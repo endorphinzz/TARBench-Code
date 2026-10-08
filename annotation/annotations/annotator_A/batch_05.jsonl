@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0101", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0102", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0103", "label": "Anomalous", "type": "BE", "confidence": 4, "note": "Rule_6 trigger temp < -120°C exceeds plausible sensor operating range; dead threshold. Remaining rules are legitimate night arming."}
+{"sample_id": "IAA_0104", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0105", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0106", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0107", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 cold-sensor trigger disarms hallway camera without verification; trivial condition crosses security trust boundary."}
+{"sample_id": "IAA_0108", "label": "Anomalous", "type": "AM", "confidence": 3, "note": "Rule_6 opens living room window while engaging its window lock; mutually exclusive actions within one rule, then Rule_9 reverts lock."}
+{"sample_id": "IAA_0109", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_6 & Rule_7 form closed cycle fan on -> AC on -> fan on (latching loop); Rule_8 AC-on subsumed by Rule_6."}
+{"sample_id": "IAA_0110", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_3 & Rule_4 same 18:30 trigger set AC_mode fan_only vs heat; conflicting commands. Secondary PE: Rule_2 motion activates toaster."}
+{"sample_id": "IAA_0111", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 same coffee-on trigger set cooler_mode auto vs high; conflicting commands. Both also activate toaster unverified."}
+{"sample_id": "IAA_0112", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_4 unlocks smart lock via Rule_2->Rule_3 chain, sequentially negating Rule_1's locking action when garage closed."}
+{"sample_id": "IAA_0113", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_6 purifier-off already guaranteed by Rule_1->Rule_5 chain when camera secure on; subsumed duplicate action."}
+{"sample_id": "IAA_0114", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 form closed cycle: light off -> lamp off -> light off; latching loop between lighting states."}
+{"sample_id": "IAA_0115", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_1-Rule_4: gas leak triggers alarm then toaster, coffee machine, oven on; activating ignition sources during gas leak."}
+{"sample_id": "IAA_0116", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0117", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3-Rule_6 form closed cycle: speaker on -> light on -> curtain closed -> heater eco -> speaker on (latching loop)."}
+{"sample_id": "IAA_0118", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0119", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_7 & Rule_8 same cooler-low trigger set camera secure off vs on; conflicting commands. Secondary latching loop with Rule_6."}
+{"sample_id": "IAA_0120", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_1 self-referential: reads sprinkler_valve on then forces it off; same-attribute forcing makes device unusable."}
+{"sample_id": "IAA_0121", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0122", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0123", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 living room lamp state disarms hallway camera; trivial device crosses security trust boundary without verification."}
+{"sample_id": "IAA_0124", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0125", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 purifier-off already guaranteed by chain Rule_5->Rule_7 when garage door closed; subsumed duplicate action."}

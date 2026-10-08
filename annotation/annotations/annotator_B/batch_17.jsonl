@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0401", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0402", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0403", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0404", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0405", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_7 & Rule_8 overlapping triggers set washing machine off vs on when lamp strong and AC heat"}
+{"sample_id": "IAA_0406", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0407", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0408", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0409", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_5 sets thermostat target 18C and 20C simultaneously (contradictory actions)"}
+{"sample_id": "IAA_0410", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 same 08:00 trigger set lamp brightness strong vs medium"}
+{"sample_id": "IAA_0411", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_7 light sensor unlocks window lock without verification; chain Rule_8-Rule_9 disarms camera"}
+{"sample_id": "IAA_0412", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_7 turns speaker on; Rule_8-Rule_11 chain reverts it to off"}
+{"sample_id": "IAA_0413", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_5-Rule_10 closed cycle: garage, lock, dishwasher, oven, coffee, toaster back to garage"}
+{"sample_id": "IAA_0414", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0415", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_7 & Rule_8 co-satisfiable triggers set robot vacuum on vs charging when door open at 14:00"}
+{"sample_id": "IAA_0416", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 same 08:00 trigger set fan intensity high vs low"}
+{"sample_id": "IAA_0417", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 & Rule_8 same curtain-open trigger set purifier on vs off"}
+{"sample_id": "IAA_0418", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_4 self-referentially forces hallway speaker from off to on"}
+{"sample_id": "IAA_0419", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0420", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0421", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0422", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 & Rule_6 same lamp-on trigger set cooler auto vs high"}
+{"sample_id": "IAA_0423", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_3 living room temperature sensor unlocks hallway smart lock without verification"}
+{"sample_id": "IAA_0424", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0425", "label": "Benign", "type": null, "confidence": 5, "note": ""}

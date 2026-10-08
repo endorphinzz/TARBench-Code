@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0101", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0102", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0103", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_6 trigger temperature < -120C, beyond plausible sensor operating range"}
+{"sample_id": "IAA_0104", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0105", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0106", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0107", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 temperature sensor disables hallway camera secure mode without verification"}
+{"sample_id": "IAA_0108", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_6 opens window and locks window lock simultaneously; mutually exclusive actions"}
+{"sample_id": "IAA_0109", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_6 & Rule_7 form fan-AC mutual cycle; Rule_6 unguarded duplicate of Rule_8 (AD secondary)"}
+{"sample_id": "IAA_0110", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_3 & Rule_4 same 18:30 trigger set AC mode fan_only vs heat"}
+{"sample_id": "IAA_0111", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 same coffee-on trigger set cooler auto vs high; toaster on duplicated"}
+{"sample_id": "IAA_0112", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_1 locks smart lock; Rule_2-Rule_4 chain reverts it to unlocked"}
+{"sample_id": "IAA_0113", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0114", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 mutual cycle: light off and lamp off trigger each other"}
+{"sample_id": "IAA_0115", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_1-Rule_4 chain: gas leak turns toaster, coffee machine, oven on (ignition hazard)"}
+{"sample_id": "IAA_0116", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0117", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3-Rule_6 form closed cycle: speaker, light, curtain, heater eco, back to speaker"}
+{"sample_id": "IAA_0118", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0119", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 & Rule_8 same cooler-low trigger set camera secure off vs on; Rule_6-Rule_7 cycle secondary"}
+{"sample_id": "IAA_0120", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_1 self-referentially forces sprinkler valve from on to off"}
+{"sample_id": "IAA_0121", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0122", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0123", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 lamp status disables hallway camera secure mode without verification"}
+{"sample_id": "IAA_0124", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0125", "label": "Benign", "type": null, "confidence": 3, "note": ""}

@@ -1,0 +1,5274 @@
+{
+ "metadata": {
+  "sampling_seed": 20260919,
+  "total": 500
+ },
+ "items": [
+  {
+   "sample_id": "IAA_0001",
+   "chain_id": "AB_002693",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "Atomic Condition Block",
+   "type_id": "CBK_009"
+  },
+  {
+   "sample_id": "IAA_0002",
+   "chain_id": "AB_004186",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_038"
+  },
+  {
+   "sample_id": "IAA_0003",
+   "chain_id": "AB_004258",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_052"
+  },
+  {
+   "sample_id": "IAA_0004",
+   "chain_id": "AB_002669",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "3 Rules Chained Condition Block",
+   "type_id": "CBK_004"
+  },
+  {
+   "sample_id": "IAA_0005",
+   "chain_id": "AB_002821",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_005"
+  },
+  {
+   "sample_id": "IAA_0006",
+   "chain_id": "AB_004110",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Condition Bypass]",
+   "type_id": "DA_022"
+  },
+  {
+   "sample_id": "IAA_0007",
+   "chain_id": "AB_001982",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_097"
+  },
+  {
+   "sample_id": "IAA_0008",
+   "chain_id": "L_0318",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0009",
+   "chain_id": "AB_002678",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "6 Rules Chained Condition Block",
+   "type_id": "CBK_006"
+  },
+  {
+   "sample_id": "IAA_0010",
+   "chain_id": "L_5432",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0011",
+   "chain_id": "AB_004382",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_077"
+  },
+  {
+   "sample_id": "IAA_0012",
+   "chain_id": "L_2062",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0013",
+   "chain_id": "AB_002391",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "4 Rules Chained Condition Bypass",
+   "type_id": "CB_079"
+  },
+  {
+   "sample_id": "IAA_0014",
+   "chain_id": "AB_001575",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "6 Rules Chained Loop",
+   "type_id": "AL_015"
+  },
+  {
+   "sample_id": "IAA_0015",
+   "chain_id": "AB_000852",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Inclusion Duplication",
+   "type_id": "AD_071"
+  },
+  {
+   "sample_id": "IAA_0016",
+   "chain_id": "AB_000283",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_057"
+  },
+  {
+   "sample_id": "IAA_0017",
+   "chain_id": "AB_004871",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_050"
+  },
+  {
+   "sample_id": "IAA_0018",
+   "chain_id": "AB_002469",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_094"
+  },
+  {
+   "sample_id": "IAA_0019",
+   "chain_id": "AB_002325",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_065"
+  },
+  {
+   "sample_id": "IAA_0020",
+   "chain_id": "AB_003883",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_007"
+  },
+  {
+   "sample_id": "IAA_0021",
+   "chain_id": "L_8932",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0022",
+   "chain_id": "L_1968",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0023",
+   "chain_id": "AB_002073",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_015"
+  },
+  {
+   "sample_id": "IAA_0024",
+   "chain_id": "AB_003777",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "3 Rules Chained Privilege Escalation",
+   "type_id": "PE_016"
+  },
+  {
+   "sample_id": "IAA_0025",
+   "chain_id": "L_7577",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0026",
+   "chain_id": "AB_003643",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "6 Rules Chained Common Sense Violation",
+   "type_id": "CSV_049"
+  },
+  {
+   "sample_id": "IAA_0027",
+   "chain_id": "AB_002101",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "6 Rules Chained Condition Bypass",
+   "type_id": "CB_021"
+  },
+  {
+   "sample_id": "IAA_0028",
+   "chain_id": "AB_000115",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_023"
+  },
+  {
+   "sample_id": "IAA_0029",
+   "chain_id": "AB_001829",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_066"
+  },
+  {
+   "sample_id": "IAA_0030",
+   "chain_id": "L_5915",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0031",
+   "chain_id": "AB_002074",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_015"
+  },
+  {
+   "sample_id": "IAA_0032",
+   "chain_id": "L_2313",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0033",
+   "chain_id": "AB_000016",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Numerical Range Action Conflict",
+   "type_id": "AC_004"
+  },
+  {
+   "sample_id": "IAA_0034",
+   "chain_id": "L_6659",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0035",
+   "chain_id": "L_0464",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0036",
+   "chain_id": "AB_003417",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "6 Rules Chained Common Sense Violation",
+   "type_id": "CSV_004"
+  },
+  {
+   "sample_id": "IAA_0037",
+   "chain_id": "AB_003619",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "4 Rules Chained Common Sense Violation",
+   "type_id": "CSV_044"
+  },
+  {
+   "sample_id": "IAA_0038",
+   "chain_id": "AB_002384",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_077"
+  },
+  {
+   "sample_id": "IAA_0039",
+   "chain_id": "L_6514",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0040",
+   "chain_id": "AB_000095",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "7 Rules Chained Conflict",
+   "type_id": "AC_019"
+  },
+  {
+   "sample_id": "IAA_0041",
+   "chain_id": "AB_003279",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_016"
+  },
+  {
+   "sample_id": "IAA_0042",
+   "chain_id": "L_1494",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0043",
+   "chain_id": "AB_001031",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_007"
+  },
+  {
+   "sample_id": "IAA_0044",
+   "chain_id": "L_2193",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0045",
+   "chain_id": "L_6413",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0046",
+   "chain_id": "AB_000515",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Exact Duplication",
+   "type_id": "AD_003"
+  },
+  {
+   "sample_id": "IAA_0047",
+   "chain_id": "AB_003861",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_003"
+  },
+  {
+   "sample_id": "IAA_0048",
+   "chain_id": "AB_002897",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_020"
+  },
+  {
+   "sample_id": "IAA_0049",
+   "chain_id": "AB_004219",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_044"
+  },
+  {
+   "sample_id": "IAA_0050",
+   "chain_id": "L_5581",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0051",
+   "chain_id": "AB_000043",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "5 Rules Chained Conflict",
+   "type_id": "AC_009"
+  },
+  {
+   "sample_id": "IAA_0052",
+   "chain_id": "AB_000612",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Exact Duplication",
+   "type_id": "AD_023"
+  },
+  {
+   "sample_id": "IAA_0053",
+   "chain_id": "L_5918",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0054",
+   "chain_id": "AB_004238",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_048"
+  },
+  {
+   "sample_id": "IAA_0055",
+   "chain_id": "AB_003497",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "Atomic Common Sense Violation",
+   "type_id": "CSV_020"
+  },
+  {
+   "sample_id": "IAA_0056",
+   "chain_id": "AB_003419",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "6 Rules Chained Common Sense Violation",
+   "type_id": "CSV_004"
+  },
+  {
+   "sample_id": "IAA_0057",
+   "chain_id": "L_7103",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0058",
+   "chain_id": "AB_002471",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_095"
+  },
+  {
+   "sample_id": "IAA_0059",
+   "chain_id": "AB_003728",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "3 Rules Chained Privilege Escalation",
+   "type_id": "PE_006"
+  },
+  {
+   "sample_id": "IAA_0060",
+   "chain_id": "L_7472",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0061",
+   "chain_id": "AB_004859",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_047"
+  },
+  {
+   "sample_id": "IAA_0062",
+   "chain_id": "AB_000224",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_045"
+  },
+  {
+   "sample_id": "IAA_0063",
+   "chain_id": "L_6382",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0064",
+   "chain_id": "AB_001061",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_013"
+  },
+  {
+   "sample_id": "IAA_0065",
+   "chain_id": "L_1923",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0066",
+   "chain_id": "AB_002625",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "6 Rules Chained Action Block",
+   "type_id": "ABK_025"
+  },
+  {
+   "sample_id": "IAA_0067",
+   "chain_id": "AB_002911",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "Physical Trigger Mutex",
+   "type_id": "TM_003"
+  },
+  {
+   "sample_id": "IAA_0068",
+   "chain_id": "AB_001713",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_043"
+  },
+  {
+   "sample_id": "IAA_0069",
+   "chain_id": "AB_000789",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Inclusion Duplication",
+   "type_id": "AD_058"
+  },
+  {
+   "sample_id": "IAA_0070",
+   "chain_id": "AB_001548",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_010"
+  },
+  {
+   "sample_id": "IAA_0071",
+   "chain_id": "AB_000278",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "5 Rules Chained Conflict",
+   "type_id": "AC_056"
+  },
+  {
+   "sample_id": "IAA_0072",
+   "chain_id": "AB_000580",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "6 Rules Chained Exact Duplication",
+   "type_id": "AD_016"
+  },
+  {
+   "sample_id": "IAA_0073",
+   "chain_id": "AB_002987",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_018"
+  },
+  {
+   "sample_id": "IAA_0074",
+   "chain_id": "AB_003270",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_014"
+  },
+  {
+   "sample_id": "IAA_0075",
+   "chain_id": "AB_002189",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_038"
+  },
+  {
+   "sample_id": "IAA_0076",
+   "chain_id": "AB_003167",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_024"
+  },
+  {
+   "sample_id": "IAA_0077",
+   "chain_id": "AB_003752",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "4 Rules Chained Privilege Escalation",
+   "type_id": "PE_011"
+  },
+  {
+   "sample_id": "IAA_0078",
+   "chain_id": "AB_001558",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_012"
+  },
+  {
+   "sample_id": "IAA_0079",
+   "chain_id": "L_1026",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0080",
+   "chain_id": "AB_003570",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "5 Rules Chained Common Sense Violation",
+   "type_id": "CSV_034"
+  },
+  {
+   "sample_id": "IAA_0081",
+   "chain_id": "AB_000598",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Exact Duplication",
+   "type_id": "AD_020"
+  },
+  {
+   "sample_id": "IAA_0082",
+   "chain_id": "L_6703",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0083",
+   "chain_id": "AB_004447",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_090"
+  },
+  {
+   "sample_id": "IAA_0084",
+   "chain_id": "L_7556",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0085",
+   "chain_id": "AB_001626",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "4 Rules Chained Loop",
+   "type_id": "AL_026"
+  },
+  {
+   "sample_id": "IAA_0086",
+   "chain_id": "AB_002111",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Numerical Range Bypass",
+   "type_id": "CB_023"
+  },
+  {
+   "sample_id": "IAA_0087",
+   "chain_id": "AB_003208",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Numerical Illegal State",
+   "type_id": "IS_002"
+  },
+  {
+   "sample_id": "IAA_0088",
+   "chain_id": "L_7566",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0089",
+   "chain_id": "AB_000654",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Exact Duplication",
+   "type_id": "AD_031"
+  },
+  {
+   "sample_id": "IAA_0090",
+   "chain_id": "AB_000112",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_023"
+  },
+  {
+   "sample_id": "IAA_0091",
+   "chain_id": "AB_002426",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Numerical Range Bypass",
+   "type_id": "CB_086"
+  },
+  {
+   "sample_id": "IAA_0092",
+   "chain_id": "L_6509",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0093",
+   "chain_id": "L_1973",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0094",
+   "chain_id": "AB_000906",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Exact Duplication",
+   "type_id": "AD_082"
+  },
+  {
+   "sample_id": "IAA_0095",
+   "chain_id": "AB_004421",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_085"
+  },
+  {
+   "sample_id": "IAA_0096",
+   "chain_id": "L_0163",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0097",
+   "chain_id": "AB_001187",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_038"
+  },
+  {
+   "sample_id": "IAA_0098",
+   "chain_id": "AB_002966",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "Mathematical Trigger Mutex",
+   "type_id": "TM_014"
+  },
+  {
+   "sample_id": "IAA_0099",
+   "chain_id": "AB_000794",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Exact Duplication",
+   "type_id": "AD_059"
+  },
+  {
+   "sample_id": "IAA_0100",
+   "chain_id": "AB_004145",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Condition Bypass]",
+   "type_id": "DA_029"
+  },
+  {
+   "sample_id": "IAA_0101",
+   "chain_id": "L_7560",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0102",
+   "chain_id": "L_3315",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0103",
+   "chain_id": "AB_002833",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_007"
+  },
+  {
+   "sample_id": "IAA_0104",
+   "chain_id": "L_5712",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0105",
+   "chain_id": "L_6217",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0106",
+   "chain_id": "L_6431",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0107",
+   "chain_id": "AB_003949",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_020"
+  },
+  {
+   "sample_id": "IAA_0108",
+   "chain_id": "AB_003082",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "Physical Action Mutex",
+   "type_id": "AM_007"
+  },
+  {
+   "sample_id": "IAA_0109",
+   "chain_id": "AB_004351",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_071"
+  },
+  {
+   "sample_id": "IAA_0110",
+   "chain_id": "AB_004080",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Duplication]",
+   "type_id": "DA_016"
+  },
+  {
+   "sample_id": "IAA_0111",
+   "chain_id": "AB_004762",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_028"
+  },
+  {
+   "sample_id": "IAA_0112",
+   "chain_id": "AB_001098",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_020"
+  },
+  {
+   "sample_id": "IAA_0113",
+   "chain_id": "AB_002094",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "6 Rules Chained Condition Bypass",
+   "type_id": "CB_019"
+  },
+  {
+   "sample_id": "IAA_0114",
+   "chain_id": "AB_001764",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_053"
+  },
+  {
+   "sample_id": "IAA_0115",
+   "chain_id": "AB_003638",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "4 Rules Chained Common Sense Violation",
+   "type_id": "CSV_048"
+  },
+  {
+   "sample_id": "IAA_0116",
+   "chain_id": "L_1079",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0117",
+   "chain_id": "AB_001726",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "4 Rules Chained Loop",
+   "type_id": "AL_046"
+  },
+  {
+   "sample_id": "IAA_0118",
+   "chain_id": "L_0375",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0119",
+   "chain_id": "AB_004300",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_060"
+  },
+  {
+   "sample_id": "IAA_0120",
+   "chain_id": "AB_003240",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_008"
+  },
+  {
+   "sample_id": "IAA_0121",
+   "chain_id": "L_6387",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0122",
+   "chain_id": "L_7544",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0123",
+   "chain_id": "AB_003807",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "Atomic Privilege Escalation",
+   "type_id": "PE_022"
+  },
+  {
+   "sample_id": "IAA_0124",
+   "chain_id": "L_7202",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0125",
+   "chain_id": "AB_000516",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Exact Duplication",
+   "type_id": "AD_004"
+  },
+  {
+   "sample_id": "IAA_0126",
+   "chain_id": "AB_003137",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_018"
+  },
+  {
+   "sample_id": "IAA_0127",
+   "chain_id": "L_0008",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0128",
+   "chain_id": "AB_000046",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Numerical Range Action Conflict",
+   "type_id": "AC_010"
+  },
+  {
+   "sample_id": "IAA_0129",
+   "chain_id": "AB_004552",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_111"
+  },
+  {
+   "sample_id": "IAA_0130",
+   "chain_id": "L_0772",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0131",
+   "chain_id": "AB_002159",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_032"
+  },
+  {
+   "sample_id": "IAA_0132",
+   "chain_id": "L_6425",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0133",
+   "chain_id": "AB_000479",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_096"
+  },
+  {
+   "sample_id": "IAA_0134",
+   "chain_id": "L_6513",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0135",
+   "chain_id": "AB_001301",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "3 Rules Chained Action Revert",
+   "type_id": "AR_061"
+  },
+  {
+   "sample_id": "IAA_0136",
+   "chain_id": "AB_000989",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Inclusion Duplication",
+   "type_id": "AD_098"
+  },
+  {
+   "sample_id": "IAA_0137",
+   "chain_id": "L_2226",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0138",
+   "chain_id": "AB_000837",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_068"
+  },
+  {
+   "sample_id": "IAA_0139",
+   "chain_id": "AB_003133",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_017"
+  },
+  {
+   "sample_id": "IAA_0140",
+   "chain_id": "L_6392",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0141",
+   "chain_id": "L_2266",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0142",
+   "chain_id": "AB_002768",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "7 Rules Chained Condition Block",
+   "type_id": "CBK_024"
+  },
+  {
+   "sample_id": "IAA_0143",
+   "chain_id": "AB_000655",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Exact Duplication",
+   "type_id": "AD_031"
+  },
+  {
+   "sample_id": "IAA_0144",
+   "chain_id": "AB_001695",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "6 Rules Chained Loop",
+   "type_id": "AL_039"
+  },
+  {
+   "sample_id": "IAA_0145",
+   "chain_id": "AB_002343",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "Atomic Condition Bypass",
+   "type_id": "CB_069"
+  },
+  {
+   "sample_id": "IAA_0146",
+   "chain_id": "L_0574",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0147",
+   "chain_id": "L_6372",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0148",
+   "chain_id": "AB_001812",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_063"
+  },
+  {
+   "sample_id": "IAA_0149",
+   "chain_id": "AB_002296",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_060"
+  },
+  {
+   "sample_id": "IAA_0150",
+   "chain_id": "L_5701",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0151",
+   "chain_id": "AB_000489",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_098"
+  },
+  {
+   "sample_id": "IAA_0152",
+   "chain_id": "L_7527",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0153",
+   "chain_id": "L_0956",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0154",
+   "chain_id": "AB_003084",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "Physical Action Mutex",
+   "type_id": "AM_007"
+  },
+  {
+   "sample_id": "IAA_0155",
+   "chain_id": "AB_001593",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_019"
+  },
+  {
+   "sample_id": "IAA_0156",
+   "chain_id": "L_1487",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0157",
+   "chain_id": "AB_001277",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_056"
+  },
+  {
+   "sample_id": "IAA_0158",
+   "chain_id": "AB_001438",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_088"
+  },
+  {
+   "sample_id": "IAA_0159",
+   "chain_id": "L_1357",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0160",
+   "chain_id": "AB_000141",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "5 Rules Chained Conflict",
+   "type_id": "AC_029"
+  },
+  {
+   "sample_id": "IAA_0161",
+   "chain_id": "AB_001048",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "3 Rules Chained Action Revert",
+   "type_id": "AR_010"
+  },
+  {
+   "sample_id": "IAA_0162",
+   "chain_id": "AB_002589",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "Atomic Action Block",
+   "type_id": "ABK_018"
+  },
+  {
+   "sample_id": "IAA_0163",
+   "chain_id": "AB_004218",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_044"
+  },
+  {
+   "sample_id": "IAA_0164",
+   "chain_id": "AB_002024",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "Atomic Condition Bypass",
+   "type_id": "CB_005"
+  },
+  {
+   "sample_id": "IAA_0165",
+   "chain_id": "L_2227",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0166",
+   "chain_id": "AB_000495",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_099"
+  },
+  {
+   "sample_id": "IAA_0167",
+   "chain_id": "AB_000179",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "7 Rules Chained Conflict",
+   "type_id": "AC_036"
+  },
+  {
+   "sample_id": "IAA_0168",
+   "chain_id": "L_6555",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0169",
+   "chain_id": "AB_001534",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "7 Rules Chained Loop",
+   "type_id": "AL_007"
+  },
+  {
+   "sample_id": "IAA_0170",
+   "chain_id": "L_6456",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0171",
+   "chain_id": "AB_001711",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_043"
+  },
+  {
+   "sample_id": "IAA_0172",
+   "chain_id": "L_0063",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0173",
+   "chain_id": "AB_004733",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_022"
+  },
+  {
+   "sample_id": "IAA_0174",
+   "chain_id": "AB_001118",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_024"
+  },
+  {
+   "sample_id": "IAA_0175",
+   "chain_id": "L_6080",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0176",
+   "chain_id": "AB_003406",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "Atomic Common Sense Violation",
+   "type_id": "CSV_002"
+  },
+  {
+   "sample_id": "IAA_0177",
+   "chain_id": "AB_002773",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "6 Rules Chained Condition Block",
+   "type_id": "CBK_025"
+  },
+  {
+   "sample_id": "IAA_0178",
+   "chain_id": "AB_001296",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "3 Rules Chained Action Revert",
+   "type_id": "AR_060"
+  },
+  {
+   "sample_id": "IAA_0179",
+   "chain_id": "L_5787",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0180",
+   "chain_id": "L_6418",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0181",
+   "chain_id": "AB_003931",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_017"
+  },
+  {
+   "sample_id": "IAA_0182",
+   "chain_id": "L_1945",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0183",
+   "chain_id": "AB_000681",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Exact Duplication",
+   "type_id": "AD_037"
+  },
+  {
+   "sample_id": "IAA_0184",
+   "chain_id": "AB_000718",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Exact Duplication",
+   "type_id": "AD_044"
+  },
+  {
+   "sample_id": "IAA_0185",
+   "chain_id": "AB_004811",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_038"
+  },
+  {
+   "sample_id": "IAA_0186",
+   "chain_id": "L_0636",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0187",
+   "chain_id": "AB_003081",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "Physical Action Mutex",
+   "type_id": "AM_007"
+  },
+  {
+   "sample_id": "IAA_0188",
+   "chain_id": "AB_000728",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Exact Duplication",
+   "type_id": "AD_046"
+  },
+  {
+   "sample_id": "IAA_0189",
+   "chain_id": "AB_000468",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_094"
+  },
+  {
+   "sample_id": "IAA_0190",
+   "chain_id": "AB_001350",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_070"
+  },
+  {
+   "sample_id": "IAA_0191",
+   "chain_id": "AB_000324",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "5 Rules Chained Conflict",
+   "type_id": "AC_065"
+  },
+  {
+   "sample_id": "IAA_0192",
+   "chain_id": "L_0069",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0193",
+   "chain_id": "AB_002244",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_049"
+  },
+  {
+   "sample_id": "IAA_0194",
+   "chain_id": "AB_000383",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_077"
+  },
+  {
+   "sample_id": "IAA_0195",
+   "chain_id": "AB_003183",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_027"
+  },
+  {
+   "sample_id": "IAA_0196",
+   "chain_id": "AB_004441",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_089"
+  },
+  {
+   "sample_id": "IAA_0197",
+   "chain_id": "AB_002813",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_003"
+  },
+  {
+   "sample_id": "IAA_0198",
+   "chain_id": "AB_000824",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Inclusion Duplication",
+   "type_id": "AD_065"
+  },
+  {
+   "sample_id": "IAA_0199",
+   "chain_id": "L_5336",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0200",
+   "chain_id": "AB_002996",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_020"
+  },
+  {
+   "sample_id": "IAA_0201",
+   "chain_id": "AB_000424",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_085"
+  },
+  {
+   "sample_id": "IAA_0202",
+   "chain_id": "L_7002",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0203",
+   "chain_id": "AB_002261",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "Atomic Condition Bypass",
+   "type_id": "CB_053"
+  },
+  {
+   "sample_id": "IAA_0204",
+   "chain_id": "AB_001388",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_078"
+  },
+  {
+   "sample_id": "IAA_0205",
+   "chain_id": "L_6807",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0206",
+   "chain_id": "AB_002562",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "6 Rules Chained Action Block",
+   "type_id": "ABK_013"
+  },
+  {
+   "sample_id": "IAA_0207",
+   "chain_id": "L_6515",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0208",
+   "chain_id": "AB_003458",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "4 Rules Chained Common Sense Violation",
+   "type_id": "CSV_012"
+  },
+  {
+   "sample_id": "IAA_0209",
+   "chain_id": "L_0060",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0210",
+   "chain_id": "AB_000774",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Exact Duplication",
+   "type_id": "AD_055"
+  },
+  {
+   "sample_id": "IAA_0211",
+   "chain_id": "L_0494",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0212",
+   "chain_id": "AB_003467",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "4 Rules Chained Common Sense Violation",
+   "type_id": "CSV_014"
+  },
+  {
+   "sample_id": "IAA_0213",
+   "chain_id": "AB_003427",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "4 Rules Chained Common Sense Violation",
+   "type_id": "CSV_006"
+  },
+  {
+   "sample_id": "IAA_0214",
+   "chain_id": "AB_001622",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "5 Rules Chained Loop",
+   "type_id": "AL_025"
+  },
+  {
+   "sample_id": "IAA_0215",
+   "chain_id": "AB_001714",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_043"
+  },
+  {
+   "sample_id": "IAA_0216",
+   "chain_id": "L_5474",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0217",
+   "chain_id": "AB_003748",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "2 Rules Chained Privilege Escalation",
+   "type_id": "PE_010"
+  },
+  {
+   "sample_id": "IAA_0218",
+   "chain_id": "AB_000992",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "4 Rules Chained Inclusion Duplication",
+   "type_id": "AD_099"
+  },
+  {
+   "sample_id": "IAA_0219",
+   "chain_id": "L_0072",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0220",
+   "chain_id": "AB_004357",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_072"
+  },
+  {
+   "sample_id": "IAA_0221",
+   "chain_id": "AB_001730",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "4 Rules Chained Loop",
+   "type_id": "AL_046"
+  },
+  {
+   "sample_id": "IAA_0222",
+   "chain_id": "AB_004368",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_074"
+  },
+  {
+   "sample_id": "IAA_0223",
+   "chain_id": "AB_003746",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "2 Rules Chained Privilege Escalation",
+   "type_id": "PE_010"
+  },
+  {
+   "sample_id": "IAA_0224",
+   "chain_id": "AB_001698",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_040"
+  },
+  {
+   "sample_id": "IAA_0225",
+   "chain_id": "L_1505",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0226",
+   "chain_id": "L_1425",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0227",
+   "chain_id": "AB_001102",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "3 Rules Chained Action Revert",
+   "type_id": "AR_021"
+  },
+  {
+   "sample_id": "IAA_0228",
+   "chain_id": "AB_000826",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_066"
+  },
+  {
+   "sample_id": "IAA_0229",
+   "chain_id": "AB_004235",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_047"
+  },
+  {
+   "sample_id": "IAA_0230",
+   "chain_id": "AB_004019",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Duplication]",
+   "type_id": "DA_004"
+  },
+  {
+   "sample_id": "IAA_0231",
+   "chain_id": "AB_000196",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_040"
+  },
+  {
+   "sample_id": "IAA_0232",
+   "chain_id": "L_0030",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0233",
+   "chain_id": "L_6281",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0234",
+   "chain_id": "AB_002445",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_089"
+  },
+  {
+   "sample_id": "IAA_0235",
+   "chain_id": "AB_002133",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_027"
+  },
+  {
+   "sample_id": "IAA_0236",
+   "chain_id": "AB_001330",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_066"
+  },
+  {
+   "sample_id": "IAA_0237",
+   "chain_id": "AB_003055",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_001"
+  },
+  {
+   "sample_id": "IAA_0238",
+   "chain_id": "L_5519",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0239",
+   "chain_id": "AB_000941",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Inclusion Duplication",
+   "type_id": "AD_089"
+  },
+  {
+   "sample_id": "IAA_0240",
+   "chain_id": "AB_001319",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_064"
+  },
+  {
+   "sample_id": "IAA_0241",
+   "chain_id": "AB_002931",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_007"
+  },
+  {
+   "sample_id": "IAA_0242",
+   "chain_id": "AB_003840",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "Atomic Privilege Escalation",
+   "type_id": "PE_028"
+  },
+  {
+   "sample_id": "IAA_0243",
+   "chain_id": "AB_003907",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_012"
+  },
+  {
+   "sample_id": "IAA_0244",
+   "chain_id": "AB_000157",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "5 Rules Chained Conflict",
+   "type_id": "AC_032"
+  },
+  {
+   "sample_id": "IAA_0245",
+   "chain_id": "AB_002541",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "Atomic Action Block",
+   "type_id": "ABK_009"
+  },
+  {
+   "sample_id": "IAA_0246",
+   "chain_id": "AB_001284",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_057"
+  },
+  {
+   "sample_id": "IAA_0247",
+   "chain_id": "L_9422",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0248",
+   "chain_id": "AB_001016",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_004"
+  },
+  {
+   "sample_id": "IAA_0249",
+   "chain_id": "AB_004293",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_059"
+  },
+  {
+   "sample_id": "IAA_0250",
+   "chain_id": "AB_001348",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_070"
+  },
+  {
+   "sample_id": "IAA_0251",
+   "chain_id": "L_2114",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0252",
+   "chain_id": "AB_002747",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "3 Rules Chained Condition Block",
+   "type_id": "CBK_020"
+  },
+  {
+   "sample_id": "IAA_0253",
+   "chain_id": "AB_003692",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "6 Rules Chained Common Sense Violation",
+   "type_id": "CSV_059"
+  },
+  {
+   "sample_id": "IAA_0254",
+   "chain_id": "L_1813",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0255",
+   "chain_id": "AB_000646",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Inclusion Duplication",
+   "type_id": "AD_030"
+  },
+  {
+   "sample_id": "IAA_0256",
+   "chain_id": "AB_001694",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "6 Rules Chained Loop",
+   "type_id": "AL_039"
+  },
+  {
+   "sample_id": "IAA_0257",
+   "chain_id": "AB_000432",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_087"
+  },
+  {
+   "sample_id": "IAA_0258",
+   "chain_id": "AB_003244",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_009"
+  },
+  {
+   "sample_id": "IAA_0259",
+   "chain_id": "AB_002757",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "4 Rules Chained Condition Block",
+   "type_id": "CBK_022"
+  },
+  {
+   "sample_id": "IAA_0260",
+   "chain_id": "L_5448",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0261",
+   "chain_id": "AB_001649",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "6 Rules Chained Loop",
+   "type_id": "AL_030"
+  },
+  {
+   "sample_id": "IAA_0262",
+   "chain_id": "AB_003953",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_021"
+  },
+  {
+   "sample_id": "IAA_0263",
+   "chain_id": "AB_003578",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "5 Rules Chained Common Sense Violation",
+   "type_id": "CSV_036"
+  },
+  {
+   "sample_id": "IAA_0264",
+   "chain_id": "L_1762",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0265",
+   "chain_id": "AB_000207",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_042"
+  },
+  {
+   "sample_id": "IAA_0266",
+   "chain_id": "AB_002580",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "4 Rules Chained Action Block",
+   "type_id": "ABK_016"
+  },
+  {
+   "sample_id": "IAA_0267",
+   "chain_id": "AB_000085",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "6 Rules Chained Conflict",
+   "type_id": "AC_017"
+  },
+  {
+   "sample_id": "IAA_0268",
+   "chain_id": "AB_002972",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_015"
+  },
+  {
+   "sample_id": "IAA_0269",
+   "chain_id": "AB_002027",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Numerical Range Bypass",
+   "type_id": "CB_006"
+  },
+  {
+   "sample_id": "IAA_0270",
+   "chain_id": "L_6120",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0271",
+   "chain_id": "L_5502",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0272",
+   "chain_id": "AB_004837",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_043"
+  },
+  {
+   "sample_id": "IAA_0273",
+   "chain_id": "AB_002991",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_019"
+  },
+  {
+   "sample_id": "IAA_0274",
+   "chain_id": "AB_003421",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "Atomic Common Sense Violation",
+   "type_id": "CSV_005"
+  },
+  {
+   "sample_id": "IAA_0275",
+   "chain_id": "L_6389",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0276",
+   "chain_id": "AB_001082",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_017"
+  },
+  {
+   "sample_id": "IAA_0277",
+   "chain_id": "AB_004414",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_083"
+  },
+  {
+   "sample_id": "IAA_0278",
+   "chain_id": "AB_003914",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_013"
+  },
+  {
+   "sample_id": "IAA_0279",
+   "chain_id": "AB_003143",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_019"
+  },
+  {
+   "sample_id": "IAA_0280",
+   "chain_id": "AB_001011",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "3 Rules Chained Action Revert",
+   "type_id": "AR_003"
+  },
+  {
+   "sample_id": "IAA_0281",
+   "chain_id": "AB_003110",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_012"
+  },
+  {
+   "sample_id": "IAA_0282",
+   "chain_id": "AB_002761",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "4 Rules Chained Condition Block",
+   "type_id": "CBK_023"
+  },
+  {
+   "sample_id": "IAA_0283",
+   "chain_id": "AB_002554",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "6 Rules Chained Action Block",
+   "type_id": "ABK_011"
+  },
+  {
+   "sample_id": "IAA_0284",
+   "chain_id": "AB_000290",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_058"
+  },
+  {
+   "sample_id": "IAA_0285",
+   "chain_id": "AB_004569",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_114"
+  },
+  {
+   "sample_id": "IAA_0286",
+   "chain_id": "AB_004023",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Duplication]",
+   "type_id": "DA_005"
+  },
+  {
+   "sample_id": "IAA_0287",
+   "chain_id": "AB_000603",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Inclusion Duplication",
+   "type_id": "AD_021"
+  },
+  {
+   "sample_id": "IAA_0288",
+   "chain_id": "AB_001367",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_074"
+  },
+  {
+   "sample_id": "IAA_0289",
+   "chain_id": "AB_002401",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_081"
+  },
+  {
+   "sample_id": "IAA_0290",
+   "chain_id": "L_6366",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0291",
+   "chain_id": "L_5328",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0292",
+   "chain_id": "AB_001248",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "7 Rules Chained Action Revert",
+   "type_id": "AR_050"
+  },
+  {
+   "sample_id": "IAA_0293",
+   "chain_id": "L_7409",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0294",
+   "chain_id": "L_0356",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0295",
+   "chain_id": "L_5567",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0296",
+   "chain_id": "L_7589",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0297",
+   "chain_id": "AB_002856",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_012"
+  },
+  {
+   "sample_id": "IAA_0298",
+   "chain_id": "L_7600",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0299",
+   "chain_id": "L_4236",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0300",
+   "chain_id": "L_0804",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0301",
+   "chain_id": "AB_002385",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_077"
+  },
+  {
+   "sample_id": "IAA_0302",
+   "chain_id": "AB_000443",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_089"
+  },
+  {
+   "sample_id": "IAA_0303",
+   "chain_id": "AB_001734",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_047"
+  },
+  {
+   "sample_id": "IAA_0304",
+   "chain_id": "AB_003895",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_009"
+  },
+  {
+   "sample_id": "IAA_0305",
+   "chain_id": "L_0193",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0306",
+   "chain_id": "AB_004431",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_087"
+  },
+  {
+   "sample_id": "IAA_0307",
+   "chain_id": "AB_000924",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Inclusion Duplication",
+   "type_id": "AD_085"
+  },
+  {
+   "sample_id": "IAA_0308",
+   "chain_id": "AB_003567",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "5 Rules Chained Common Sense Violation",
+   "type_id": "CSV_034"
+  },
+  {
+   "sample_id": "IAA_0309",
+   "chain_id": "L_6495",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0310",
+   "chain_id": "AB_002389",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "4 Rules Chained Numerical Range Bypass",
+   "type_id": "CB_078"
+  },
+  {
+   "sample_id": "IAA_0311",
+   "chain_id": "AB_001843",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_069"
+  },
+  {
+   "sample_id": "IAA_0312",
+   "chain_id": "AB_001464",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_093"
+  },
+  {
+   "sample_id": "IAA_0313",
+   "chain_id": "L_7319",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0314",
+   "chain_id": "L_6845",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0315",
+   "chain_id": "AB_004179",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_036"
+  },
+  {
+   "sample_id": "IAA_0316",
+   "chain_id": "AB_001890",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "4 Rules Chained Loop",
+   "type_id": "AL_078"
+  },
+  {
+   "sample_id": "IAA_0317",
+   "chain_id": "AB_001242",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_049"
+  },
+  {
+   "sample_id": "IAA_0318",
+   "chain_id": "AB_002606",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "7 Rules Chained Action Block",
+   "type_id": "ABK_022"
+  },
+  {
+   "sample_id": "IAA_0319",
+   "chain_id": "L_5321",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0320",
+   "chain_id": "L_1126",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0321",
+   "chain_id": "L_7523",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0322",
+   "chain_id": "AB_000976",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Exact Duplication",
+   "type_id": "AD_096"
+  },
+  {
+   "sample_id": "IAA_0323",
+   "chain_id": "AB_001471",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_095"
+  },
+  {
+   "sample_id": "IAA_0324",
+   "chain_id": "AB_000282",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_057"
+  },
+  {
+   "sample_id": "IAA_0325",
+   "chain_id": "AB_003825",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "Atomic Privilege Escalation",
+   "type_id": "PE_025"
+  },
+  {
+   "sample_id": "IAA_0326",
+   "chain_id": "L_7507",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0327",
+   "chain_id": "AB_001538",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_008"
+  },
+  {
+   "sample_id": "IAA_0328",
+   "chain_id": "AB_002228",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_046"
+  },
+  {
+   "sample_id": "IAA_0329",
+   "chain_id": "L_2197",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0330",
+   "chain_id": "AB_000073",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_015"
+  },
+  {
+   "sample_id": "IAA_0331",
+   "chain_id": "AB_004113",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Condition Bypass]",
+   "type_id": "DA_023"
+  },
+  {
+   "sample_id": "IAA_0332",
+   "chain_id": "AB_000374",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_075"
+  },
+  {
+   "sample_id": "IAA_0333",
+   "chain_id": "AB_004794",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_034"
+  },
+  {
+   "sample_id": "IAA_0334",
+   "chain_id": "L_6526",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0335",
+   "chain_id": "L_5418",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0336",
+   "chain_id": "AB_001514",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "5 Rules Chained Loop",
+   "type_id": "AL_003"
+  },
+  {
+   "sample_id": "IAA_0337",
+   "chain_id": "AB_001783",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "7 Rules Chained Loop",
+   "type_id": "AL_057"
+  },
+  {
+   "sample_id": "IAA_0338",
+   "chain_id": "AB_001976",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_096"
+  },
+  {
+   "sample_id": "IAA_0339",
+   "chain_id": "AB_001962",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "7 Rules Chained Loop",
+   "type_id": "AL_093"
+  },
+  {
+   "sample_id": "IAA_0340",
+   "chain_id": "AB_002605",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "4 Rules Chained Action Block",
+   "type_id": "ABK_021"
+  },
+  {
+   "sample_id": "IAA_0341",
+   "chain_id": "AB_004783",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_032"
+  },
+  {
+   "sample_id": "IAA_0342",
+   "chain_id": "AB_000937",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "6 Rules Chained Inclusion Duplication",
+   "type_id": "AD_088"
+  },
+  {
+   "sample_id": "IAA_0343",
+   "chain_id": "AB_001268",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_054"
+  },
+  {
+   "sample_id": "IAA_0344",
+   "chain_id": "AB_002195",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_039"
+  },
+  {
+   "sample_id": "IAA_0345",
+   "chain_id": "AB_002170",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "Atomic Condition Bypass",
+   "type_id": "CB_034"
+  },
+  {
+   "sample_id": "IAA_0346",
+   "chain_id": "L_6356",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0347",
+   "chain_id": "AB_000737",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Inclusion Duplication",
+   "type_id": "AD_048"
+  },
+  {
+   "sample_id": "IAA_0348",
+   "chain_id": "AB_003453",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "2 Rules Chained Common Sense Violation",
+   "type_id": "CSV_011"
+  },
+  {
+   "sample_id": "IAA_0349",
+   "chain_id": "L_1569",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0350",
+   "chain_id": "AB_001325",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_065"
+  },
+  {
+   "sample_id": "IAA_0351",
+   "chain_id": "AB_000066",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "4 Rules Chained Conflict",
+   "type_id": "AC_014"
+  },
+  {
+   "sample_id": "IAA_0352",
+   "chain_id": "AB_004225",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_045"
+  },
+  {
+   "sample_id": "IAA_0353",
+   "chain_id": "L_1489",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0354",
+   "chain_id": "AB_000669",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_034"
+  },
+  {
+   "sample_id": "IAA_0355",
+   "chain_id": "AB_000638",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "6 Rules Chained Inclusion Duplication",
+   "type_id": "AD_028"
+  },
+  {
+   "sample_id": "IAA_0356",
+   "chain_id": "AB_000284",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_057"
+  },
+  {
+   "sample_id": "IAA_0357",
+   "chain_id": "AB_004348",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_070"
+  },
+  {
+   "sample_id": "IAA_0358",
+   "chain_id": "AB_002486",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_098"
+  },
+  {
+   "sample_id": "IAA_0359",
+   "chain_id": "L_6604",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0360",
+   "chain_id": "AB_004131",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Condition Bypass]",
+   "type_id": "DA_027"
+  },
+  {
+   "sample_id": "IAA_0361",
+   "chain_id": "AB_002860",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_012"
+  },
+  {
+   "sample_id": "IAA_0362",
+   "chain_id": "L_5339",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0363",
+   "chain_id": "AB_002203",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_041"
+  },
+  {
+   "sample_id": "IAA_0364",
+   "chain_id": "AB_004564",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_113"
+  },
+  {
+   "sample_id": "IAA_0365",
+   "chain_id": "AB_001387",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_078"
+  },
+  {
+   "sample_id": "IAA_0366",
+   "chain_id": "AB_002586",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "Atomic Action Block",
+   "type_id": "ABK_018"
+  },
+  {
+   "sample_id": "IAA_0367",
+   "chain_id": "L_0015",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0368",
+   "chain_id": "AB_002070",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Numerical Range Bypass",
+   "type_id": "CB_014"
+  },
+  {
+   "sample_id": "IAA_0369",
+   "chain_id": "L_7439",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0370",
+   "chain_id": "AB_000433",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_087"
+  },
+  {
+   "sample_id": "IAA_0371",
+   "chain_id": "AB_003862",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_003"
+  },
+  {
+   "sample_id": "IAA_0372",
+   "chain_id": "AB_004623",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_125"
+  },
+  {
+   "sample_id": "IAA_0373",
+   "chain_id": "L_5397",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0374",
+   "chain_id": "L_7060",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0375",
+   "chain_id": "AB_003790",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "4 Rules Chained Privilege Escalation",
+   "type_id": "PE_018"
+  },
+  {
+   "sample_id": "IAA_0376",
+   "chain_id": "AB_000616",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_024"
+  },
+  {
+   "sample_id": "IAA_0377",
+   "chain_id": "AB_003035",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_027"
+  },
+  {
+   "sample_id": "IAA_0378",
+   "chain_id": "AB_004581",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_117"
+  },
+  {
+   "sample_id": "IAA_0379",
+   "chain_id": "AB_002593",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "5 Rules Chained Action Block",
+   "type_id": "ABK_019"
+  },
+  {
+   "sample_id": "IAA_0380",
+   "chain_id": "L_5363",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0381",
+   "chain_id": "AB_000762",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Inclusion Duplication",
+   "type_id": "AD_053"
+  },
+  {
+   "sample_id": "IAA_0382",
+   "chain_id": "AB_003300",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_020"
+  },
+  {
+   "sample_id": "IAA_0383",
+   "chain_id": "AB_003036",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_028"
+  },
+  {
+   "sample_id": "IAA_0384",
+   "chain_id": "AB_000137",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "7 Rules Chained Conflict",
+   "type_id": "AC_028"
+  },
+  {
+   "sample_id": "IAA_0385",
+   "chain_id": "L_0093",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0386",
+   "chain_id": "AB_001263",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_053"
+  },
+  {
+   "sample_id": "IAA_0387",
+   "chain_id": "AB_001195",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_039"
+  },
+  {
+   "sample_id": "IAA_0388",
+   "chain_id": "AB_001653",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "7 Rules Chained Loop",
+   "type_id": "AL_031"
+  },
+  {
+   "sample_id": "IAA_0389",
+   "chain_id": "AB_003700",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "3 Rules Chained Common Sense Violation",
+   "type_id": "CSV_060"
+  },
+  {
+   "sample_id": "IAA_0390",
+   "chain_id": "AB_003667",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "5 Rules Chained Common Sense Violation",
+   "type_id": "CSV_054"
+  },
+  {
+   "sample_id": "IAA_0391",
+   "chain_id": "AB_002843",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_009"
+  },
+  {
+   "sample_id": "IAA_0392",
+   "chain_id": "AB_001820",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "7 Rules Chained Loop",
+   "type_id": "AL_064"
+  },
+  {
+   "sample_id": "IAA_0393",
+   "chain_id": "L_5344",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0394",
+   "chain_id": "L_1056",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0395",
+   "chain_id": "AB_002939",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_008"
+  },
+  {
+   "sample_id": "IAA_0396",
+   "chain_id": "AB_003495",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "2 Rules Chained Common Sense Violation",
+   "type_id": "CSV_019"
+  },
+  {
+   "sample_id": "IAA_0397",
+   "chain_id": "L_7592",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0398",
+   "chain_id": "AB_000617",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_024"
+  },
+  {
+   "sample_id": "IAA_0399",
+   "chain_id": "AB_004874",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_050"
+  },
+  {
+   "sample_id": "IAA_0400",
+   "chain_id": "L_1318",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0401",
+   "chain_id": "AB_002631",
+   "label": "abnormal",
+   "type_codes": [
+    "AB"
+   ],
+   "anomaly_type": "Action Block",
+   "sub_category": "5 Rules Chained Action Block",
+   "type_id": "ABK_027"
+  },
+  {
+   "sample_id": "IAA_0402",
+   "chain_id": "AB_003493",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "2 Rules Chained Common Sense Violation",
+   "type_id": "CSV_019"
+  },
+  {
+   "sample_id": "IAA_0403",
+   "chain_id": "AB_003738",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "3 Rules Chained Privilege Escalation",
+   "type_id": "PE_008"
+  },
+  {
+   "sample_id": "IAA_0404",
+   "chain_id": "L_2240",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0405",
+   "chain_id": "AB_004143",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Condition Bypass]",
+   "type_id": "DA_029"
+  },
+  {
+   "sample_id": "IAA_0406",
+   "chain_id": "AB_003835",
+   "label": "abnormal",
+   "type_codes": [
+    "PE"
+   ],
+   "anomaly_type": "Privilege Escalation",
+   "sub_category": "2 Rules Chained Privilege Escalation",
+   "type_id": "PE_027"
+  },
+  {
+   "sample_id": "IAA_0407",
+   "chain_id": "L_5520",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0408",
+   "chain_id": "AB_000928",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "6 Rules Chained Inclusion Duplication",
+   "type_id": "AD_086"
+  },
+  {
+   "sample_id": "IAA_0409",
+   "chain_id": "AB_003075",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "Mathematical Action Mutex",
+   "type_id": "AM_005"
+  },
+  {
+   "sample_id": "IAA_0410",
+   "chain_id": "AB_004246",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Block]",
+   "type_id": "DA_050"
+  },
+  {
+   "sample_id": "IAA_0411",
+   "chain_id": "AB_003593",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "6 Rules Chained Common Sense Violation",
+   "type_id": "CSV_039"
+  },
+  {
+   "sample_id": "IAA_0412",
+   "chain_id": "AB_001346",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "5 Rules Chained Action Revert",
+   "type_id": "AR_070"
+  },
+  {
+   "sample_id": "IAA_0413",
+   "chain_id": "AB_001509",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "6 Rules Chained Loop",
+   "type_id": "AL_002"
+  },
+  {
+   "sample_id": "IAA_0414",
+   "chain_id": "AB_002365",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "6 Rules Chained Condition Bypass",
+   "type_id": "CB_073"
+  },
+  {
+   "sample_id": "IAA_0415",
+   "chain_id": "L_6653",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0416",
+   "chain_id": "AB_004056",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Action Duplication]",
+   "type_id": "DA_012"
+  },
+  {
+   "sample_id": "IAA_0417",
+   "chain_id": "AB_004760",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_027"
+  },
+  {
+   "sample_id": "IAA_0418",
+   "chain_id": "AB_000676",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "7 Rules Chained Inclusion Duplication",
+   "type_id": "AD_036"
+  },
+  {
+   "sample_id": "IAA_0419",
+   "chain_id": "L_0123",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0420",
+   "chain_id": "L_8565",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0421",
+   "chain_id": "L_1082",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0422",
+   "chain_id": "AB_004752",
+   "label": "abnormal",
+   "type_codes": [
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Action Block & Action Conflict & Action Duplication]",
+   "type_id": "TA_026"
+  },
+  {
+   "sample_id": "IAA_0423",
+   "chain_id": "AB_003911",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_013"
+  },
+  {
+   "sample_id": "IAA_0424",
+   "chain_id": "AB_002723",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "7 Rules Chained Condition Block",
+   "type_id": "CBK_015"
+  },
+  {
+   "sample_id": "IAA_0425",
+   "chain_id": "L_0928",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0426",
+   "chain_id": "L_7657",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0427",
+   "chain_id": "L_6261",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0428",
+   "chain_id": "AB_002204",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "3 Rules Chained Condition Bypass",
+   "type_id": "CB_041"
+  },
+  {
+   "sample_id": "IAA_0429",
+   "chain_id": "AB_004278",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_056"
+  },
+  {
+   "sample_id": "IAA_0430",
+   "chain_id": "AB_001169",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "7 Rules Chained Action Revert",
+   "type_id": "AR_034"
+  },
+  {
+   "sample_id": "IAA_0431",
+   "chain_id": "AB_003505",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "3 Rules Chained Common Sense Violation",
+   "type_id": "CSV_021"
+  },
+  {
+   "sample_id": "IAA_0432",
+   "chain_id": "AB_000823",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "3 Rules Chained Inclusion Duplication",
+   "type_id": "AD_065"
+  },
+  {
+   "sample_id": "IAA_0433",
+   "chain_id": "AB_002673",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "4 Rules Chained Condition Block",
+   "type_id": "CBK_005"
+  },
+  {
+   "sample_id": "IAA_0434",
+   "chain_id": "AB_002232",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_047"
+  },
+  {
+   "sample_id": "IAA_0435",
+   "chain_id": "AB_000709",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "5 Rules Chained Inclusion Duplication",
+   "type_id": "AD_042"
+  },
+  {
+   "sample_id": "IAA_0436",
+   "chain_id": "AB_004398",
+   "label": "abnormal",
+   "type_codes": [
+    "EL",
+    "CB"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Loop & Condition Bypass]",
+   "type_id": "DA_080"
+  },
+  {
+   "sample_id": "IAA_0437",
+   "chain_id": "L_1108",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0438",
+   "chain_id": "L_7567",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0439",
+   "chain_id": "AB_000409",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "6 Rules Chained Conflict",
+   "type_id": "AC_082"
+  },
+  {
+   "sample_id": "IAA_0440",
+   "chain_id": "AB_001412",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_083"
+  },
+  {
+   "sample_id": "IAA_0441",
+   "chain_id": "AB_004313",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_063"
+  },
+  {
+   "sample_id": "IAA_0442",
+   "chain_id": "L_1911",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0443",
+   "chain_id": "AB_001842",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_069"
+  },
+  {
+   "sample_id": "IAA_0444",
+   "chain_id": "L_1036",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0445",
+   "chain_id": "L_6462",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0446",
+   "chain_id": "AB_001752",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "5 Rules Chained Loop",
+   "type_id": "AL_051"
+  },
+  {
+   "sample_id": "IAA_0447",
+   "chain_id": "L_7468",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0448",
+   "chain_id": "L_2224",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0449",
+   "chain_id": "L_1839",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0450",
+   "chain_id": "AB_001556",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_012"
+  },
+  {
+   "sample_id": "IAA_0451",
+   "chain_id": "L_1046",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0452",
+   "chain_id": "L_1636",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0453",
+   "chain_id": "AB_003293",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_019"
+  },
+  {
+   "sample_id": "IAA_0454",
+   "chain_id": "AB_004805",
+   "label": "abnormal",
+   "type_codes": [
+    "PD",
+    "AC",
+    "CB"
+   ],
+   "anomaly_type": "Triple Anomaly",
+   "sub_category": "Triple Anomaly [Physical Cross-rule Interaction & Action Conflict & Condition Bypass]",
+   "type_id": "TA_036"
+  },
+  {
+   "sample_id": "IAA_0455",
+   "chain_id": "AB_003130",
+   "label": "abnormal",
+   "type_codes": [
+    "AM"
+   ],
+   "anomaly_type": "Action Mutex",
+   "sub_category": "State Action Mutex",
+   "type_id": "AM_016"
+  },
+  {
+   "sample_id": "IAA_0456",
+   "chain_id": "AB_000240",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "7 Rules Chained Conflict",
+   "type_id": "AC_048"
+  },
+  {
+   "sample_id": "IAA_0457",
+   "chain_id": "L_0835",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0458",
+   "chain_id": "AB_004603",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_121"
+  },
+  {
+   "sample_id": "IAA_0459",
+   "chain_id": "L_0960",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0460",
+   "chain_id": "AB_002998",
+   "label": "abnormal",
+   "type_codes": [
+    "TM"
+   ],
+   "anomaly_type": "Trigger Mutex",
+   "sub_category": "State Trigger Mutex",
+   "type_id": "TM_020"
+  },
+  {
+   "sample_id": "IAA_0461",
+   "chain_id": "AB_001452",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "4 Rules Chained Action Revert",
+   "type_id": "AR_091"
+  },
+  {
+   "sample_id": "IAA_0462",
+   "chain_id": "AB_001815",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_063"
+  },
+  {
+   "sample_id": "IAA_0463",
+   "chain_id": "L_1852",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0464",
+   "chain_id": "AB_002804",
+   "label": "abnormal",
+   "type_codes": [
+    "BE"
+   ],
+   "anomaly_type": "Safety Boundary Error",
+   "sub_category": "Safety Boundary Error",
+   "type_id": "SB_001"
+  },
+  {
+   "sample_id": "IAA_0465",
+   "chain_id": "AB_001249",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "7 Rules Chained Action Revert",
+   "type_id": "AR_050"
+  },
+  {
+   "sample_id": "IAA_0466",
+   "chain_id": "L_1680",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0467",
+   "chain_id": "AB_002799",
+   "label": "abnormal",
+   "type_codes": [
+    "CBk"
+   ],
+   "anomaly_type": "Condition Block",
+   "sub_category": "Atomic Condition Block",
+   "type_id": "CBK_030"
+  },
+  {
+   "sample_id": "IAA_0468",
+   "chain_id": "AB_001616",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_024"
+  },
+  {
+   "sample_id": "IAA_0469",
+   "chain_id": "AB_001496",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_100"
+  },
+  {
+   "sample_id": "IAA_0470",
+   "chain_id": "AB_002351",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_071"
+  },
+  {
+   "sample_id": "IAA_0471",
+   "chain_id": "AB_002442",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "7 Rules Chained Condition Bypass",
+   "type_id": "CB_089"
+  },
+  {
+   "sample_id": "IAA_0472",
+   "chain_id": "L_1143",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0473",
+   "chain_id": "L_6477",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0474",
+   "chain_id": "AB_000223",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_045"
+  },
+  {
+   "sample_id": "IAA_0475",
+   "chain_id": "L_1237",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0476",
+   "chain_id": "AB_002431",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "Atomic Condition Bypass",
+   "type_id": "CB_087"
+  },
+  {
+   "sample_id": "IAA_0477",
+   "chain_id": "AB_003517",
+   "label": "abnormal",
+   "type_codes": [
+    "CV"
+   ],
+   "anomaly_type": "Common Sense Violation",
+   "sub_category": "2 Rules Chained Common Sense Violation",
+   "type_id": "CSV_024"
+  },
+  {
+   "sample_id": "IAA_0478",
+   "chain_id": "AB_000221",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "Atomic Action Conflict",
+   "type_id": "AC_045"
+  },
+  {
+   "sample_id": "IAA_0479",
+   "chain_id": "L_1080",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0480",
+   "chain_id": "AB_001089",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "Atomic Action Revert",
+   "type_id": "AR_018"
+  },
+  {
+   "sample_id": "IAA_0481",
+   "chain_id": "L_1148",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0482",
+   "chain_id": "AB_000613",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Exact Duplication",
+   "type_id": "AD_023"
+  },
+  {
+   "sample_id": "IAA_0483",
+   "chain_id": "L_0521",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0484",
+   "chain_id": "AB_003929",
+   "label": "abnormal",
+   "type_codes": [
+    "PD"
+   ],
+   "anomaly_type": "Physical Cross-rule Interaction",
+   "sub_category": "Physical Cross-rule Interaction",
+   "type_id": "PCI_016"
+  },
+  {
+   "sample_id": "IAA_0485",
+   "chain_id": "L_2257",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0486",
+   "chain_id": "L_0886",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0487",
+   "chain_id": "AB_001285",
+   "label": "abnormal",
+   "type_codes": [
+    "AR"
+   ],
+   "anomaly_type": "Action Revert",
+   "sub_category": "6 Rules Chained Action Revert",
+   "type_id": "AR_057"
+  },
+  {
+   "sample_id": "IAA_0488",
+   "chain_id": "AB_004463",
+   "label": "abnormal",
+   "type_codes": [
+    "TM",
+    "AC"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Trigger Mutex & Action Conflict]",
+   "type_id": "DA_093"
+  },
+  {
+   "sample_id": "IAA_0489",
+   "chain_id": "AB_000971",
+   "label": "abnormal",
+   "type_codes": [
+    "AD"
+   ],
+   "anomaly_type": "Action Duplication",
+   "sub_category": "Atomic Inclusion Duplication",
+   "type_id": "AD_095"
+  },
+  {
+   "sample_id": "IAA_0490",
+   "chain_id": "AB_000334",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "3 Rules Chained Conflict",
+   "type_id": "AC_067"
+  },
+  {
+   "sample_id": "IAA_0491",
+   "chain_id": "AB_004622",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "CV"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Common Sense Violation]",
+   "type_id": "DA_125"
+  },
+  {
+   "sample_id": "IAA_0492",
+   "chain_id": "AB_001559",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "2 Rules Chained Loop",
+   "type_id": "AL_012"
+  },
+  {
+   "sample_id": "IAA_0493",
+   "chain_id": "AB_004255",
+   "label": "abnormal",
+   "type_codes": [
+    "AC",
+    "EL"
+   ],
+   "anomaly_type": "Dual Anomaly",
+   "sub_category": "Dual Anomaly [Action Conflict & Loop]",
+   "type_id": "DA_051"
+  },
+  {
+   "sample_id": "IAA_0494",
+   "chain_id": "AB_002165",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "5 Rules Chained Condition Bypass",
+   "type_id": "CB_033"
+  },
+  {
+   "sample_id": "IAA_0495",
+   "chain_id": "AB_003266",
+   "label": "abnormal",
+   "type_codes": [
+    "IS"
+   ],
+   "anomaly_type": "Illegal State Rule",
+   "sub_category": "Discrete State Illegal State",
+   "type_id": "IS_014"
+  },
+  {
+   "sample_id": "IAA_0496",
+   "chain_id": "L_6104",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0497",
+   "chain_id": "AB_000178",
+   "label": "abnormal",
+   "type_codes": [
+    "AC"
+   ],
+   "anomaly_type": "Action Conflict",
+   "sub_category": "7 Rules Chained Conflict",
+   "type_id": "AC_036"
+  },
+  {
+   "sample_id": "IAA_0498",
+   "chain_id": "AB_001667",
+   "label": "abnormal",
+   "type_codes": [
+    "EL"
+   ],
+   "anomaly_type": "Loop",
+   "sub_category": "3 Rules Chained Loop",
+   "type_id": "AL_034"
+  },
+  {
+   "sample_id": "IAA_0499",
+   "chain_id": "L_5322",
+   "label": "benign",
+   "type_codes": [],
+   "anomaly_type": null,
+   "sub_category": null,
+   "type_id": null
+  },
+  {
+   "sample_id": "IAA_0500",
+   "chain_id": "AB_002181",
+   "label": "abnormal",
+   "type_codes": [
+    "CB"
+   ],
+   "anomaly_type": "Condition Bypass",
+   "sub_category": "4 Rules Chained Condition Bypass",
+   "type_id": "CB_037"
+  }
+ ]
+}

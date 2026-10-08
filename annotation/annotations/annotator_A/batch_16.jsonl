@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0376", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 duplicates stove/oven off already produced by Rule_4-Rule_9 chain from same garage-closed trigger."}
+{"sample_id": "IAA_0377", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_2 requires garage door closed and open simultaneously; dead rule."}
+{"sample_id": "IAA_0378", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 locks and Rule_2 unlocks smart lock under same AQI>300 trigger; secondary CV purifier off in Rule_1."}
+{"sample_id": "IAA_0379", "label": "Anomalous", "type": "AB", "confidence": 3, "note": "Rule_7 chain shuts laundry water valve; Rule_8 later starts washing machine, blocked without water supply."}
+{"sample_id": "IAA_0380", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0381", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 duplicates Rule_4's purifier-high action under same oven-grill trigger, adding camera off."}
+{"sample_id": "IAA_0382", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_3 self-referentially forces toaster on whenever it is off, destabilizing steady state."}
+{"sample_id": "IAA_0383", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_2 requires purifier off and on simultaneously; dead rule."}
+{"sample_id": "IAA_0384", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Unlocked lock triggers chain Rule_8-Rule_13 setting thermostat 20°C while Rule_14 sets 25°C; conflicting targets."}
+{"sample_id": "IAA_0385", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0386", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_5 reverts camera secure mode off after Rule_3 turned it on via siren-triggered chain."}
+{"sample_id": "IAA_0387", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_7 unlocks smart lock, sequentially reverting Rule_3's locking via window-lock-triggered chain; no cycle."}
+{"sample_id": "IAA_0388", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_2-Rule_8 form closed latching cycle: lock-locked chain re-asserts locked via Rule_8."}
+{"sample_id": "IAA_0389", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_4-Rule_6 chain turns humidifier off exactly when humidity is critically low; anti-safety."}
+{"sample_id": "IAA_0390", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_6-Rule_10 chain turns humidifier off in critically dry air; anti-safety response."}
+{"sample_id": "IAA_0391", "label": "Anomalous", "type": "BE", "confidence": 4, "note": "Rule_3 trigger AQI>1500 exceeds any measurable air-quality scale; threshold physically impossible."}
+{"sample_id": "IAA_0392", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_2-Rule_8 close latching loop: lock-locked chain re-locks smart lock via Rule_8."}
+{"sample_id": "IAA_0393", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0394", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0395", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_7 requires coffee machine on and off simultaneously; dead rule."}
+{"sample_id": "IAA_0396", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0397", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0398", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_12 duplicates stove/oven off already delivered by Rule_6-Rule_11 chain from same garage-closed trigger."}
+{"sample_id": "IAA_0399", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Under light <100 with lock unlocked, Rule_2 sets coffee off while Rule_3 sets coffee on."}
+{"sample_id": "IAA_0400", "label": "Benign", "type": null, "confidence": 5, "note": ""}

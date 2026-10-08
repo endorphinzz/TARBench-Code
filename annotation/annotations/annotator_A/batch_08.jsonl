@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0176", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_5 turns backyard sprinkler ON during rain; contradicts water-conservation common sense (sprinkler should be off when raining)."}
+{"sample_id": "IAA_0177", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0178", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_6 re-locks window lock via Rule_5 chain after Rule_4 unlocked it; sequential cancellation of unlock action."}
+{"sample_id": "IAA_0179", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0180", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0181", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 dry-air sensor unlocks hallway smart lock; trivial condition commands high-stakes security device without verification."}
+{"sample_id": "IAA_0182", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0183", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_4 curtain-open at 08:00 duplicated by chain Rule_1->Rule_3 (08:00 -> speaker -> alarm ringing -> curtain open)."}
+{"sample_id": "IAA_0184", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 humidifier-off already guaranteed by chain Rule_7->Rule_9 when window lock locked; subsumed duplicate action."}
+{"sample_id": "IAA_0185", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_9 vs Rule_10: when temp<15 and humidity<20 both fire, oven_mode convection vs grill; overlapping triggers, conflicting commands."}
+{"sample_id": "IAA_0186", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0187", "label": "Anomalous", "type": "AM", "confidence": 3, "note": "Rule_1 opens living room window while engaging its window lock; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0188", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_5 & Rule_6 are exact duplicates (camera secure on -> sprinkler off); identical trigger and action."}
+{"sample_id": "IAA_0189", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 (via Rule_4->Rule_5 chain at 08:00) sets window open vs Rule_7 closed; conflicting commands."}
+{"sample_id": "IAA_0190", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_5 turns speaker off via Rule_2->Rule_4 chain, sequentially reverting Rule_1's 08:00 speaker-on action."}
+{"sample_id": "IAA_0191", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 (via Rule_4->Rule_6 chain at 08:00) sets window open vs Rule_8 closed; conflicting commands."}
+{"sample_id": "IAA_0192", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0193", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_13 window-open subsumed by chain Rule_9->Rule_12 whenever alarm rings (trigger only adds time condition); redundant."}
+{"sample_id": "IAA_0194", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 (via Rule_4 chain when alarm rings) sets purifier mode high vs Rule_6 low; conflicting commands."}
+{"sample_id": "IAA_0195", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_8 sets robot vacuum on AND charging simultaneously; mutually exclusive status values within one rule."}
+{"sample_id": "IAA_0196", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_1 & Rule_2 require camera secure off AND on simultaneously; impossible triggers, dead rules."}
+{"sample_id": "IAA_0197", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_2 trigger light value < -100lux is physically impossible (lux cannot be negative); boundary error, dead rule."}
+{"sample_id": "IAA_0198", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 heater-eco subsumed by chain Rule_4->Rule_5 when curtain closed; redundant (stove-off part is new)."}
+{"sample_id": "IAA_0199", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0200", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_5 requires user sleeping AND away simultaneously; contradictory trigger, dead rule."}

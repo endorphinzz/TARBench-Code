@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0351", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_8 to Rule_10 chain AC cool vs Rule_11 direct heat, same camera-off trigger"}
+{"sample_id": "IAA_0352", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 vs Rule_8 same 09:00 trigger sets camera secure off vs on"}
+{"sample_id": "IAA_0353", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0354", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 duplicates Rule_3 to Rule_8 chain oven/dishwasher-off from same window-lock trigger"}
+{"sample_id": "IAA_0355", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 door-open disarms camera, Rule_4 unlocks smart lock; Rule_8 duplicates chain AC-on"}
+{"sample_id": "IAA_0356", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same user-away trigger opens vs closes living room window"}
+{"sample_id": "IAA_0357", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_11 and Rule_12 dependency cycle lamp-on and curtain-open reinforce; Rule_13 subsumed by Rule_11"}
+{"sample_id": "IAA_0358", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 duplicates Rule_6 to Rule_7 chain smart-lock-locked from same window-lock trigger"}
+{"sample_id": "IAA_0359", "label": "Anomalous", "type": "CV", "confidence": 2, "note": "Rule_8 locks garage window while it is open; contradictory device state"}
+{"sample_id": "IAA_0360", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 vs Rule_3 dishwasher on vs off when hot and window-lock-unlocked, co-satisfiable"}
+{"sample_id": "IAA_0361", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_1 threshold -120C physically impossible"}
+{"sample_id": "IAA_0362", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0363", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 camera-off unlocks window lock; Rule_4 duplicates Rule_2 to Rule_3 chain lamp-on"}
+{"sample_id": "IAA_0364", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same user-away trigger sets living room light on vs off"}
+{"sample_id": "IAA_0365", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_7 sets brightness strong; Rule_8 reverts to medium, negating head action"}
+{"sample_id": "IAA_0366", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0367", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0368", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_3 brightness-strong subsumed by Rule_1 to Rule_2 chain, threshold 150 nested in 200"}
+{"sample_id": "IAA_0369", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0370", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_4 to Rule_5 chain thermostat 28 vs Rule_6 direct 22 at same 19:00 trigger"}
+{"sample_id": "IAA_0371", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 cold temp disarms hallway camera; trivial sensor disables security"}
+{"sample_id": "IAA_0372", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_5 purifier off when AQI above 300, inverted; Rule_5 vs Rule_6 light off vs on conflict"}
+{"sample_id": "IAA_0373", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0374", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0375", "label": "Benign", "type": null, "confidence": 3, "note": ""}

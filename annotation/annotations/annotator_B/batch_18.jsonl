@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0426", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0427", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0428", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 camera-off state unlocks living room window lock without authorization"}
+{"sample_id": "IAA_0429", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_8 & Rule_9 same trigger set garage door closed vs open; Rule_7-Rule_8 mutual pair EL"}
+{"sample_id": "IAA_0430", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_11 door open disarms camera; chain Rule_12-Rule_13 unlocks window lock and smart lock"}
+{"sample_id": "IAA_0431", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_4 freezing trigger (<0C) unlocks smart lock; Rule_5-Rule_6 chain cooling in freezing weather"}
+{"sample_id": "IAA_0432", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0433", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0434", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0435", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_7-Rule_8 unlocked window lock disarms camera, unlocks smart lock; Rule_9 vs Rule_11 curtain conflict"}
+{"sample_id": "IAA_0436", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 & Rule_2 mutual pair: camera off sets cooler low, cooler low disarms camera"}
+{"sample_id": "IAA_0437", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0438", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0439", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_2 door state unlocks smart lock; chain Rule_3-Rule_4 unlocks window lock, disarms camera; Rule_7 cooler conflict"}
+{"sample_id": "IAA_0440", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_2 locks smart lock; Rule_3-Rule_7 chain reverts it to unlocked"}
+{"sample_id": "IAA_0441", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_3 & Rule_4 same trigger set curtain open vs closed; Rule_2-Rule_3 mutual pair EL"}
+{"sample_id": "IAA_0442", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0443", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 & Rule_2 mutual pair: lamp off sets heater eco, heater eco sets lamp off"}
+{"sample_id": "IAA_0444", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0445", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0446", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3-Rule_7 closed cycle: camera on, purifier off, fan off, heater off, humidifier off back to camera on"}
+{"sample_id": "IAA_0447", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0448", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0449", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0450", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_8 & Rule_9 mutual pair: dishwasher off sets coffee machine off and vice versa"}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0351", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_10 via Rule_8-Rule_9 chain and Rule_11 both fire on camera-off, setting AC cool vs heat"}
+{"sample_id": "IAA_0352", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 & Rule_8 same 09:00 trigger set hallway camera secure off vs on"}
+{"sample_id": "IAA_0353", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0354", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0355", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 door sensor disarms camera; Rule_4 chain unlocks smart lock without verification"}
+{"sample_id": "IAA_0356", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 same user-away trigger set living room window open vs closed"}
+{"sample_id": "IAA_0357", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_11 & Rule_12 mutual cycle: lamp on and curtain open trigger each other"}
+{"sample_id": "IAA_0358", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0359", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_8 engages window lock while garage window is open, contradicting physical lock operation"}
+{"sample_id": "IAA_0360", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 & Rule_3 overlapping triggers set dishwasher on vs off when hot and window lock unlocked"}
+{"sample_id": "IAA_0361", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_1 trigger temperature < -120C, beyond plausible sensor operating range"}
+{"sample_id": "IAA_0362", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0363", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0364", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 same user-away trigger set living room light on vs off"}
+{"sample_id": "IAA_0365", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_7 sets lamp brightness strong; Rule_8 triggered on strong reverts it to medium"}
+{"sample_id": "IAA_0366", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0367", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0368", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0369", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0370", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_5 via Rule_4 chain and Rule_6 both fire at 19:00, setting thermostat 28 vs 22"}
+{"sample_id": "IAA_0371", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 temperature sensor disables hallway camera secure mode without verification"}
+{"sample_id": "IAA_0372", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_5 turns purifier off in hazardous air (>300 AQI); Rule_5 & Rule_6 conflict light off vs on (AC secondary)"}
+{"sample_id": "IAA_0373", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0374", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0375", "label": "Benign", "type": null, "confidence": 3, "note": ""}

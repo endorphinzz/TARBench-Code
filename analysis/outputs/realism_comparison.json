@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "synthetic_chains": 10583,
+    "seed_chains": 1380,
+    "note": "seed chains are single-rule by design; chain-level length comparison is a design difference, not a realism defect"
+  },
+  "rule_level": {
+    "trigger_attribute": {
+      "jsd": 0.36144572325905205,
+      "synthetic_top": [
+        {
+          "key": "temperature_sensor_value",
+          "count": 9810,
+          "freq": 0.1526
+        },
+        {
+          "key": "alarm_clock_time",
+          "count": 9258,
+          "freq": 0.144
+        },
+        {
+          "key": "light_sensor_value",
+          "count": 8730,
+          "freq": 0.1358
+        },
+        {
+          "key": "humidity_sensor_value",
+          "count": 6212,
+          "freq": 0.0966
+        },
+        {
+          "key": "air_quality_sensor_value",
+          "count": 5801,
+          "freq": 0.0903
+        },
+        {
+          "key": "motion_sensor_value",
+          "count": 5768,
+          "freq": 0.0897
+        },
+        {
+          "key": "door_sensor_value",
+          "count": 3594,
+          "freq": 0.0559
+        },
+        {
+          "key": "lamp_status",
+          "count": 1484,
+          "freq": 0.0231
+        },
+        {
+          "key": "water_leak_sensor_value",
+          "count": 1364,
+          "freq": 0.0212
+        },
+        {
+          "key": "smoke_sensor_value",
+          "count": 1343,
+          "freq": 0.0209
+        },
+        {
+          "key": "air_purifier_status",
+          "count": 990,
+          "freq": 0.0154
+        },
+        {
+          "key": "doorbell_status",
+          "count": 988,
+          "freq": 0.0154
+        },
+        {
+          "key": "speaker_status",
+          "count": 976,
+          "freq": 0.0152
+        },
+        {
+          "key": "fan_status",
+          "count": 963,
+          "freq": 0.015
+        },
+        {
+          "key": "window_status",
+          "count": 905,
+          "freq": 0.0141
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "motion_sensor_value",
+          "count": 565,
+          "freq": 0.4151
+        },
+        {
+          "key": "door_sensor_value",
+          "count": 199,
+          "freq": 0.1462
+        },
+        {
+          "key": "temperature_sensor_value",
+          "count": 172,
+          "freq": 0.1264
+        },
+        {
+          "key": "alarm_clock_status",
+          "count": 75,
+          "freq": 0.0551
+        },
+        {
+          "key": "doorbell_status",
+          "count": 62,
+          "freq": 0.0456
+        },
+        {
+          "key": "water_leak_sensor_value",
+          "count": 43,
+          "freq": 0.0316
+        },
+        {
+          "key": "air_quality_sensor_value",
+          "count": 30,
+          "freq": 0.022
+        },
+        {
+          "key": "plug_status",
+          "count": 28,
+          "freq": 0.0206
+        },
+        {
+          "key": "oven_status",
+          "count": 27,
+          "freq": 0.0198
+        },
+        {
+          "key": "smoke_sensor_value",
+          "count": 25,
+          "freq": 0.0184
+        },
+        {
+          "key": "smart_lock_status",
+          "count": 25,
+          "freq": 0.0184
+        },
+        {
+          "key": "garage_door_status",
+          "count": 24,
+          "freq": 0.0176
+        },
+        {
+          "key": "light_sensor_value",
+          "count": 15,
+          "freq": 0.011
+        },
+        {
+          "key": "humidity_sensor_value",
+          "count": 15,
+          "freq": 0.011
+        },
+        {
+          "key": "lamp_status",
+          "count": 13,
+          "freq": 0.0096
+        }
+      ]
+    },
+    "action_attribute": {
+      "jsd": 0.12792972629552962,
+      "synthetic_top": [
+        {
+          "key": "light_status",
+          "count": 8468,
+          "freq": 0.1359
+        },
+        {
+          "key": "lamp_status",
+          "count": 5604,
+          "freq": 0.0899
+        },
+        {
+          "key": "speaker_status",
+          "count": 4615,
+          "freq": 0.0741
+        },
+        {
+          "key": "air_purifier_status",
+          "count": 4282,
+          "freq": 0.0687
+        },
+        {
+          "key": "curtain_status",
+          "count": 3285,
+          "freq": 0.0527
+        },
+        {
+          "key": "dehumidifier_status",
+          "count": 3280,
+          "freq": 0.0526
+        },
+        {
+          "key": "lamp_brightness",
+          "count": 3273,
+          "freq": 0.0525
+        },
+        {
+          "key": "fan_status",
+          "count": 2963,
+          "freq": 0.0476
+        },
+        {
+          "key": "secure_mode",
+          "count": 2926,
+          "freq": 0.047
+        },
+        {
+          "key": "heater_status",
+          "count": 2765,
+          "freq": 0.0444
+        },
+        {
+          "key": "air_purifier_mode",
+          "count": 1992,
+          "freq": 0.032
+        },
+        {
+          "key": "speaker_volume",
+          "count": 1950,
+          "freq": 0.0313
+        },
+        {
+          "key": "window_status",
+          "count": 1493,
+          "freq": 0.024
+        },
+        {
+          "key": "dehumidifier_mode",
+          "count": 1489,
+          "freq": 0.0239
+        },
+        {
+          "key": "humidifier_status",
+          "count": 1378,
+          "freq": 0.0221
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "light_status",
+          "count": 249,
+          "freq": 0.1876
+        },
+        {
+          "key": "window_status",
+          "count": 128,
+          "freq": 0.0965
+        },
+        {
+          "key": "speaker_status",
+          "count": 119,
+          "freq": 0.0897
+        },
+        {
+          "key": "plug_status",
+          "count": 76,
+          "freq": 0.0573
+        },
+        {
+          "key": "secure_mode",
+          "count": 76,
+          "freq": 0.0573
+        },
+        {
+          "key": "fan_status",
+          "count": 62,
+          "freq": 0.0467
+        },
+        {
+          "key": "curtain_status",
+          "count": 61,
+          "freq": 0.046
+        },
+        {
+          "key": "lamp_brightness",
+          "count": 58,
+          "freq": 0.0437
+        },
+        {
+          "key": "air_purifier_status",
+          "count": 52,
+          "freq": 0.0392
+        },
+        {
+          "key": "heater_status",
+          "count": 49,
+          "freq": 0.0369
+        },
+        {
+          "key": "speaker_volume",
+          "count": 41,
+          "freq": 0.0309
+        },
+        {
+          "key": "air_purifier_mode",
+          "count": 35,
+          "freq": 0.0264
+        },
+        {
+          "key": "lamp_status",
+          "count": 33,
+          "freq": 0.0249
+        },
+        {
+          "key": "smart_lock_status",
+          "count": 29,
+          "freq": 0.0219
+        },
+        {
+          "key": "dehumidifier_status",
+          "count": 27,
+          "freq": 0.0203
+        }
+      ]
+    },
+    "trigger_device": {
+      "jsd": 0.3682058311214428,
+      "synthetic_top": [
+        {
+          "key": "alarm_clock",
+          "count": 6593,
+          "freq": 0.1026
+        },
+        {
+          "key": "temperature_sensor",
+          "count": 6096,
+          "freq": 0.0948
+        },
+        {
+          "key": "light_sensor",
+          "count": 5067,
+          "freq": 0.0788
+        },
+        {
+          "key": "humidity_sensor",
+          "count": 3890,
+          "freq": 0.0605
+        },
+        {
+          "key": "motion_sensor",
+          "count": 3670,
+          "freq": 0.0571
+        },
+        {
+          "key": "room_temperature_sensor",
+          "count": 3615,
+          "freq": 0.0562
+        },
+        {
+          "key": "air_quality_sensor",
+          "count": 3302,
+          "freq": 0.0514
+        },
+        {
+          "key": "room_alarm_clock",
+          "count": 2944,
+          "freq": 0.0458
+        },
+        {
+          "key": "room_light_sensor",
+          "count": 2793,
+          "freq": 0.0435
+        },
+        {
+          "key": "room_air_quality_sensor",
+          "count": 2463,
+          "freq": 0.0383
+        },
+        {
+          "key": "room_humidity_sensor",
+          "count": 2286,
+          "freq": 0.0356
+        },
+        {
+          "key": "door_sensor",
+          "count": 2240,
+          "freq": 0.0349
+        },
+        {
+          "key": "room_motion_sensor",
+          "count": 1759,
+          "freq": 0.0274
+        },
+        {
+          "key": "smoke_sensor",
+          "count": 1196,
+          "freq": 0.0186
+        },
+        {
+          "key": "porch_doorbell",
+          "count": 964,
+          "freq": 0.015
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "motion_sensor",
+          "count": 332,
+          "freq": 0.2439
+        },
+        {
+          "key": "room_motion_sensor",
+          "count": 151,
+          "freq": 0.1109
+        },
+        {
+          "key": "porch_door_sensor",
+          "count": 124,
+          "freq": 0.0911
+        },
+        {
+          "key": "room_temperature_sensor",
+          "count": 87,
+          "freq": 0.0639
+        },
+        {
+          "key": "temperature_sensor",
+          "count": 85,
+          "freq": 0.0625
+        },
+        {
+          "key": "porch_motion_sensor",
+          "count": 82,
+          "freq": 0.0602
+        },
+        {
+          "key": "alarm_clock",
+          "count": 75,
+          "freq": 0.0551
+        },
+        {
+          "key": "door_sensor",
+          "count": 75,
+          "freq": 0.0551
+        },
+        {
+          "key": "porch_doorbell",
+          "count": 62,
+          "freq": 0.0456
+        },
+        {
+          "key": "oven",
+          "count": 28,
+          "freq": 0.0206
+        },
+        {
+          "key": "smoke_sensor",
+          "count": 25,
+          "freq": 0.0184
+        },
+        {
+          "key": "porch_smart_lock",
+          "count": 25,
+          "freq": 0.0184
+        },
+        {
+          "key": "garage_door",
+          "count": 24,
+          "freq": 0.0176
+        },
+        {
+          "key": "room_water_leak_sensor",
+          "count": 22,
+          "freq": 0.0162
+        },
+        {
+          "key": "water_leak_sensor",
+          "count": 21,
+          "freq": 0.0154
+        }
+      ]
+    },
+    "action_device": {
+      "jsd": 0.12466614706782814,
+      "synthetic_top": [
+        {
+          "key": "light",
+          "count": 5403,
+          "freq": 0.0867
+        },
+        {
+          "key": "lamp",
+          "count": 5203,
+          "freq": 0.0835
+        },
+        {
+          "key": "speaker",
+          "count": 3840,
+          "freq": 0.0616
+        },
+        {
+          "key": "air_purifier",
+          "count": 3440,
+          "freq": 0.0552
+        },
+        {
+          "key": "room_lamp",
+          "count": 3186,
+          "freq": 0.0511
+        },
+        {
+          "key": "heater",
+          "count": 2981,
+          "freq": 0.0478
+        },
+        {
+          "key": "room_air_purifier",
+          "count": 2800,
+          "freq": 0.0449
+        },
+        {
+          "key": "dehumidifier",
+          "count": 2698,
+          "freq": 0.0433
+        },
+        {
+          "key": "fan",
+          "count": 2556,
+          "freq": 0.041
+        },
+        {
+          "key": "room_speaker",
+          "count": 2432,
+          "freq": 0.039
+        },
+        {
+          "key": "room_light",
+          "count": 2151,
+          "freq": 0.0345
+        },
+        {
+          "key": "room_dehumidifier",
+          "count": 2040,
+          "freq": 0.0327
+        },
+        {
+          "key": "room_fan",
+          "count": 1744,
+          "freq": 0.028
+        },
+        {
+          "key": "camera",
+          "count": 1731,
+          "freq": 0.0278
+        },
+        {
+          "key": "curtain",
+          "count": 1662,
+          "freq": 0.0267
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "light",
+          "count": 145,
+          "freq": 0.1093
+        },
+        {
+          "key": "window",
+          "count": 91,
+          "freq": 0.0686
+        },
+        {
+          "key": "speaker",
+          "count": 87,
+          "freq": 0.0656
+        },
+        {
+          "key": "room_light",
+          "count": 73,
+          "freq": 0.055
+        },
+        {
+          "key": "room_speaker",
+          "count": 60,
+          "freq": 0.0452
+        },
+        {
+          "key": "lamp",
+          "count": 57,
+          "freq": 0.043
+        },
+        {
+          "key": "fan",
+          "count": 55,
+          "freq": 0.0414
+        },
+        {
+          "key": "plug",
+          "count": 47,
+          "freq": 0.0354
+        },
+        {
+          "key": "camera",
+          "count": 47,
+          "freq": 0.0354
+        },
+        {
+          "key": "heater",
+          "count": 46,
+          "freq": 0.0347
+        },
+        {
+          "key": "air_purifier",
+          "count": 46,
+          "freq": 0.0347
+        },
+        {
+          "key": "room_air_purifier",
+          "count": 41,
+          "freq": 0.0309
+        },
+        {
+          "key": "room_window",
+          "count": 37,
+          "freq": 0.0279
+        },
+        {
+          "key": "room_curtain",
+          "count": 36,
+          "freq": 0.0271
+        },
+        {
+          "key": "room_lamp",
+          "count": 33,
+          "freq": 0.0249
+        }
+      ]
+    },
+    "trigger_operator": {
+      "jsd": 0.07336477480557134,
+      "synthetic_top": [
+        {
+          "key": "==",
+          "count": 35221,
+          "freq": 0.5422
+        },
+        {
+          "key": ">",
+          "count": 16903,
+          "freq": 0.2602
+        },
+        {
+          "key": "<",
+          "count": 12839,
+          "freq": 0.1976
+        },
+        {
+          "key": "<=",
+          "count": 1,
+          "freq": 0.0
+        },
+        {
+          "key": ">=",
+          "count": 1,
+          "freq": 0.0
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "==",
+          "count": 1148,
+          "freq": 0.8319
+        },
+        {
+          "key": ">",
+          "count": 148,
+          "freq": 0.1072
+        },
+        {
+          "key": "<",
+          "count": 84,
+          "freq": 0.0609
+        }
+      ]
+    },
+    "value_type": {
+      "jsd": 0.20049504869829127,
+      "synthetic_top": [
+        {
+          "key": "numeric",
+          "count": 30553,
+          "freq": 0.4703
+        },
+        {
+          "key": "enum_word",
+          "count": 15809,
+          "freq": 0.2433
+        },
+        {
+          "key": "boolean",
+          "count": 9327,
+          "freq": 0.1436
+        },
+        {
+          "key": "time",
+          "count": 9258,
+          "freq": 0.1425
+        },
+        {
+          "key": "other",
+          "count": 18,
+          "freq": 0.0003
+        }
+      ],
+      "seed_top": [
+        {
+          "key": "boolean",
+          "count": 656,
+          "freq": 0.4754
+        },
+        {
+          "key": "enum_word",
+          "count": 492,
+          "freq": 0.3565
+        },
+        {
+          "key": "numeric",
+          "count": 232,
+          "freq": 0.1681
+        }
+      ]
+    },
+    "trigger_to_action_device_pairs": {
+      "synthetic_top": [
+        {
+          "key": [
+            "air_quality_sensor",
+            "air_purifier"
+          ],
+          "count": 2789,
+          "freq": 0.0448
+        },
+        {
+          "key": [
+            "light_sensor",
+            "lamp"
+          ],
+          "count": 2561,
+          "freq": 0.0411
+        },
+        {
+          "key": [
+            "humidity_sensor",
+            "dehumidifier"
+          ],
+          "count": 2272,
+          "freq": 0.0365
+        },
+        {
+          "key": [
+            "room_air_quality_sensor",
+            "room_air_purifier"
+          ],
+          "count": 2244,
+          "freq": 0.036
+        },
+        {
+          "key": [
+            "temperature_sensor",
+            "heater"
+          ],
+          "count": 2178,
+          "freq": 0.035
+        },
+        {
+          "key": [
+            "light_sensor",
+            "light"
+          ],
+          "count": 1871,
+          "freq": 0.03
+        },
+        {
+          "key": [
+            "room_humidity_sensor",
+            "room_dehumidifier"
+          ],
+          "count": 1592,
+          "freq": 0.0256
+        },
+        {
+          "key": [
+            "room_light_sensor",
+            "room_lamp"
+          ],
+          "count": 1533,
+          "freq": 0.0246
+        },
+        {
+          "key": [
+            "temperature_sensor",
+            "fan"
+          ],
+          "count": 1488,
+          "freq": 0.0239
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "light"
+          ],
+          "count": 1227,
+          "freq": 0.0197
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "speaker"
+          ],
+          "count": 1197,
+          "freq": 0.0192
+        },
+        {
+          "key": [
+            "room_temperature_sensor",
+            "room_fan"
+          ],
+          "count": 1106,
+          "freq": 0.0178
+        },
+        {
+          "key": [
+            "alarm_clock",
+            "curtain"
+          ],
+          "count": 1026,
+          "freq": 0.0165
+        },
+        {
+          "key": [
+            "humidity_sensor",
+            "humidifier"
+          ],
+          "count": 1004,
+          "freq": 0.0161
+        },
+        {
+          "key": [
+            "temperature_sensor",
+            "cooler"
+          ],
+          "count": 967,
+          "freq": 0.0155
+        }
+      ],
+      "seed_top": [
+        {
+          "key": [
+            "motion_sensor",
+            "light"
+          ],
+          "count": 60,
+          "freq": 0.0459
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "lamp"
+          ],
+          "count": 45,
+          "freq": 0.0344
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "speaker"
+          ],
+          "count": 28,
+          "freq": 0.0214
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "plug"
+          ],
+          "count": 24,
+          "freq": 0.0183
+        },
+        {
+          "key": [
+            "temperature_sensor",
+            "heater"
+          ],
+          "count": 22,
+          "freq": 0.0168
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "fan"
+          ],
+          "count": 21,
+          "freq": 0.0161
+        },
+        {
+          "key": [
+            "room_motion_sensor",
+            "room_light"
+          ],
+          "count": 21,
+          "freq": 0.0161
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "window"
+          ],
+          "count": 21,
+          "freq": 0.0161
+        },
+        {
+          "key": [
+            "room_motion_sensor",
+            "room_lamp"
+          ],
+          "count": 17,
+          "freq": 0.013
+        },
+        {
+          "key": [
+            "room_motion_sensor",
+            "room_speaker"
+          ],
+          "count": 15,
+          "freq": 0.0115
+        },
+        {
+          "key": [
+            "room_motion_sensor",
+            "room_air_purifier"
+          ],
+          "count": 14,
+          "freq": 0.0107
+        },
+        {
+          "key": [
+            "porch_door_sensor",
+            "light"
+          ],
+          "count": 13,
+          "freq": 0.0099
+        },
+        {
+          "key": [
+            "temperature_sensor",
+            "window"
+          ],
+          "count": 13,
+          "freq": 0.0099
+        },
+        {
+          "key": [
+            "motion_sensor",
+            "air_purifier"
+          ],
+          "count": 13,
+          "freq": 0.0099
+        },
+        {
+          "key": [
+            "room_temperature_sensor",
+            "room_heater"
+          ],
+          "count": 12,
+          "freq": 0.0092
+        }
+      ]
+    },
+    "rule_text_length_words": {
+      "synthetic_mean": 6.000307858077426,
+      "synthetic_std": 0.03509041939204188,
+      "seed_mean": 6.0,
+      "seed_std": 0.0
+    }
+  },
+  "chain_level": {
+    "rules_per_chain": {
+      "synthetic": {
+        "2": 346,
+        "3": 438,
+        "4": 1031,
+        "5": 1978,
+        "6": 2332,
+        "7": 2252,
+        "8": 1147,
+        "9": 577,
+        "10": 482
+      },
+      "seed": {
+        "1": 1380
+      }
+    }
+  }
+}

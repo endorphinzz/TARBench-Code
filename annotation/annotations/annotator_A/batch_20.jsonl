@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0476", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_7 duplicates Rule_6's light-on action under narrower subsumed trigger."}
+{"sample_id": "IAA_0477", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_1 sets AC to heat mode when temperature exceeds 30°C; anti-safety reversal, amplified by Rule_2."}
+{"sample_id": "IAA_0478", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 and Rule_8 set dehumidifier mode weak vs strong at same 23:00 trigger; conflicting commands."}
+{"sample_id": "IAA_0479", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0480", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_5 self-referentially forces dehumidifier on whenever off, destabilizing steady state."}
+{"sample_id": "IAA_0481", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0482", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_2 exactly duplicates Rule_1's dishwasher-off action under identical stove-off trigger."}
+{"sample_id": "IAA_0483", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0484", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 lets living-room temperature sensor open garage door without verification; privilege escalation."}
+{"sample_id": "IAA_0485", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0486", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0487", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_14 unlocks smart lock, sequentially reverting Rule_9's locking via camera-on chain; no cycle."}
+{"sample_id": "IAA_0488", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_4 and Rule_5 require washing machine on and off simultaneously; dead rules."}
+{"sample_id": "IAA_0489", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 subsumes Rule_3's sprinkler-off action under identical trigger, adding dishwasher off."}
+{"sample_id": "IAA_0490", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "At 19:30 chain Rule_4-Rule_5 sets AC heat while Rule_6 sets fan_only; conflicting modes."}
+{"sample_id": "IAA_0491", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 and Rule_5 conflict on light off vs on under same AQI trigger; secondary CV purifier off in Rule_4."}
+{"sample_id": "IAA_0492", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_4 and Rule_5 form latching cycle dishwasher-off/coffee-off re-asserting dishwasher off."}
+{"sample_id": "IAA_0493", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 and Rule_4 set light off vs on under same heater-eco trigger; secondary EL latching with Rule_2."}
+{"sample_id": "IAA_0494", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 duplicates purifier off already delivered by Rule_5-Rule_8 chain from same camera-on trigger."}
+{"sample_id": "IAA_0495", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_9 self-referentially forces oven off whenever on, destabilizing steady state."}
+{"sample_id": "IAA_0496", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0497", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Chain Rule_2-Rule_7 sets thermostat 20°C while Rule_8 sets 22°C from same user-home trigger."}
+{"sample_id": "IAA_0498", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_2-Rule_4 form closed latching cycle: sprinkler-off chain re-asserts sprinkler off."}
+{"sample_id": "IAA_0499", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0500", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 duplicates washing machine off already delivered by Rule_3-Rule_5 chain from same camera-on trigger."}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0301", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_14 heater-off already guaranteed by chain Rule_8->Rule_13 when camera on; subsumed duplicate (user-away condition narrower)."}
+{"sample_id": "IAA_0302", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same 23:00 trigger set window open vs closed; conflicting commands."}
+{"sample_id": "IAA_0303", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 form closed cycle: window lock unlocked -> thermostat 26 -> window lock unlocked; latching loop."}
+{"sample_id": "IAA_0304", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0305", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0306", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 & Rule_4 require washing machine mode normal AND spin simultaneously; contradictory triggers, dead rules."}
+{"sample_id": "IAA_0307", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_2 window-open subsumed by Rule_3 (same alarm-ringing trigger, Rule_3 repeats window-open plus fan-on); inclusion duplication."}
+{"sample_id": "IAA_0308", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 freezing sensor unlocks smart lock; cascade Rule_4-Rule_5 unlocks window lock and disarms camera; unverified security downgrade."}
+{"sample_id": "IAA_0309", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0310", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_11 heater-eco already guaranteed by chain Rule_8->Rule_10 (light<200 -> light on -> curtain closed); subsumed at light<150."}
+{"sample_id": "IAA_0311", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 form closed latching cycle: lamp off -> heater eco -> lamp off; mutual trigger-action loop."}
+{"sample_id": "IAA_0312", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_5 self-referential: reads heater_mode eco then forces high; same-attribute forcing defeats Rule_4."}
+{"sample_id": "IAA_0313", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0314", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0315", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_4 & Rule_5 same user-home trigger set heater eco vs high (and lock window vs open window); conflicting commands."}
+{"sample_id": "IAA_0316", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4-Rule_7 form closed cycle: camera off -> lock unlocked -> fan on -> cooler low -> camera off; latching loop."}
+{"sample_id": "IAA_0317", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 vs Rule_6: camera on (lock locked) fights camera off via chain Rule_3->Rule_5 (window lock -> heater -> humidifier off)."}
+{"sample_id": "IAA_0318", "label": "Anomalous", "type": "AB", "confidence": 3, "note": "Rule_15 dishwasher start blocked: water valve off via chain Rule_9->Rule_14 when user away persists past 18:00."}
+{"sample_id": "IAA_0319", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0320", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0321", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0322", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_5 curtain-closed subsumed by chain Rule_3->Rule_4 (light<150 -> light on -> curtain closed); duplicate action."}
+{"sample_id": "IAA_0323", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_6 turns dehumidifier back on via Rule_4->Rule_5 chain, sequentially negating Rule_3's off action."}
+{"sample_id": "IAA_0324", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same user-away trigger set window open vs closed; conflicting commands."}
+{"sample_id": "IAA_0325", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_8 curtain state activates kitchen oven unverified. Secondary: Rule_6 fabricates motion_detected, triggering siren via Rule_7."}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0051", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_4 & Rule_5 conflict thermostat target 25 vs 28 when smart lock unlocked"}
+{"sample_id": "IAA_0052", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_3 & Rule_4 exact duplicate trigger and action (dishwasher off)"}
+{"sample_id": "IAA_0053", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0054", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 & Rule_4 same trigger 08:00: living room lamp off vs on"}
+{"sample_id": "IAA_0055", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_4 shuts purifier off when AQ > 300 hazardous; secondary PE Rule_2 motion triggers toaster"}
+{"sample_id": "IAA_0056", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2–Rule_3: freezing temp disarms camera and unlocks smart lock"}
+{"sample_id": "IAA_0057", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0058", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 thermostat-off subsumed by chain Rule_2→Rule_3"}
+{"sample_id": "IAA_0059", "label": "Anomalous", "type": "PE", "confidence": 2, "note": "Rule_3: alarm-clock ringing turns toaster on unattended; Rule_4 opens window"}
+{"sample_id": "IAA_0060", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0061", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 vs Rule_3 conflict dehumidifier off vs on when temp > 35 and user home"}
+{"sample_id": "IAA_0062", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 same trigger 23:00: dehumidifier mode weak vs strong"}
+{"sample_id": "IAA_0063", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0064", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_7–Rule_12 cycle: dehum off→fan→purifier→thermostat→humidifier→dehum on, oscillates"}
+{"sample_id": "IAA_0065", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0066", "label": "Benign", "type": null, "confidence": 2, "note": ""}
+{"sample_id": "IAA_0067", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0068", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_7–Rule_9 cycle thermostat→humidifier→dehumidifier→thermostat"}
+{"sample_id": "IAA_0069", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_12 duplicates Rule_11 heater eco action under same trigger"}
+{"sample_id": "IAA_0070", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1–Rule_3 cycle smart_lock→window_lock→brightness→smart_lock"}
+{"sample_id": "IAA_0071", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_5 (via Rule_2–Rule_4 chain) vs Rule_6 conflict lamp brightness strong vs medium at 08:00"}
+{"sample_id": "IAA_0072", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 coffee-off subsumed by chain Rule_5→Rule_9"}
+{"sample_id": "IAA_0073", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 trigger requires water valve on AND off simultaneously, never fires"}
+{"sample_id": "IAA_0074", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_5 self-referential: oven on → oven off immediately, oven can never run"}
+{"sample_id": "IAA_0075", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 coffee-off subsumed by chain Rule_6→Rule_9"}

@@ -1,0 +1,1532 @@
+[
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 5,
+    "Sample_Index": 1,
+    "Case_ID": "L_0963",
+    "Label": "benign",
+    "Scenario_Group": "Climate Comfort",
+    "Chain_Length": 4,
+    "Rules": [
+      "Rule_1: IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+      "Rule_2: IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+      "Rule_3: IF hallway_light_sensor.light_sensor_value < 90 THEN hallway_lamp.lamp_status = on",
+      "Rule_4: IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "ICL_Context": {
+      "type_definitions": [
+        {
+          "type_name": "Action Conflict",
+          "definition": "Multiple rules trigger inconsistent states on the same actuator simultaneously.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Action Duplication",
+          "definition": "Redundant actions triggered on the same device, or an action subsumed by a broader group command.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = ON AND Device_B = ON."
+          ]
+        },
+        {
+          "type_name": "Action Revert",
+          "definition": "A rule chain where the final action negates the initial rule's intent.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Device_A == ON THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Loop",
+          "definition": "Causal dependencies between rules form a closed loop, leading to infinite state oscillation.",
+          "examples": [
+            "IF Device_A == ON THEN Device_B = OFF; IF Device_B == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Condition Bypass",
+          "definition": "A rule triggers an action by omitting specific constraints or logic required by another rule.",
+          "examples": [
+            "IF Event_X AND Event_Y THEN Device_A = ON; IF Event_X THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Action Block",
+          "definition": "An action cannot execute because a prior rule creates a physical state that denies necessary prerequisites.",
+          "examples": [
+            "IF ... THEN Water Valve = OFF; IF ... THEN dishwasher = ON. (The action is blocked by no water flow)"
+          ]
+        },
+        {
+          "type_name": "Condition Block",
+          "definition": "A rule’s required condition becomes permanently unsatisfiable due to the physical state.",
+          "examples": [
+            "IF ...THEN window_lock_status = LOCKED; IF Window == OPEN THEN ...(The \"window == open\" condition can never be met while the lock is engaged)"
+          ]
+        },
+        {
+          "type_name": "Safety Boundary Error",
+          "definition": "Thresholds that exceed physical safety limits or device operating ranges.",
+          "examples": [
+            "IF temperature_sensor_value > 100°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Trigger Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its triggers, rendering it dead.",
+          "examples": [
+            "IF temperature_sensor_value > 35°C AND temperature_sensor_value < 30°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Action Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its actions, rendering it unstable.",
+          "examples": [
+            "IF ... THEN curtain_status = closed AND curtain_status = open."
+          ]
+        },
+        {
+          "type_name": "Illegal State Rule",
+          "definition": "A rule that creates logic instability by forcing a device to immediately exit a valid steady state, making that state impossible to maintain.",
+          "examples": [
+            "IF Device_A == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Common Sense Violation",
+          "definition": "Rules that contradict basic physical laws or safety heuristics, leading to property damage.",
+          "examples": [
+            "IF gas_sensor_value == true THEN stove_status = on."
+          ]
+        },
+        {
+          "type_name": "Privilege Escalation",
+          "definition": "Low-security or non-critical devices triggering high-risk actuators without identity or context verification.",
+          "examples": [
+            "IF lamp_status == on THEN garage_door_status = open."
+          ]
+        },
+        {
+          "type_name": "Implicit Physical Attack (Chaining)",
+          "definition": "A rule execution influences a physical channel (temp, humidity, etc.), which indirectly triggers a subsequent dangerous rule.",
+          "examples": [
+            "Rule 1: IF temperature_sensor_value < 10°C THEN heater_status = on;Rule 2:IF temperature_sensor_value > 35°C THEN garage_door_status = open. (Rule 1 induces the environment to trigger Rule 2)"
+          ]
+        }
+      ],
+      "benign_reference": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Hallway secure nighttime",
+          "scenario_group": "Climate Comfort",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+            "Rule_3": "IF hallway_light_sensor.light_sensor_value < 90 THEN hallway_lamp.lamp_status = on",
+            "Rule_4": "IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        }
+      ],
+      "few_shot_examples": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Hallway secure nighttime",
+          "scenario_group": "Climate Comfort",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+            "Rule_3": "IF hallway_light_sensor.light_sensor_value < 90 THEN hallway_lamp.lamp_status = on",
+            "Rule_4": "IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 2,
+          "example_type": "benign_example",
+          "scenario": "Hallway late-night path lighting",
+          "scenario_group": "Climate Comfort",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak",
+            "Rule_4": "IF hallway_light_sensor.light_sensor_value < 100 THEN hallway_light.light_status = on",
+            "Rule_5": "IF hallway_temperature_sensor.temperature_sensor_value < 17 THEN hallway_heater.heater_status = on",
+            "Rule_6": "IF hallway_heater.heater_status == on THEN hallway_heater.heater_mode = eco"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 3,
+          "example_type": "abnormal_example",
+          "scenario": "Hallway secure nighttime",
+          "scenario_group": "Climate Comfort",
+          "anomaly_type": "Dual Anomaly",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+            "Rule_3": "IF hallway_light_sensor.light_sensor_value < 90 THEN hallway_lamp.lamp_status = on",
+            "Rule_4": "IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak",
+            "Rule_5": "IF laundry_room_washing_machine.washing_machine_mode == normal AND laundry_room_washing_machine.washing_machine_mode == spin THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_6": "IF laundry_room_washing_machine.washing_machine_mode == normal AND laundry_room_washing_machine.washing_machine_mode == spin THEN living_room_robot_vacuum.robot_vacuum_status = self-cleaning"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Dual Anomaly]: Rule_5 & Rule_6 cause Dual Anomaly Detected: (1) [Trigger Mutex] Both Rules Rule_5 and Rule_6 are logically dead code because the shared trigger is physically impossible (washing_machine.washing_machine_mode cannot be both 'normal' and 'spin'); (2) [Action Conflict] Rule_5 and Rule_6 command contradictory states for robot_vacuum.robot_vacuum_status ('on' vs 'self-cleaning').",
+            "involved_rules": [
+              "Rule_5",
+              "Rule_6"
+            ]
+          }
+        },
+        {
+          "example_index": 4,
+          "example_type": "abnormal_example",
+          "scenario": "Hallway late-night path lighting",
+          "scenario_group": "Climate Comfort",
+          "anomaly_type": "Action Conflict",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF hallway_lamp.lamp_status == on THEN hallway_lamp.lamp_brightness = weak",
+            "Rule_4": "IF hallway_light_sensor.light_sensor_value < 100 THEN hallway_light.light_status = on",
+            "Rule_5": "IF hallway_temperature_sensor.temperature_sensor_value < 17 THEN hallway_heater.heater_status = on",
+            "Rule_6": "IF hallway_heater.heater_status == on THEN hallway_heater.heater_mode = eco",
+            "Rule_7": "IF environment_time.time_point == 23:00 THEN living_room_window.window_status = open",
+            "Rule_8": "IF environment_time.time_point == 23:00 THEN living_room_window.window_status = closed"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Conflict]: Rule_7 & Rule_8 cause Rule_7 and Rule_8 conflict on living_room_window.window_status.",
+            "involved_rules": [
+              "Rule_7",
+              "Rule_8"
+            ]
+          }
+        },
+        {
+          "example_index": 5,
+          "example_type": "abnormal_example",
+          "scenario": "Hallway late-night guidance",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Loop",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 23:30 THEN hallway_camera.secure_mode = on",
+            "Rule_2": "IF living_room_window_lock.window_lock_status == unlocked THEN living_room_AC.AC_status = on",
+            "Rule_3": "IF living_room_AC.AC_status == on THEN living_room_window_lock.window_lock_status = unlocked",
+            "Rule_4": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+            "Rule_5": "IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+            "Rule_6": "IF hallway_door_sensor.door_sensor_value == closed THEN hallway_lamp.lamp_brightness = weak",
+            "Rule_7": "IF hallway_temperature_sensor.temperature_sensor_value < 18 THEN hallway_heater.heater_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Loop]: Rule_2 & Rule_3 cause Rules Rule_2 and Rule_3 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+            "involved_rules": [
+              "Rule_2",
+              "Rule_3"
+            ]
+          }
+        }
+      ]
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 5,
+    "Sample_Index": 2,
+    "Case_ID": "L_8120",
+    "Label": "benign",
+    "Scenario_Group": "__cross_scenario__",
+    "Chain_Length": 6,
+    "Rules": [
+      "Rule_1: IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+      "Rule_2: IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+      "Rule_3: IF hallway_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+      "Rule_4: IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = medium",
+      "Rule_5: IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+      "Rule_6: IF living_room_heater.heater_status == on THEN living_room_heater.heater_mode = eco"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "ICL_Context": {
+      "type_definitions": [
+        {
+          "type_name": "Action Conflict",
+          "definition": "Multiple rules trigger inconsistent states on the same actuator simultaneously.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Action Duplication",
+          "definition": "Redundant actions triggered on the same device, or an action subsumed by a broader group command.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = ON AND Device_B = ON."
+          ]
+        },
+        {
+          "type_name": "Action Revert",
+          "definition": "A rule chain where the final action negates the initial rule's intent.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Device_A == ON THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Loop",
+          "definition": "Causal dependencies between rules form a closed loop, leading to infinite state oscillation.",
+          "examples": [
+            "IF Device_A == ON THEN Device_B = OFF; IF Device_B == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Condition Bypass",
+          "definition": "A rule triggers an action by omitting specific constraints or logic required by another rule.",
+          "examples": [
+            "IF Event_X AND Event_Y THEN Device_A = ON; IF Event_X THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Action Block",
+          "definition": "An action cannot execute because a prior rule creates a physical state that denies necessary prerequisites.",
+          "examples": [
+            "IF ... THEN Water Valve = OFF; IF ... THEN dishwasher = ON. (The action is blocked by no water flow)"
+          ]
+        },
+        {
+          "type_name": "Condition Block",
+          "definition": "A rule’s required condition becomes permanently unsatisfiable due to the physical state.",
+          "examples": [
+            "IF ...THEN window_lock_status = LOCKED; IF Window == OPEN THEN ...(The \"window == open\" condition can never be met while the lock is engaged)"
+          ]
+        },
+        {
+          "type_name": "Safety Boundary Error",
+          "definition": "Thresholds that exceed physical safety limits or device operating ranges.",
+          "examples": [
+            "IF temperature_sensor_value > 100°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Trigger Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its triggers, rendering it dead.",
+          "examples": [
+            "IF temperature_sensor_value > 35°C AND temperature_sensor_value < 30°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Action Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its actions, rendering it unstable.",
+          "examples": [
+            "IF ... THEN curtain_status = closed AND curtain_status = open."
+          ]
+        },
+        {
+          "type_name": "Illegal State Rule",
+          "definition": "A rule that creates logic instability by forcing a device to immediately exit a valid steady state, making that state impossible to maintain.",
+          "examples": [
+            "IF Device_A == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Common Sense Violation",
+          "definition": "Rules that contradict basic physical laws or safety heuristics, leading to property damage.",
+          "examples": [
+            "IF gas_sensor_value == true THEN stove_status = on."
+          ]
+        },
+        {
+          "type_name": "Privilege Escalation",
+          "definition": "Low-security or non-critical devices triggering high-risk actuators without identity or context verification.",
+          "examples": [
+            "IF lamp_status == on THEN garage_door_status = open."
+          ]
+        },
+        {
+          "type_name": "Implicit Physical Attack (Chaining)",
+          "definition": "A rule execution influences a physical channel (temp, humidity, etc.), which indirectly triggers a subsequent dangerous rule.",
+          "examples": [
+            "Rule 1: IF temperature_sensor_value < 10°C THEN heater_status = on;Rule 2:IF temperature_sensor_value > 35°C THEN garage_door_status = open. (Rule 1 induces the environment to trigger Rule 2)"
+          ]
+        }
+      ],
+      "benign_reference": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF hallway_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = medium",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_6": "IF living_room_heater.heater_status == on THEN living_room_heater.heater_mode = eco"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        }
+      ],
+      "few_shot_examples": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF hallway_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = medium",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_6": "IF living_room_heater.heater_status == on THEN living_room_heater.heater_mode = eco"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 2,
+          "example_type": "benign_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF living_room_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = medium",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_6": "IF living_room_heater.heater_status == on THEN living_room_heater.heater_mode = eco"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 3,
+          "example_type": "abnormal_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Loop",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF front_porch_light_sensor.light_sensor_value < 200 THEN front_porch_light.light_status = on",
+            "Rule_2": "IF hallway_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_3": "IF living_room_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF hallway_smart_lock.smart_lock_status == unlocked THEN living_room_air_purifier.air_purifier_mode = high",
+            "Rule_5": "IF living_room_air_purifier.air_purifier_mode == high THEN hallway_smart_lock.smart_lock_status = unlocked",
+            "Rule_6": "IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = medium",
+            "Rule_7": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Loop]: Rule_4 & Rule_5 cause Rules Rule_4 and Rule_5 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+            "involved_rules": [
+              "Rule_4",
+              "Rule_5"
+            ]
+          }
+        },
+        {
+          "example_index": 4,
+          "example_type": "abnormal_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Action Conflict",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 200 THEN hallway_lamp.lamp_status = on",
+            "Rule_3": "IF hallway_temperature_sensor.temperature_sensor_value < 17 THEN living_room_heater.heater_status = on",
+            "Rule_4": "IF living_room_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_5": "IF hallway_camera.secure_mode == off THEN living_room_window_lock.window_lock_status = unlocked",
+            "Rule_6": "IF living_room_window_lock.window_lock_status == unlocked THEN hallway_smart_lock.smart_lock_status = unlocked",
+            "Rule_7": "IF hallway_smart_lock.smart_lock_status == unlocked THEN living_room_fan.fan_intensity = high",
+            "Rule_8": "IF living_room_fan.fan_intensity == high THEN living_room_cooler.cooler_mode = low",
+            "Rule_9": "IF hallway_camera.secure_mode == off THEN living_room_cooler.cooler_mode = high",
+            "Rule_10": "IF living_room_motion_sensor.motion_sensor_value == true THEN living_room_speaker.speaker_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Conflict]: Rule_5 & Rule_6 & Rule_7 & Rule_8 & Rule_9 cause Rule_5 & Rule_6 & Rule_7 & Rule_8 and Rule_9 an action conflict on living_room_cooler.cooler_mode.",
+            "involved_rules": [
+              "Rule_5",
+              "Rule_6",
+              "Rule_7",
+              "Rule_8",
+              "Rule_9"
+            ]
+          }
+        },
+        {
+          "example_index": 5,
+          "example_type": "abnormal_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Privilege Escalation",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 150 THEN front_porch_lamp.lamp_status = on",
+            "Rule_3": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_4": "IF living_room_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_5": "IF living_room_robot_vacuum.robot_vacuum_status == on THEN hallway_camera.secure_mode = off",
+            "Rule_6": "IF hallway_motion_sensor.motion_sensor_value == true THEN living_room_speaker.speaker_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Privilege Escalation]: Rule_5 cause Rule_5 enables a low-privilege trigger (robot_vacuum) to directly drive a sensitive operation on a high-risk asset (camera.secure_mode = off), bypassing standard authorization boundaries.",
+            "involved_rules": [
+              "Rule_5"
+            ]
+          }
+        }
+      ]
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 5,
+    "Sample_Index": 3,
+    "Case_ID": "VA_000257",
+    "Label": "abnormal",
+    "Scenario_Group": "Morning Routine",
+    "Chain_Length": 13,
+    "Rules": [
+      "Rule_1: IF laundry_room_alarm_clock.alarm_clock_time == 09:00 THEN laundry_room_washing_machine.washing_machine_status = on",
+      "Rule_2: IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_washing_machine.washing_machine_mode = normal",
+      "Rule_3: IF laundry_room_humidity_sensor.humidity_sensor_value > 70 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+      "Rule_4: IF laundry_room_dehumidifier.dehumidifier_status == on THEN laundry_room_dehumidifier.dehumidifier_mode = strong",
+      "Rule_5: IF living_room_window_lock.window_lock_status == locked THEN hallway_smart_lock.smart_lock_status = locked",
+      "Rule_6: IF hallway_smart_lock.smart_lock_status == locked THEN hallway_camera.secure_mode = on",
+      "Rule_7: IF hallway_camera.secure_mode == on THEN laundry_room_water_valve.water_valve_status = off",
+      "Rule_8: IF laundry_room_water_valve.water_valve_status == off THEN kitchen_dishwasher.dishwasher_status = off",
+      "Rule_9: IF kitchen_dishwasher.dishwasher_status == off THEN laundry_room_washing_machine.washing_machine_status = off",
+      "Rule_10: IF laundry_room_washing_machine.washing_machine_status == off THEN living_room_window_lock.window_lock_status = locked",
+      "Rule_11: IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_water_valve.water_valve_status = off",
+      "Rule_12: IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_siren.siren_status = on",
+      "Rule_13: IF laundry_room_temperature_sensor.temperature_sensor_value > 30 THEN laundry_room_fan.fan_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": true,
+      "anomaly_type": "Loop",
+      "type_id": "AL_059",
+      "sub_category": "6 Rules Chained Loop",
+      "description": "Rules Rule_5, Rule_6, Rule_7, Rule_8, Rule_9 and Rule_10 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+      "abnormal_fragment_start_index": 5,
+      "abnormal_fragment_length": 6,
+      "abnormal_fragment_id_list": [
+        "R_0005",
+        "R_0006",
+        "R_0007",
+        "R_0008",
+        "R_0009",
+        "R_0010"
+      ]
+    },
+    "ICL_Context": {
+      "type_definitions": [
+        {
+          "type_name": "Action Conflict",
+          "definition": "Multiple rules trigger inconsistent states on the same actuator simultaneously.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Action Duplication",
+          "definition": "Redundant actions triggered on the same device, or an action subsumed by a broader group command.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = ON AND Device_B = ON."
+          ]
+        },
+        {
+          "type_name": "Action Revert",
+          "definition": "A rule chain where the final action negates the initial rule's intent.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Device_A == ON THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Loop",
+          "definition": "Causal dependencies between rules form a closed loop, leading to infinite state oscillation.",
+          "examples": [
+            "IF Device_A == ON THEN Device_B = OFF; IF Device_B == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Condition Bypass",
+          "definition": "A rule triggers an action by omitting specific constraints or logic required by another rule.",
+          "examples": [
+            "IF Event_X AND Event_Y THEN Device_A = ON; IF Event_X THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Action Block",
+          "definition": "An action cannot execute because a prior rule creates a physical state that denies necessary prerequisites.",
+          "examples": [
+            "IF ... THEN Water Valve = OFF; IF ... THEN dishwasher = ON. (The action is blocked by no water flow)"
+          ]
+        },
+        {
+          "type_name": "Condition Block",
+          "definition": "A rule’s required condition becomes permanently unsatisfiable due to the physical state.",
+          "examples": [
+            "IF ...THEN window_lock_status = LOCKED; IF Window == OPEN THEN ...(The \"window == open\" condition can never be met while the lock is engaged)"
+          ]
+        },
+        {
+          "type_name": "Safety Boundary Error",
+          "definition": "Thresholds that exceed physical safety limits or device operating ranges.",
+          "examples": [
+            "IF temperature_sensor_value > 100°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Trigger Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its triggers, rendering it dead.",
+          "examples": [
+            "IF temperature_sensor_value > 35°C AND temperature_sensor_value < 30°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Action Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its actions, rendering it unstable.",
+          "examples": [
+            "IF ... THEN curtain_status = closed AND curtain_status = open."
+          ]
+        },
+        {
+          "type_name": "Illegal State Rule",
+          "definition": "A rule that creates logic instability by forcing a device to immediately exit a valid steady state, making that state impossible to maintain.",
+          "examples": [
+            "IF Device_A == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Common Sense Violation",
+          "definition": "Rules that contradict basic physical laws or safety heuristics, leading to property damage.",
+          "examples": [
+            "IF gas_sensor_value == true THEN stove_status = on."
+          ]
+        },
+        {
+          "type_name": "Privilege Escalation",
+          "definition": "Low-security or non-critical devices triggering high-risk actuators without identity or context verification.",
+          "examples": [
+            "IF lamp_status == on THEN garage_door_status = open."
+          ]
+        },
+        {
+          "type_name": "Implicit Physical Attack (Chaining)",
+          "definition": "A rule execution influences a physical channel (temp, humidity, etc.), which indirectly triggers a subsequent dangerous rule.",
+          "examples": [
+            "Rule 1: IF temperature_sensor_value < 10°C THEN heater_status = on;Rule 2:IF temperature_sensor_value > 35°C THEN garage_door_status = open. (Rule 1 induces the environment to trigger Rule 2)"
+          ]
+        }
+      ],
+      "benign_reference": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Laundry leak-safe cycle",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF laundry_room_alarm_clock.alarm_clock_time == 09:00 THEN laundry_room_washing_machine.washing_machine_status = on",
+            "Rule_2": "IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_washing_machine.washing_machine_mode = normal",
+            "Rule_3": "IF laundry_room_humidity_sensor.humidity_sensor_value > 70 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF laundry_room_dehumidifier.dehumidifier_status == on THEN laundry_room_dehumidifier.dehumidifier_mode = strong",
+            "Rule_5": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_water_valve.water_valve_status = off",
+            "Rule_6": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_siren.siren_status = on",
+            "Rule_7": "IF laundry_room_temperature_sensor.temperature_sensor_value > 30 THEN laundry_room_fan.fan_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        }
+      ],
+      "few_shot_examples": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Laundry leak-safe cycle",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF laundry_room_alarm_clock.alarm_clock_time == 09:00 THEN laundry_room_washing_machine.washing_machine_status = on",
+            "Rule_2": "IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_washing_machine.washing_machine_mode = normal",
+            "Rule_3": "IF laundry_room_humidity_sensor.humidity_sensor_value > 70 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF laundry_room_dehumidifier.dehumidifier_status == on THEN laundry_room_dehumidifier.dehumidifier_mode = strong",
+            "Rule_5": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_water_valve.water_valve_status = off",
+            "Rule_6": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_siren.siren_status = on",
+            "Rule_7": "IF laundry_room_temperature_sensor.temperature_sensor_value > 30 THEN laundry_room_fan.fan_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 2,
+          "example_type": "benign_example",
+          "scenario": "Laundry day full routine",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF laundry_room_alarm_clock.alarm_clock_time == 09:00 THEN laundry_room_washing_machine.washing_machine_status = on",
+            "Rule_2": "IF laundry_room_alarm_clock.alarm_clock_time == 09:01 THEN laundry_room_washing_machine.washing_machine_mode = normal",
+            "Rule_3": "IF laundry_room_humidity_sensor.humidity_sensor_value > 72 THEN laundry_room_dehumidifier.dehumidifier_mode = strong",
+            "Rule_4": "IF laundry_room_temperature_sensor.temperature_sensor_value > 29 THEN laundry_room_fan.fan_intensity = high",
+            "Rule_5": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_siren.siren_status = on",
+            "Rule_6": "IF laundry_room_door_sensor.door_sensor_value == closed THEN laundry_room_speaker.speaker_volume = low",
+            "Rule_7": "IF laundry_room_light_sensor.light_sensor_value < 180 THEN laundry_room_light.light_status = on",
+            "Rule_8": "IF laundry_room_alarm_clock.alarm_clock_time == 10:30 THEN laundry_room_washing_machine.washing_machine_status = off",
+            "Rule_9": "IF laundry_room_alarm_clock.alarm_clock_time == 10:35 THEN laundry_room_speaker.speaker_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 3,
+          "example_type": "abnormal_example",
+          "scenario": "Laundry leak protection",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": "Action Conflict",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_water_valve.water_valve_status = off",
+            "Rule_2": "IF hallway_door_sensor.door_sensor_value == open THEN hallway_smart_lock.smart_lock_status = unlocked",
+            "Rule_3": "IF hallway_smart_lock.smart_lock_status == unlocked THEN living_room_window_lock.window_lock_status = unlocked",
+            "Rule_4": "IF living_room_window_lock.window_lock_status == unlocked THEN hallway_camera.secure_mode = off",
+            "Rule_5": "IF hallway_camera.secure_mode == off THEN living_room_fan.fan_intensity = high",
+            "Rule_6": "IF living_room_fan.fan_intensity == high THEN living_room_cooler.cooler_mode = low",
+            "Rule_7": "IF hallway_door_sensor.door_sensor_value == open THEN living_room_cooler.cooler_mode = high",
+            "Rule_8": "IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_light.light_status = on",
+            "Rule_9": "IF laundry_room_humidity_sensor.humidity_sensor_value > 75 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+            "Rule_10": "IF laundry_room_temperature_sensor.temperature_sensor_value > 30 THEN laundry_room_fan.fan_status = on",
+            "Rule_11": "IF laundry_room_washing_machine.washing_machine_status == off THEN laundry_room_speaker.speaker_status = on",
+            "Rule_12": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN hallway_siren.siren_status = on",
+            "Rule_13": "IF laundry_room_light_sensor.light_sensor_value < 150 THEN laundry_room_lamp.lamp_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Conflict]: Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 cause Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 and Rule_7 an action conflict on living_room_cooler.cooler_mode.",
+            "involved_rules": [
+              "Rule_2",
+              "Rule_3",
+              "Rule_4",
+              "Rule_5",
+              "Rule_6",
+              "Rule_7"
+            ]
+          }
+        },
+        {
+          "example_index": 4,
+          "example_type": "abnormal_example",
+          "scenario": "Laundry leak protection",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": "Loop",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN laundry_room_water_valve.water_valve_status = off",
+            "Rule_2": "IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_light.light_status = on",
+            "Rule_3": "IF laundry_room_humidity_sensor.humidity_sensor_value > 75 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF laundry_room_temperature_sensor.temperature_sensor_value > 30 THEN laundry_room_fan.fan_status = on",
+            "Rule_5": "IF laundry_room_washing_machine.washing_machine_status == off THEN laundry_room_speaker.speaker_status = on",
+            "Rule_6": "IF living_room_window_lock.window_lock_status == locked THEN garage_garage_door.garage_door_status = closed",
+            "Rule_7": "IF garage_garage_door.garage_door_status == closed THEN living_room_air_purifier.air_purifier_status = off",
+            "Rule_8": "IF living_room_air_purifier.air_purifier_status == off THEN living_room_heater.heater_status = off",
+            "Rule_9": "IF living_room_heater.heater_status == off THEN living_room_humidifier.humidifier_status = off",
+            "Rule_10": "IF living_room_humidifier.humidifier_status == off THEN living_room_dehumidifier.dehumidifier_status = off",
+            "Rule_11": "IF living_room_dehumidifier.dehumidifier_status == off THEN living_room_window_lock.window_lock_status = locked",
+            "Rule_12": "IF laundry_room_water_leak_sensor.water_leak_sensor_value == true THEN hallway_siren.siren_status = on",
+            "Rule_13": "IF laundry_room_light_sensor.light_sensor_value < 150 THEN laundry_room_lamp.lamp_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Loop]: Rule_6 & Rule_7 & Rule_8 & Rule_9 & Rule_10 & Rule_11 cause Rules Rule_6, Rule_7, Rule_8, Rule_9, Rule_10 and Rule_11 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+            "involved_rules": [
+              "Rule_6",
+              "Rule_7",
+              "Rule_8",
+              "Rule_9",
+              "Rule_10",
+              "Rule_11"
+            ]
+          }
+        },
+        {
+          "example_index": 5,
+          "example_type": "abnormal_example",
+          "scenario": "Evening study comfort",
+          "scenario_group": "Morning Routine",
+          "anomaly_type": "Loop",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF garage_garage_door.garage_door_status == closed THEN hallway_smart_lock.smart_lock_status = locked",
+            "Rule_2": "IF hallway_smart_lock.smart_lock_status == locked THEN hallway_camera.secure_mode = on",
+            "Rule_3": "IF hallway_camera.secure_mode == on THEN living_room_window_lock.window_lock_status = locked",
+            "Rule_4": "IF living_room_window_lock.window_lock_status == locked THEN kitchen_dishwasher.dishwasher_status = off",
+            "Rule_5": "IF kitchen_dishwasher.dishwasher_status == off THEN laundry_room_washing_machine.washing_machine_status = off",
+            "Rule_6": "IF laundry_room_washing_machine.washing_machine_status == off THEN laundry_room_water_valve.water_valve_status = off",
+            "Rule_7": "IF laundry_room_water_valve.water_valve_status == off THEN garage_garage_door.garage_door_status = closed",
+            "Rule_8": "IF study_room_light_sensor.light_sensor_value < 250 THEN study_room_light.light_status = on",
+            "Rule_9": "IF study_room_light.light_status == on THEN study_room_lamp.lamp_brightness = medium",
+            "Rule_10": "IF study_room_air_quality_sensor.air_quality_sensor_value > 140 THEN study_room_air_purifier.air_purifier_status = on",
+            "Rule_11": "IF study_room_air_purifier.air_purifier_status == on THEN study_room_air_purifier.air_purifier_mode = auto",
+            "Rule_12": "IF study_room_temperature_sensor.temperature_sensor_value < 19 THEN study_room_heater.heater_status = on",
+            "Rule_13": "IF study_room_heater.heater_status == on THEN study_room_heater.heater_mode = eco"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Loop]: Rule_1 & Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 cause Rules Rule_1, Rule_2, Rule_3, Rule_4, Rule_5, Rule_6 and Rule_7 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+            "involved_rules": [
+              "Rule_1",
+              "Rule_2",
+              "Rule_3",
+              "Rule_4",
+              "Rule_5",
+              "Rule_6",
+              "Rule_7"
+            ]
+          }
+        }
+      ]
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 5,
+    "Sample_Index": 4,
+    "Case_ID": "VA_000052",
+    "Label": "abnormal",
+    "Scenario_Group": "__cross_scenario__",
+    "Chain_Length": 10,
+    "Rules": [
+      "Rule_1: IF living_room_alarm_clock.alarm_clock_time == 20:00 THEN living_room_curtain.curtain_status = closed",
+      "Rule_2: IF living_room_light_sensor.light_sensor_value < 160 THEN living_room_lamp.lamp_status = on",
+      "Rule_3: IF living_room_alarm_clock.alarm_clock_status == ringing THEN kitchen_oven.oven_status = on",
+      "Rule_4: IF kitchen_oven.oven_status == on THEN living_room_air_purifier.air_purifier_mode = auto",
+      "Rule_5: IF living_room_air_purifier.air_purifier_mode == auto THEN living_room_alarm_clock.alarm_clock_status = ringing",
+      "Rule_6: IF living_room_alarm_clock.alarm_clock_status == off THEN kitchen_oven.oven_status = off",
+      "Rule_7: IF living_room_temperature_sensor.temperature_sensor_value < 20 THEN living_room_heater.heater_status = on",
+      "Rule_8: IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+      "Rule_9: IF dining_room_motion_sensor.motion_sensor_value == true THEN dining_room_speaker.speaker_status = on",
+      "Rule_10: IF hallway_door_sensor.door_sensor_value == closed THEN hallway_light.light_status = off"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": true,
+      "anomaly_type": "Loop",
+      "type_id": "AL_082",
+      "sub_category": "3 Rules Chained Loop",
+      "description": "Rules Rule_3, Rule_4 and Rule_5 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+      "abnormal_fragment_start_index": 3,
+      "abnormal_fragment_length": 4,
+      "abnormal_fragment_id_list": [
+        "R_0003",
+        "R_0004",
+        "R_0005",
+        "R_0006"
+      ]
+    },
+    "ICL_Context": {
+      "type_definitions": [
+        {
+          "type_name": "Action Conflict",
+          "definition": "Multiple rules trigger inconsistent states on the same actuator simultaneously.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Action Duplication",
+          "definition": "Redundant actions triggered on the same device, or an action subsumed by a broader group command.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = ON AND Device_B = ON."
+          ]
+        },
+        {
+          "type_name": "Action Revert",
+          "definition": "A rule chain where the final action negates the initial rule's intent.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Device_A == ON THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Loop",
+          "definition": "Causal dependencies between rules form a closed loop, leading to infinite state oscillation.",
+          "examples": [
+            "IF Device_A == ON THEN Device_B = OFF; IF Device_B == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Condition Bypass",
+          "definition": "A rule triggers an action by omitting specific constraints or logic required by another rule.",
+          "examples": [
+            "IF Event_X AND Event_Y THEN Device_A = ON; IF Event_X THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Action Block",
+          "definition": "An action cannot execute because a prior rule creates a physical state that denies necessary prerequisites.",
+          "examples": [
+            "IF ... THEN Water Valve = OFF; IF ... THEN dishwasher = ON. (The action is blocked by no water flow)"
+          ]
+        },
+        {
+          "type_name": "Condition Block",
+          "definition": "A rule’s required condition becomes permanently unsatisfiable due to the physical state.",
+          "examples": [
+            "IF ...THEN window_lock_status = LOCKED; IF Window == OPEN THEN ...(The \"window == open\" condition can never be met while the lock is engaged)"
+          ]
+        },
+        {
+          "type_name": "Safety Boundary Error",
+          "definition": "Thresholds that exceed physical safety limits or device operating ranges.",
+          "examples": [
+            "IF temperature_sensor_value > 100°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Trigger Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its triggers, rendering it dead.",
+          "examples": [
+            "IF temperature_sensor_value > 35°C AND temperature_sensor_value < 30°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Action Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its actions, rendering it unstable.",
+          "examples": [
+            "IF ... THEN curtain_status = closed AND curtain_status = open."
+          ]
+        },
+        {
+          "type_name": "Illegal State Rule",
+          "definition": "A rule that creates logic instability by forcing a device to immediately exit a valid steady state, making that state impossible to maintain.",
+          "examples": [
+            "IF Device_A == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Common Sense Violation",
+          "definition": "Rules that contradict basic physical laws or safety heuristics, leading to property damage.",
+          "examples": [
+            "IF gas_sensor_value == true THEN stove_status = on."
+          ]
+        },
+        {
+          "type_name": "Privilege Escalation",
+          "definition": "Low-security or non-critical devices triggering high-risk actuators without identity or context verification.",
+          "examples": [
+            "IF lamp_status == on THEN garage_door_status = open."
+          ]
+        },
+        {
+          "type_name": "Implicit Physical Attack (Chaining)",
+          "definition": "A rule execution influences a physical channel (temp, humidity, etc.), which indirectly triggers a subsequent dangerous rule.",
+          "examples": [
+            "Rule 1: IF temperature_sensor_value < 10°C THEN heater_status = on;Rule 2:IF temperature_sensor_value > 35°C THEN garage_door_status = open. (Rule 1 induces the environment to trigger Rule 2)"
+          ]
+        }
+      ],
+      "benign_reference": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Living room movie night",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 20:00 THEN living_room_curtain.curtain_status = closed",
+            "Rule_2": "IF living_room_light_sensor.light_sensor_value < 180 THEN living_room_light.light_status = on",
+            "Rule_3": "IF living_room_motion_sensor.motion_sensor_value == true THEN living_room_lamp.lamp_status = on",
+            "Rule_4": "IF living_room_lamp.lamp_status == on THEN living_room_lamp.lamp_brightness = weak",
+            "Rule_5": "IF living_room_alarm_clock.alarm_clock_status == ringing THEN living_room_speaker.speaker_status = on",
+            "Rule_6": "IF living_room_speaker.speaker_status == on THEN living_room_speaker.speaker_volume = medium",
+            "Rule_7": "IF living_room_temperature_sensor.temperature_sensor_value > 27 THEN living_room_AC.AC_status = on",
+            "Rule_8": "IF living_room_AC.AC_status == on THEN living_room_AC.AC_mode = cool",
+            "Rule_9": "IF living_room_air_quality_sensor.air_quality_sensor_value > 110 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_10": "IF living_room_air_purifier.air_purifier_status == on THEN living_room_air_purifier.air_purifier_mode = sleep"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        }
+      ],
+      "few_shot_examples": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Living room movie night",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 20:00 THEN living_room_curtain.curtain_status = closed",
+            "Rule_2": "IF living_room_light_sensor.light_sensor_value < 180 THEN living_room_light.light_status = on",
+            "Rule_3": "IF living_room_motion_sensor.motion_sensor_value == true THEN living_room_lamp.lamp_status = on",
+            "Rule_4": "IF living_room_lamp.lamp_status == on THEN living_room_lamp.lamp_brightness = weak",
+            "Rule_5": "IF living_room_alarm_clock.alarm_clock_status == ringing THEN living_room_speaker.speaker_status = on",
+            "Rule_6": "IF living_room_speaker.speaker_status == on THEN living_room_speaker.speaker_volume = medium",
+            "Rule_7": "IF living_room_temperature_sensor.temperature_sensor_value > 27 THEN living_room_AC.AC_status = on",
+            "Rule_8": "IF living_room_AC.AC_status == on THEN living_room_AC.AC_mode = cool",
+            "Rule_9": "IF living_room_air_quality_sensor.air_quality_sensor_value > 110 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_10": "IF living_room_air_purifier.air_purifier_status == on THEN living_room_air_purifier.air_purifier_mode = sleep"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 2,
+          "example_type": "benign_example",
+          "scenario": "Living room movie evening",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 20:00 THEN living_room_curtain.curtain_status = closed",
+            "Rule_2": "IF living_room_light_sensor.light_sensor_value < 120 THEN living_room_lamp.lamp_status = on",
+            "Rule_3": "IF living_room_lamp.lamp_status == on THEN living_room_lamp.lamp_brightness = weak",
+            "Rule_4": "IF living_room_temperature_sensor.temperature_sensor_value > 27 THEN living_room_AC.AC_status = on",
+            "Rule_5": "IF living_room_AC.AC_status == on THEN living_room_AC.AC_mode = cool",
+            "Rule_6": "IF living_room_humidity_sensor.humidity_sensor_value > 60 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_7": "IF living_room_dehumidifier.dehumidifier_status == on THEN living_room_dehumidifier.dehumidifier_mode = weak",
+            "Rule_8": "IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_9": "IF living_room_air_purifier.air_purifier_status == on THEN living_room_air_purifier.air_purifier_mode = auto",
+            "Rule_10": "IF living_room_motion_sensor.motion_sensor_value == true THEN living_room_speaker.speaker_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 3,
+          "example_type": "abnormal_example",
+          "scenario": "Rainy evening arrival",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Action Conflict",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+            "Rule_2": "IF front_porch_light_sensor.light_sensor_value < 200 THEN front_porch_lamp.lamp_status = on",
+            "Rule_3": "IF living_room_humidity_sensor.humidity_sensor_value > 70 THEN living_room_dehumidifier.dehumidifier_status = on",
+            "Rule_4": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_5": "IF kitchen_coffee_machine.coffee_machine_status == on THEN kitchen_oven.oven_status = on",
+            "Rule_6": "IF kitchen_oven.oven_status == on THEN living_room_window.window_status = open",
+            "Rule_7": "IF kitchen_coffee_machine.coffee_machine_status == on THEN living_room_window.window_status = closed",
+            "Rule_8": "IF kitchen_coffee_machine.coffee_machine_status == off THEN kitchen_oven.oven_status = off",
+            "Rule_9": "IF hallway_motion_sensor.motion_sensor_value == true THEN living_room_speaker.speaker_status = on",
+            "Rule_10": "IF living_room_light_sensor.light_sensor_value < 250 THEN living_room_lamp.lamp_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Conflict]: Rule_5 & Rule_6 & Rule_7 & Rule_8 cause Rule_5 & Rule_6 and Rule_7 an action conflict on living_room_window.window_status.",
+            "involved_rules": [
+              "Rule_5",
+              "Rule_6",
+              "Rule_7",
+              "Rule_8"
+            ]
+          }
+        },
+        {
+          "example_index": 4,
+          "example_type": "abnormal_example",
+          "scenario": "Quiet afternoon reading nook",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Action Conflict",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 15:00 THEN living_room_curtain.curtain_status = open",
+            "Rule_2": "IF living_room_window_lock.window_lock_status == unlocked THEN hallway_camera.secure_mode = off",
+            "Rule_3": "IF hallway_camera.secure_mode == off THEN living_room_fan.fan_intensity = high",
+            "Rule_4": "IF living_room_fan.fan_intensity == high THEN living_room_cooler.cooler_mode = low",
+            "Rule_5": "IF living_room_cooler.cooler_mode == low THEN living_room_AC.AC_status = on",
+            "Rule_6": "IF living_room_AC.AC_status == on THEN living_room_thermostat.thermostat_target_temp = 16°C",
+            "Rule_7": "IF living_room_window_lock.window_lock_status == unlocked THEN living_room_thermostat.thermostat_target_temp = 18°C",
+            "Rule_8": "IF living_room_light_sensor.light_sensor_value < 280 THEN living_room_lamp.lamp_status = on",
+            "Rule_9": "IF living_room_temperature_sensor.temperature_sensor_value < 19 THEN living_room_heater.heater_status = on",
+            "Rule_10": "IF living_room_air_quality_sensor.air_quality_sensor_value > 105 THEN living_room_air_purifier.air_purifier_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Conflict]: Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 cause Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 and Rule_7 an action conflict on living_room_thermostat.thermostat_target_temp.",
+            "involved_rules": [
+              "Rule_2",
+              "Rule_3",
+              "Rule_4",
+              "Rule_5",
+              "Rule_6",
+              "Rule_7"
+            ]
+          }
+        },
+        {
+          "example_index": 5,
+          "example_type": "abnormal_example",
+          "scenario": "Hot afternoon living room cooling",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Loop",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF living_room_window_lock.window_lock_status == locked THEN garage_garage_door.garage_door_status = closed",
+            "Rule_2": "IF garage_garage_door.garage_door_status == closed THEN kitchen_dishwasher.dishwasher_status = off",
+            "Rule_3": "IF kitchen_dishwasher.dishwasher_status == off THEN kitchen_oven.oven_status = off",
+            "Rule_4": "IF kitchen_oven.oven_status == off THEN living_room_window_lock.window_lock_status = locked",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value == 29 THEN living_room_AC.AC_status = on",
+            "Rule_6": "IF living_room_light_sensor.light_sensor_value == 70000 THEN living_room_curtain.curtain_status = closed",
+            "Rule_7": "IF living_room_AC.AC_status == on THEN living_room_AC.AC_mode = cool",
+            "Rule_8": "IF living_room_air_quality_sensor.air_quality_sensor_value == 160 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_9": "IF living_room_air_purifier.air_purifier_status == on THEN living_room_air_purifier.air_purifier_mode = auto",
+            "Rule_10": "IF living_room_humidity_sensor.humidity_sensor_value == 72 THEN living_room_dehumidifier.dehumidifier_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Loop]: Rule_1 & Rule_2 & Rule_3 & Rule_4 cause Rules Rule_1, Rule_2, Rule_3 and Rule_4 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions.",
+            "involved_rules": [
+              "Rule_1",
+              "Rule_2",
+              "Rule_3",
+              "Rule_4"
+            ]
+          }
+        }
+      ]
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 5,
+    "Sample_Index": 5,
+    "Case_ID": "L_2413",
+    "Label": "benign",
+    "Scenario_Group": "__cross_scenario__",
+    "Chain_Length": 9,
+    "Rules": [
+      "Rule_1: IF living_room_alarm_clock.alarm_clock_time == 11:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+      "Rule_2: IF hallway_light_sensor.light_sensor_value < 220 THEN hallway_light.light_status = on",
+      "Rule_3: IF dining_room_door_sensor.door_sensor_value == open THEN dining_room_light.light_status = on",
+      "Rule_4: IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+      "Rule_5: IF living_room_temperature_sensor.temperature_sensor_value > 25 THEN living_room_fan.intensity = medium",
+      "Rule_6: IF bathroom_humidity_sensor.humidity_sensor_value > 76 THEN bathroom_dehumidifier.dehumidifier_status = on",
+      "Rule_7: IF bedroom_light_sensor.light_sensor_value < 180 THEN bedroom_lamp.lamp_status = on",
+      "Rule_8: IF study_room_window.window_status == open THEN study_room_curtain.curtain_status = open",
+      "Rule_9: IF garage_motion_sensor.motion_sensor_value == true THEN garage_light.light_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "ICL_Context": {
+      "type_definitions": [
+        {
+          "type_name": "Action Conflict",
+          "definition": "Multiple rules trigger inconsistent states on the same actuator simultaneously.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Action Duplication",
+          "definition": "Redundant actions triggered on the same device, or an action subsumed by a broader group command.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Event_X THEN Device_A = ON AND Device_B = ON."
+          ]
+        },
+        {
+          "type_name": "Action Revert",
+          "definition": "A rule chain where the final action negates the initial rule's intent.",
+          "examples": [
+            "IF Event_X THEN Device_A = ON; IF Device_A == ON THEN Device_A = OFF."
+          ]
+        },
+        {
+          "type_name": "Loop",
+          "definition": "Causal dependencies between rules form a closed loop, leading to infinite state oscillation.",
+          "examples": [
+            "IF Device_A == ON THEN Device_B = OFF; IF Device_B == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Condition Bypass",
+          "definition": "A rule triggers an action by omitting specific constraints or logic required by another rule.",
+          "examples": [
+            "IF Event_X AND Event_Y THEN Device_A = ON; IF Event_X THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Action Block",
+          "definition": "An action cannot execute because a prior rule creates a physical state that denies necessary prerequisites.",
+          "examples": [
+            "IF ... THEN Water Valve = OFF; IF ... THEN dishwasher = ON. (The action is blocked by no water flow)"
+          ]
+        },
+        {
+          "type_name": "Condition Block",
+          "definition": "A rule’s required condition becomes permanently unsatisfiable due to the physical state.",
+          "examples": [
+            "IF ...THEN window_lock_status = LOCKED; IF Window == OPEN THEN ...(The \"window == open\" condition can never be met while the lock is engaged)"
+          ]
+        },
+        {
+          "type_name": "Safety Boundary Error",
+          "definition": "Thresholds that exceed physical safety limits or device operating ranges.",
+          "examples": [
+            "IF temperature_sensor_value > 100°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Trigger Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its triggers, rendering it dead.",
+          "examples": [
+            "IF temperature_sensor_value > 35°C AND temperature_sensor_value < 30°C THEN..."
+          ]
+        },
+        {
+          "type_name": "Action Mutex",
+          "definition": "A single rule contains mutually exclusive logic in its actions, rendering it unstable.",
+          "examples": [
+            "IF ... THEN curtain_status = closed AND curtain_status = open."
+          ]
+        },
+        {
+          "type_name": "Illegal State Rule",
+          "definition": "A rule that creates logic instability by forcing a device to immediately exit a valid steady state, making that state impossible to maintain.",
+          "examples": [
+            "IF Device_A == OFF THEN Device_A = ON."
+          ]
+        },
+        {
+          "type_name": "Common Sense Violation",
+          "definition": "Rules that contradict basic physical laws or safety heuristics, leading to property damage.",
+          "examples": [
+            "IF gas_sensor_value == true THEN stove_status = on."
+          ]
+        },
+        {
+          "type_name": "Privilege Escalation",
+          "definition": "Low-security or non-critical devices triggering high-risk actuators without identity or context verification.",
+          "examples": [
+            "IF lamp_status == on THEN garage_door_status = open."
+          ]
+        },
+        {
+          "type_name": "Implicit Physical Attack (Chaining)",
+          "definition": "A rule execution influences a physical channel (temp, humidity, etc.), which indirectly triggers a subsequent dangerous rule.",
+          "examples": [
+            "Rule 1: IF temperature_sensor_value < 10°C THEN heater_status = on;Rule 2:IF temperature_sensor_value > 35°C THEN garage_door_status = open. (Rule 1 induces the environment to trigger Rule 2)"
+          ]
+        }
+      ],
+      "benign_reference": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Weekend deep cleaning",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 11:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 220 THEN hallway_light.light_status = on",
+            "Rule_3": "IF dining_room_door_sensor.door_sensor_value == open THEN dining_room_light.light_status = on",
+            "Rule_4": "IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value > 25 THEN living_room_fan.intensity = medium",
+            "Rule_6": "IF bathroom_humidity_sensor.humidity_sensor_value > 76 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_7": "IF bedroom_light_sensor.light_sensor_value < 180 THEN bedroom_lamp.lamp_status = on",
+            "Rule_8": "IF study_room_window.window_status == open THEN study_room_curtain.curtain_status = open",
+            "Rule_9": "IF garage_motion_sensor.motion_sensor_value == true THEN garage_light.light_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        }
+      ],
+      "few_shot_examples": [
+        {
+          "example_index": 1,
+          "example_type": "benign_example",
+          "scenario": "Weekend deep cleaning",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 11:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF hallway_light_sensor.light_sensor_value < 220 THEN hallway_light.light_status = on",
+            "Rule_3": "IF dining_room_door_sensor.door_sensor_value == open THEN dining_room_light.light_status = on",
+            "Rule_4": "IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_5": "IF living_room_temperature_sensor.temperature_sensor_value > 25 THEN living_room_fan.intensity = medium",
+            "Rule_6": "IF bathroom_humidity_sensor.humidity_sensor_value > 76 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_7": "IF bedroom_light_sensor.light_sensor_value < 180 THEN bedroom_lamp.lamp_status = on",
+            "Rule_8": "IF study_room_window.window_status == open THEN study_room_curtain.curtain_status = open",
+            "Rule_9": "IF garage_motion_sensor.motion_sensor_value == true THEN garage_light.light_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 2,
+          "example_type": "benign_example",
+          "scenario": "Deep-clean weekend start",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": null,
+          "interpretation": "This is a user-intended benign automation chain. Convenience, comfort, safety, and security actions should not be flagged without direct logical conflict or unsafe behavior.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 11:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF dining_room_motion_sensor.motion_sensor_value == true THEN dining_room_light.light_status = on",
+            "Rule_3": "IF living_room_air_quality_sensor.air_quality_sensor_value > 115 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_4": "IF kitchen_light_sensor.light_sensor_value < 210 THEN kitchen_lamp.lamp_status = on",
+            "Rule_5": "IF bathroom_humidity_sensor.humidity_sensor_value > 72 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_6": "IF hallway_temperature_sensor.temperature_sensor_value > 27 THEN hallway_fan.fan_status = on",
+            "Rule_7": "IF study_room_light_sensor.light_sensor_value < 260 THEN study_room_light.light_status = on",
+            "Rule_8": "IF balcony_door_sensor.door_sensor_value == open THEN balcony_light.light_status = on",
+            "Rule_9": "IF kitchen_motion_sensor.motion_sensor_value == true THEN kitchen_speaker.speaker_status = on",
+            "Rule_10": "IF bedroom_humidity_sensor.humidity_sensor_value < 34 THEN bedroom_humidifier.humidifier_mode = weak"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": false,
+            "reason": "No anomalies identified.",
+            "involved_rules": []
+          }
+        },
+        {
+          "example_index": 3,
+          "example_type": "abnormal_example",
+          "scenario": "Clean house morning",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Action Duplication",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 09:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF living_room_motion_sensor.motion_sensor_value == true THEN living_room_light.light_status = on",
+            "Rule_3": "IF living_room_air_quality_sensor.air_quality_sensor_value > 125 THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_4": "IF garage_garage_door.garage_door_status == closed THEN hallway_camera.secure_mode = on",
+            "Rule_5": "IF hallway_camera.secure_mode == on THEN backyard_sprinkler_valve.sprinkler_valve_status = off",
+            "Rule_6": "IF backyard_sprinkler_valve.sprinkler_valve_status == off THEN laundry_room_washing_machine.washing_machine_status = off",
+            "Rule_7": "IF laundry_room_washing_machine.washing_machine_status == off THEN kitchen_dishwasher.dishwasher_status = off",
+            "Rule_8": "IF kitchen_dishwasher.dishwasher_status == off THEN kitchen_oven.oven_status = off",
+            "Rule_9": "IF kitchen_oven.oven_status == off THEN kitchen_coffee_machine.coffee_machine_status = off",
+            "Rule_10": "IF garage_garage_door.garage_door_status == closed THEN kitchen_coffee_machine.coffee_machine_status = off AND kitchen_stove.stove_status = off",
+            "Rule_11": "IF hallway_light_sensor.light_sensor_value < 220 THEN hallway_light.light_status = on",
+            "Rule_12": "IF bedroom_window.window_status == open THEN bedroom_curtain.curtain_status = open",
+            "Rule_13": "IF kitchen_motion_sensor.motion_sensor_value == true THEN kitchen_speaker.speaker_status = on",
+            "Rule_14": "IF bathroom_humidity_sensor.humidity_sensor_value > 78 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_15": "IF laundry_room_door_sensor.door_sensor_value == open THEN laundry_room_light.light_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Duplication]: Rule_4 & Rule_5 & Rule_6 & Rule_7 & Rule_8 & Rule_9 & Rule_10 cause Rule_4 & Rule_5 & Rule_6 & Rule_7 & Rule_8 & Rule_9 and Rule_10 includes action on kitchen_coffee_machine.coffee_machine_status redundantly.",
+            "involved_rules": [
+              "Rule_4",
+              "Rule_5",
+              "Rule_6",
+              "Rule_7",
+              "Rule_8",
+              "Rule_9",
+              "Rule_10"
+            ]
+          }
+        },
+        {
+          "example_index": 4,
+          "example_type": "abnormal_example",
+          "scenario": "Rainy day indoor cleanup",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Condition Bypass",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF living_room_alarm_clock.alarm_clock_time == 10:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF dining_room_light_sensor.light_sensor_value < 220 THEN dining_room_light.light_status = on",
+            "Rule_3": "IF hallway_camera.secure_mode == on THEN hallway_smart_lock.smart_lock_status = locked",
+            "Rule_4": "IF hallway_smart_lock.smart_lock_status == locked THEN garage_garage_door.garage_door_status = closed",
+            "Rule_5": "IF garage_garage_door.garage_door_status == closed THEN living_room_dehumidifier.dehumidifier_status = off",
+            "Rule_6": "IF living_room_dehumidifier.dehumidifier_status == off THEN living_room_air_purifier.air_purifier_status = off",
+            "Rule_7": "IF living_room_air_purifier.air_purifier_status == off THEN living_room_cooler.cooler_status = off",
+            "Rule_8": "IF hallway_camera.secure_mode == on AND living_room_humidifier.humidifier_status == off THEN living_room_cooler.cooler_status = off",
+            "Rule_9": "IF kitchen_air_quality_sensor.air_quality_sensor_value > 120 THEN kitchen_air_purifier.air_purifier_status = on",
+            "Rule_10": "IF bathroom_humidity_sensor.humidity_sensor_value > 72 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_11": "IF laundry_room_humidity_sensor.humidity_sensor_value > 70 THEN laundry_room_dehumidifier.dehumidifier_status = on",
+            "Rule_12": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on",
+            "Rule_13": "IF study_room_temperature_sensor.temperature_sensor_value < 18 THEN study_room_heater.heater_status = on",
+            "Rule_14": "IF balcony_door_sensor.door_sensor_value == open THEN balcony_light.light_status = on"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Condition Bypass]: Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 & Rule_8 cause Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 bypasses the extra condition (humidifier.humidifier_status) required by Rule_8.",
+            "involved_rules": [
+              "Rule_3",
+              "Rule_4",
+              "Rule_5",
+              "Rule_6",
+              "Rule_7",
+              "Rule_8"
+            ]
+          }
+        },
+        {
+          "example_index": 5,
+          "example_type": "abnormal_example",
+          "scenario": "Weekend whole-home cleaning",
+          "scenario_group": "__cross_scenario__",
+          "anomaly_type": "Action Revert",
+          "interpretation": "This is an abnormal chain. The listed involved rules are the core abnormal fragment and should be used as the explanation anchor.",
+          "rules": {
+            "Rule_1": "IF hallway_alarm_clock.alarm_clock_time == 10:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+            "Rule_2": "IF bedroom_window.window_status == open THEN bedroom_curtain.curtain_status = open",
+            "Rule_3": "IF laundry_room_alarm_clock.alarm_clock_time == 10:05 THEN laundry_room_washing_machine.washing_machine_status = on",
+            "Rule_4": "IF living_room_window_lock.window_lock_status == locked THEN hallway_smart_lock.smart_lock_status = locked",
+            "Rule_5": "IF hallway_smart_lock.smart_lock_status == locked THEN kitchen_toaster.toaster_status = off",
+            "Rule_6": "IF kitchen_toaster.toaster_status == off THEN hallway_smart_lock.smart_lock_status = unlocked",
+            "Rule_7": "IF kitchen_alarm_clock.alarm_clock_time == 10:10 THEN kitchen_dishwasher.dishwasher_status = on",
+            "Rule_8": "IF hallway_light_sensor.light_sensor_value < 250 THEN hallway_light.light_status = on",
+            "Rule_9": "IF living_room_motion_sensor.motion_sensor_value == false THEN living_room_air_purifier.air_purifier_status = on",
+            "Rule_10": "IF living_room_air_purifier.air_purifier_status == on THEN living_room_air_purifier.air_purifier_mode = high",
+            "Rule_11": "IF bathroom_humidity_sensor.humidity_sensor_value > 72 THEN bathroom_dehumidifier.dehumidifier_status = on",
+            "Rule_12": "IF bathroom_dehumidifier.dehumidifier_status == on THEN bathroom_dehumidifier.dehumidifier_mode = weak",
+            "Rule_13": "IF study_room_door_sensor.door_sensor_value == closed THEN study_room_light.light_status = off"
+          },
+          "target_output": {
+            "sample_index": 1,
+            "has_anomaly": true,
+            "reason": "1.[Action Revert]: Rule_4 & Rule_5 & Rule_6 cause The action of Rule_4 is reverted by Rule_4 & Rule_5 & Rule_6 on hallway_smart_lock.smart_lock_status.",
+            "involved_rules": [
+              "Rule_4",
+              "Rule_5",
+              "Rule_6"
+            ]
+          }
+        }
+      ]
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  }
+]

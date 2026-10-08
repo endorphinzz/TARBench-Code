@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0426", "label": "Benign", "type": null, "confidence": 4, "note": "All rules are sensible guest-room readiness automation; curtain-closed locks window and door-open lights hallway, no hazard"}
+{"sample_id": "IAA_0427", "label": "Benign", "type": null, "confidence": 5, "note": "Simple winter-morning automation; curtain-closed to speaker rule is odd but harmless"}
+{"sample_id": "IAA_0428", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 camera secure-mode off unlocks living-room window lock (PE); Rule_5 also shortcuts the Rule_3-Rule_4 chain to lamp on (AD)"}
+{"sample_id": "IAA_0429", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_8 and Rule_9 share trigger humidifier off but set garage door closed vs open (same-trigger conflict); Rule_7-Rule_8 also form a mutual-satisfaction cycle (EL)"}
+{"sample_id": "IAA_0430", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_11 door-open disarms hallway camera; Rule_12-Rule_13 then unlock window lock and smart lock (PE); Rule_17 re-arms camera at chain end"}
+{"sample_id": "IAA_0431", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 freezing-temperature trigger unlocks hallway smart lock (PE); Rule_5-Rule_6 fan and AC chain follows the unlock"}
+{"sample_id": "IAA_0432", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 duplicates the Rule_2-Rule_3 chain (curtain closed, light off, heater eco) for heater eco at same head trigger (AD), plus stove-off action"}
+{"sample_id": "IAA_0433", "label": "Benign", "type": null, "confidence": 4, "note": "Lock-to-camera-to-garage-to-water-valve chain is odd but protective; no hazard or conflict"}
+{"sample_id": "IAA_0434", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 duplicates the Rule_1-Rule_4 chain (smart lock locked to sprinkler off) at same head trigger (AD)"}
+{"sample_id": "IAA_0435", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Chain Rule_7-Rule_9 opens curtain while Rule_11 directly closes it, same window-lock-unlocked root (chain-vs-direct AC); Rule_7-Rule_8 unlock cascade also noted"}
+{"sample_id": "IAA_0436", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 and Rule_2 form camera-off to cooler-low mutual-satisfaction cycle (EL); Rule_3 is subsumed by Rule_1"}
+{"sample_id": "IAA_0437", "label": "Benign", "type": null, "confidence": 5, "note": "Leak shuts water valve and triggers siren: correct safety automation"}
+{"sample_id": "IAA_0438", "label": "Benign", "type": null, "confidence": 5, "note": "Motion-activated light and low-temperature heater are sensible"}
+{"sample_id": "IAA_0439", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Chain Rule_2-Rule_6 (door open to cooler low) conflicts with direct Rule_7 (door open to cooler high) at same root (AC); Rule_2 door-open unlock is also PE-like"}
+{"sample_id": "IAA_0440", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_2 locks smart lock; chain Rule_3-Rule_7 ends unlocking it (AR)"}
+{"sample_id": "IAA_0441", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 and Rule_4 share trigger lamp on but set curtain open vs closed (same-trigger conflict); Rule_2-Rule_3 also form a cycle"}
+{"sample_id": "IAA_0442", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible wake-up automation; no conflicts or hazards"}
+{"sample_id": "IAA_0443", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 and Rule_2 form lamp-off to heater-eco satisfy-edge dependency cycle (EL)"}
+{"sample_id": "IAA_0444", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible evening automation with timed lamp, purifier, and heater"}
+{"sample_id": "IAA_0445", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible sleep-preparation automation throughout"}
+{"sample_id": "IAA_0446", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3 to Rule_7 form camera-on, purifier/fan/heater/humidifier off, camera-on satisfy-edge cycle (EL)"}
+{"sample_id": "IAA_0447", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible overnight hallway guidance automation"}
+{"sample_id": "IAA_0448", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible dusk watering preparation rules"}
+{"sample_id": "IAA_0449", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible evening study automation; no conflicts or hazards"}
+{"sample_id": "IAA_0450", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_8 and Rule_9 form dishwasher-off to coffee-off mutual-satisfaction cycle (EL)"}

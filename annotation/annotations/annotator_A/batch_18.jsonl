@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0426", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0427", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0428", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0429", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_8 and Rule_9 set garage closed vs open under same humidifier-off trigger; secondary EL latching with Rule_7."}
+{"sample_id": "IAA_0430", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Door-open chain Rule_11-Rule_13 disarms camera and unlocks smart lock; secondary AR chain re-arms camera via Rule_17."}
+{"sample_id": "IAA_0431", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 lets living-room temperature sensor unlock hallway smart lock without verification; privilege escalation."}
+{"sample_id": "IAA_0432", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 duplicates heater eco already delivered by Rule_2-Rule_3 chain from same curtain-closed trigger."}
+{"sample_id": "IAA_0433", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0434", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 duplicates sprinkler off already delivered by Rule_1-Rule_4 chain from same lock-locked trigger."}
+{"sample_id": "IAA_0435", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_11 sets curtain closed while chain Rule_7-Rule_9 opens it from same window-lock trigger; secondary PE disarm chain."}
+{"sample_id": "IAA_0436", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_1 and Rule_2 form latching cycle camera-off/cooler-low; secondary AD Rule_3 duplicates Rule_1's action."}
+{"sample_id": "IAA_0437", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0438", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0439", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 lets door sensor unlock smart lock and chain disarms camera; secondary AC cooler low vs high."}
+{"sample_id": "IAA_0440", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_7 unlocks smart lock, sequentially reverting Rule_2's locking via camera-on chain; no cycle."}
+{"sample_id": "IAA_0441", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 and Rule_4 set curtain open vs closed under same lamp-on trigger; secondary EL latching with Rule_2."}
+{"sample_id": "IAA_0442", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0443", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_1 and Rule_2 form latching cycle lamp-off/heater-eco re-asserting lamp off."}
+{"sample_id": "IAA_0444", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0445", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0446", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_3-Rule_7 form closed latching cycle: camera-on chain re-asserts camera on via Rule_7."}
+{"sample_id": "IAA_0447", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0448", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0449", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0450", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_8 and Rule_9 form latching cycle dishwasher-off/coffee-off re-asserting dishwasher off."}

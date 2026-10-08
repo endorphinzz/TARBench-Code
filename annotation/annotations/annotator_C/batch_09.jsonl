@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0201", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_8 to Rule_9 chain sets cooler low vs Rule_10 direct sets auto; same camera-off root conflict"}
+{"sample_id": "IAA_0202", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0203", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_7 grill and home to purifier auto subsumed by Rule_6 grill to purifier auto; redundant"}
+{"sample_id": "IAA_0204", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_3 sets lamp strong; Rule_4 reverts to medium via chain, negating head action"}
+{"sample_id": "IAA_0205", "label": "Benign", "type": null, "confidence": 3, "note": "Rule_2 motion turns toaster on; no hazardous trigger, no conflict, benign appliance chain"}
+{"sample_id": "IAA_0206", "label": "Benign", "type": null, "confidence": 4, "note": "Rule_4 to Rule_8 cascade long but no cycle, conflict, or duplication"}
+{"sample_id": "IAA_0207", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0208", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_7 gas leak via Rule_8 to Rule_10 ignites oven; hazardous trigger activates hazard appliance"}
+{"sample_id": "IAA_0209", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0210", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_13 window lock unlocked opens curtain, duplicating Rule_10 to Rule_12 chain from same trigger"}
+{"sample_id": "IAA_0211", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0212", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 user sleeping unlocks window lock; ambient condition unlocks security device unauthenticated"}
+{"sample_id": "IAA_0213", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_1 user away via Rule_2 to Rule_4 ignites oven unattended; contrary to common sense"}
+{"sample_id": "IAA_0214", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_5 to Rule_9 off-state dependency cycle heater, humidifier, dehumidifier, AC, fan, back to heater"}
+{"sample_id": "IAA_0215", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 to Rule_4 off-state dependency cycle thermostat, humidifier, dehumidifier, back to thermostat"}
+{"sample_id": "IAA_0216", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0217", "label": "Benign", "type": null, "confidence": 3, "note": "Rule_8 to Rule_9 lamp, speaker, window-open cascade odd but no hazard or conflict"}
+{"sample_id": "IAA_0218", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 camera on to dishwasher off duplicates Rule_6 to Rule_8 chain from same trigger"}
+{"sample_id": "IAA_0219", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0220", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 and Rule_5 dependency cycle ringing to window open back to ringing; Rule_6 duplicates Rule_4"}
+{"sample_id": "IAA_0221", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 to Rule_5 dependency cycle speaker, light, curtain, heater, back to speaker"}
+{"sample_id": "IAA_0222", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 and Rule_2 dependency cycle locked to dishwasher off back to locked; Rule_3 subsumed"}
+{"sample_id": "IAA_0223", "label": "Benign", "type": null, "confidence": 3, "note": "Rule_6 to Rule_7 lamp, speaker, window-open cascade odd but no hazard or conflict"}
+{"sample_id": "IAA_0224", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 to Rule_3 dependency cycle light, curtain, heater, back to light"}
+{"sample_id": "IAA_0225", "label": "Benign", "type": null, "confidence": 5, "note": ""}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0301", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_14 duplicates Rule_8 to Rule_13 chain heater-off from same camera-on trigger"}
+{"sample_id": "IAA_0302", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same 23:00 trigger opens vs closes living room window"}
+{"sample_id": "IAA_0303", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 and Rule_5 dependency cycle window-lock-unlocked and thermostat-26 reinforce each other"}
+{"sample_id": "IAA_0304", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0305", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0306", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 and Rule_4 trigger requires mode normal and spin simultaneously, impossible; conflicting vacuum actions too"}
+{"sample_id": "IAA_0307", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_2 window-open subsumed by Rule_3 same-trigger window-open plus fan-on"}
+{"sample_id": "IAA_0308", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 freezing temp unlocks smart lock; chain unlocks window lock, disarms camera"}
+{"sample_id": "IAA_0309", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0310", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_11 heater-eco subsumed by Rule_8 to Rule_10 chain, light threshold 150 nested in 200"}
+{"sample_id": "IAA_0311", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 and Rule_5 dependency cycle lamp-off and heater-eco reinforce each other"}
+{"sample_id": "IAA_0312", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_4 sets heater eco; Rule_5 chain reverts to high, negating head action"}
+{"sample_id": "IAA_0313", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0314", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0315", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 vs Rule_5 same user-home trigger sets heater eco vs high; window lock vs open too"}
+{"sample_id": "IAA_0316", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 to Rule_7 dependency cycle camera-off, unlock, fan, cooler, back to camera-off"}
+{"sample_id": "IAA_0317", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_2 turns camera on; Rule_3 to Rule_6 chain turns it off, negating head action"}
+{"sample_id": "IAA_0318", "label": "Anomalous", "type": "BE", "confidence": 3, "note": "Rule_2 gas sensor value ? undefined, unsatisfiable"}
+{"sample_id": "IAA_0319", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0320", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0321", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0322", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 curtain-closed duplicates Rule_3 to Rule_4 chain from same light trigger"}
+{"sample_id": "IAA_0323", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_3 turns dehumidifier off; Rule_4 to Rule_6 chain turns it on, negating head action"}
+{"sample_id": "IAA_0324", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same user-away trigger opens vs closes living room window"}
+{"sample_id": "IAA_0325", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_6 writes camera motion sensor, fabricating detection; Rule_7 chain triggers siren falsely"}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0176", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_5 turns sprinkler on during rain, contradicting common-sense watering heuristic"}
+{"sample_id": "IAA_0177", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0178", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_4 unlocks window lock; Rule_5-Rule_6 chain reverts it to locked"}
+{"sample_id": "IAA_0179", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0180", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0181", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_3 humidity sensor unlocks hallway smart lock without verification"}
+{"sample_id": "IAA_0182", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0183", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0184", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0185", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_9 & Rule_10 overlapping triggers set oven convection vs grill when cold and dry"}
+{"sample_id": "IAA_0186", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0187", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_1 opens window and locks window lock simultaneously; mutually exclusive actions"}
+{"sample_id": "IAA_0188", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_5 & Rule_6 exact duplicate rules: camera on turns sprinkler off twice"}
+{"sample_id": "IAA_0189", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_6 via Rule_4-Rule_5 chain and Rule_7 both fire at 08:00, setting window open vs closed"}
+{"sample_id": "IAA_0190", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_1 turns speaker on; Rule_2-Rule_5 chain reverts it to off"}
+{"sample_id": "IAA_0191", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_7 via Rule_4-Rule_6 chain and Rule_8 both fire at 08:00, setting window open vs closed"}
+{"sample_id": "IAA_0192", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0193", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0194", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_5 via Rule_4 chain and Rule_6 both fire on alarm ringing, setting purifier high vs low"}
+{"sample_id": "IAA_0195", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_8 sets robot vacuum on and charging simultaneously (contradictory actions)"}
+{"sample_id": "IAA_0196", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_1 & Rule_2 triggers require camera secure off and on simultaneously, never fire"}
+{"sample_id": "IAA_0197", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_2 trigger light < -100lux, impossible negative sensor value"}
+{"sample_id": "IAA_0198", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0199", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0200", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_5 trigger requires user sleeping and away simultaneously, never fires"}

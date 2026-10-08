@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0201", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_9 via Rule_8 chain and Rule_10 both fire on camera-off, setting cooler low vs auto"}
+{"sample_id": "IAA_0202", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0203", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 trigger subsumes Rule_7 guarded trigger with identical purifier auto action (inclusion duplication)"}
+{"sample_id": "IAA_0204", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_3 sets lamp brightness strong; Rule_4 triggered on strong reverts it to medium"}
+{"sample_id": "IAA_0205", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0206", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0207", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0208", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_7-Rule_10 chain: gas leak turns coffee machine and oven on (ignition hazard)"}
+{"sample_id": "IAA_0209", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0210", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0211", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0212", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0213", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_1-Rule_4 chain: user away turns toaster, coffee machine, oven on unattended (fire hazard)"}
+{"sample_id": "IAA_0214", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_5-Rule_9 closed cycle: heater, humidifier, dehumidifier, AC, fan off loop back to heater"}
+{"sample_id": "IAA_0215", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_4 form closed cycle: thermostat off, humidifier off, dehumidifier off, back to thermostat"}
+{"sample_id": "IAA_0216", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0217", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0218", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0219", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0220", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 mutual cycle: alarm ringing and window open trigger each other"}
+{"sample_id": "IAA_0221", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_5 form closed cycle: speaker, light, curtain closed, heater eco, back to speaker"}
+{"sample_id": "IAA_0222", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 & Rule_2 mutual cycle: lock locked and dishwasher off sustain each other; Rule_1 subsumes Rule_3 (AD secondary)"}
+{"sample_id": "IAA_0223", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0224", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_3 form closed cycle: light on, curtain closed, heater eco, back to light on"}
+{"sample_id": "IAA_0225", "label": "Benign", "type": null, "confidence": 5, "note": ""}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0376", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0377", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_2 trigger requires garage door closed and open simultaneously, never fires"}
+{"sample_id": "IAA_0378", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 & Rule_2 same trigger set smart lock locked vs unlocked; Rule_1 purifier off in hazardous air (CV secondary)"}
+{"sample_id": "IAA_0379", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0380", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0381", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 subsumes Rule_4 same-trigger purifier action (inclusion duplication); Rule_5 disarms camera (PE secondary)"}
+{"sample_id": "IAA_0382", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_3 self-referentially forces toaster from off to on"}
+{"sample_id": "IAA_0383", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_2 trigger requires purifier off and on simultaneously, never fires"}
+{"sample_id": "IAA_0384", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_13 via Rule_8-Rule_12 chain and Rule_14 both fire on lock unlocked, setting thermostat 20 vs 25"}
+{"sample_id": "IAA_0385", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0386", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_2 arms camera; Rule_3-Rule_5 chain reverts it to off"}
+{"sample_id": "IAA_0387", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_3 locks smart lock; Rule_4-Rule_7 chain reverts it to unlocked"}
+{"sample_id": "IAA_0388", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_8 closed cycle: lock, camera, garage, AC, purifier, heater, humidifier back to lock"}
+{"sample_id": "IAA_0389", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0390", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0391", "label": "Anomalous", "type": "BE", "confidence": 4, "note": "Rule_3 trigger AQI > 1500, beyond plausible sensor operating range"}
+{"sample_id": "IAA_0392", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_8 closed cycle: lock, camera, window lock, fan, thermostat, humidifier, AC back to lock"}
+{"sample_id": "IAA_0393", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0394", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0395", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_7 trigger requires coffee machine on and off simultaneously, never fires"}
+{"sample_id": "IAA_0396", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0397", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0398", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0399", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 & Rule_3 overlapping triggers set coffee machine off vs on when dark and lock unlocked"}
+{"sample_id": "IAA_0400", "label": "Benign", "type": null, "confidence": 5, "note": ""}

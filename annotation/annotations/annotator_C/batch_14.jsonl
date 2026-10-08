@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0326", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0327", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 to Rule_6 dependency cycle lock, camera, water valve, back to lock"}
+{"sample_id": "IAA_0328", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 duplicates Rule_2 to Rule_5 chain water-valve-off from same lock-locked trigger"}
+{"sample_id": "IAA_0329", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0330", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_1 to Rule_3 chain brightness strong vs Rule_4 direct weak at same 08:00 trigger"}
+{"sample_id": "IAA_0331", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_3 vs Rule_4 set light off vs on when humidifier-on and vacuum-on co-satisfiable"}
+{"sample_id": "IAA_0332", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 vs Rule_6 same sunny trigger opens vs closes living room window"}
+{"sample_id": "IAA_0333", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 vs Rule_4 same light-on trigger sets fan on vs off"}
+{"sample_id": "IAA_0334", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0335", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0336", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3 to Rule_7 dependency cycle lock, camera, window lock, sprinkler, dishwasher, back to lock; Rule_2 writes sensor"}
+{"sample_id": "IAA_0337", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_6 to Rule_12 dependency cycle camera, window lock, garage, smart lock, appliances, back to camera"}
+{"sample_id": "IAA_0338", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_11 and Rule_12 dependency cycle lamp-on and light-on reinforce each other"}
+{"sample_id": "IAA_0339", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_5 to Rule_11 dependency cycle camera, garage, window lock, appliances, back to camera"}
+{"sample_id": "IAA_0340", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0341", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_8 vs Rule_9 same coffee-on trigger sets dehumidifier on vs off"}
+{"sample_id": "IAA_0342", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_6 camera-off unlocks smart lock, security degradation; Rule_11 duplicates chain curtain-closed"}
+{"sample_id": "IAA_0343", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_6 sets AC cool; Rule_7 to Rule_9 chain reverts to auto, negating head action"}
+{"sample_id": "IAA_0344", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_7 door-open unlocks smart lock, disarms camera; Rule_13 duplicates chain AC-on"}
+{"sample_id": "IAA_0345", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_7 subsumed by Rule_6, lamp-off triggers light-off regardless of curtain state"}
+{"sample_id": "IAA_0346", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0347", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 duplicates Rule_1 to Rule_4 chain dehumidifier-off from same away trigger"}
+{"sample_id": "IAA_0348", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0349", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0350", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_7 sets AC cool; Rule_8 reverts to auto, negating head action"}

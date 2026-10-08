@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0476", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_7 is subsumed by Rule_6 (same window-lock-unlocked trigger plus conjunct, same light-on action)"}
+{"sample_id": "IAA_0477", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_1 sets AC to heat mode when temperature exceeds 30C (heating in hot weather, CV); Rule_2 compounds by turning heater on"}
+{"sample_id": "IAA_0478", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7/Rule_8 same trigger (23:00) set living-room dehumidifier mode weak vs strong (same-trigger conflict)"}
+{"sample_id": "IAA_0479", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible dawn garden prep rules"}
+{"sample_id": "IAA_0480", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_5 self-activating rule turns dehumidifier on whenever it is off (IS); also negates Rule_4 chain"}
+{"sample_id": "IAA_0481", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible whole-home spring refresh rules"}
+{"sample_id": "IAA_0482", "label": "Anomalous", "type": "AD", "confidence": 5, "note": "Rule_1 and Rule_2 are exact duplicates (stove off to dishwasher off)"}
+{"sample_id": "IAA_0483", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible late-night porch monitoring rules"}
+{"sample_id": "IAA_0484", "label": "Anomalous", "type": "CV", "confidence": 2, "note": "Rule_2 opens garage door when living-room temperature below 15C; counterproductive in cold weather (CV)"}
+{"sample_id": "IAA_0485", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible breakfast burst rules"}
+{"sample_id": "IAA_0486", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible balcony evening rules"}
+{"sample_id": "IAA_0487", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_9 locks smart lock; chain Rule_10-Rule_14 ends unlocking it (AR); equality-based sensor triggers are benign quirks"}
+{"sample_id": "IAA_0488", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_4/Rule_5 require washing machine on AND off simultaneously (mutually exclusive trigger conditions, TM); their conflicting actions are unreachable"}
+{"sample_id": "IAA_0489", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_3 is fully subsumed by Rule_4 (same window-lock-locked trigger; Rule_4 adds dishwasher-off action)"}
+{"sample_id": "IAA_0490", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Chain Rule_4-Rule_5 (19:30, heater on, AC heat) conflicts with direct Rule_6 (19:30, AC fan_only) at same root (AC)"}
+{"sample_id": "IAA_0491", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4/Rule_5 same trigger (AQI>300) set living-room light off vs on (same-trigger conflict); purifier-off during bad air also CV-like"}
+{"sample_id": "IAA_0492", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4/Rule_5 dishwasher-off to coffee-off satisfy-edge cycle (EL)"}
+{"sample_id": "IAA_0493", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3/Rule_4 same trigger (heater eco) set living-room light off vs on (same-trigger conflict); Rule_2-Rule_3 also form a cycle"}
+{"sample_id": "IAA_0494", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 shortcuts the Rule_5-Rule_8 chain (camera on to purifier off) at same head trigger (AD)"}
+{"sample_id": "IAA_0495", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_9 turns oven off whenever it is on (self-negating rule mirroring self-activating pattern, IS); oven becomes unusable"}
+{"sample_id": "IAA_0496", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible warm wake-up rules"}
+{"sample_id": "IAA_0497", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Chain Rule_2-Rule_7 (user home to thermostat 20) conflicts with direct Rule_8 (user home, thermostat 22) at same root (AC); unlock cascade also noted"}
+{"sample_id": "IAA_0498", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_4 sprinkler-off, dishwasher-off, oven-off satisfy-edge cycle (EL)"}
+{"sample_id": "IAA_0499", "label": "Benign", "type": null, "confidence": 4, "note": "Several odd cross-device rules (door/plug/window to speaker/camera/fan) but no hazard, conflict, or type match"}
+{"sample_id": "IAA_0500", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 duplicates the Rule_3-Rule_5 chain (camera on to washing machine off) at same head trigger (AD)"}

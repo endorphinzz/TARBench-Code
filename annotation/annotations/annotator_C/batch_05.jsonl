@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0101", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0102", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0103", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_6 trigger -120C is a physically impossible indoor temperature reading"}
+{"sample_id": "IAA_0104", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0105", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0106", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0107", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 cold temperature sensor disarms hallway camera; trust-boundary crossing"}
+{"sample_id": "IAA_0108", "label": "Anomalous", "type": "AM", "confidence": 3, "note": "Rule_6 commands window open while engaging window lock; mutually exclusive actions in one rule"}
+{"sample_id": "IAA_0109", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_6-7 form fan-AC dependency cycle; Rule_8 also duplicates Rule_6's AC-on (AD)"}
+{"sample_id": "IAA_0110", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_3 & Rule_4 conflict on AC mode fan_only vs heat under same 18:30 trigger"}
+{"sample_id": "IAA_0111", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 conflict on cooler mode auto vs high under same coffee-on trigger"}
+{"sample_id": "IAA_0112", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_2-4 chain ends unlocking smart lock, sequentially defeating Rule_1's lock command"}
+{"sample_id": "IAA_0113", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 duplicates purifier-off already produced by Rule_1 to Rule_5 chain under subsumed trigger"}
+{"sample_id": "IAA_0114", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_4-5 form light-lamp dependency cycle"}
+{"sample_id": "IAA_0115", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rules_1-4 gas leak chain activates toaster and oven; ignition hazard during leak"}
+{"sample_id": "IAA_0116", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0117", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_3-6 form speaker-light-curtain-heater-speaker dependency cycle"}
+{"sample_id": "IAA_0118", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0119", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 & Rule_8 conflict on camera off vs on under same cooler-low trigger; Rules_6-7 also cycle"}
+{"sample_id": "IAA_0120", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_1 self-referentially forces sprinkler off whenever on; unstable self-forcing"}
+{"sample_id": "IAA_0121", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0122", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0123", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 trivial lamp state disarms hallway camera; trust-boundary crossing"}
+{"sample_id": "IAA_0124", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0125", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 duplicates purifier-off already produced by Rule_5 to Rule_7 chain under same garage-closed trigger"}

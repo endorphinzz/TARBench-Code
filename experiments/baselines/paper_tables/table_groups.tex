@@ -1,0 +1,26 @@
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Recall on rule-rule ($R_{rr}$) vs.\ rule-environment ($R_{re}$) threats (750-sample ICL set; LLMs zero-shot). Heuristic baselines are named after the structural property they check (Appendix~\ref{app:baselines}); Dual/Triple-anomaly samples count toward each component group.}
+\label{tab:groups}
+\begin{tabular}{lcccc}
+\hline
+Method & $R_{rr}$ & $R_{re}$ & $R$ & FPR \\
+\hline
+Heuristic (loop) & 0.18 & 0.00 & 0.13 & \textbf{0.00} \\
+Heuristic (action) & 0.82 & 0.36 & 0.65 & 0.03 \\
+Heuristic (trig.-overlap) & 0.21 & 0.31 & 0.18 & \textbf{0.00} \\
+Heuristic (mutex) & 0.03 & 0.17 & 0.06 & \textbf{0.00} \\
+Heuristic (ontology) & 0.00 & 0.02 & 0.01 & \textbf{0.00} \\
+SMT (iRuler-style) & 0.54 & 0.44 & 0.47 & 0.03 \\
+Lexical (TF-IDF+LR) & 0.70 & 0.49 & 0.64 & \textbf{0.00} \\
+Graph (features+LR) & \textbf{0.99} & \underline{0.74} & \textbf{0.90} & \underline{0.01} \\
+Symbolic ensemble & \underline{0.98} & 0.53 & \underline{0.82} & 0.03 \\
+\hline
+gpt-5.4 & 0.80 & \textbf{0.77} & 0.78 & 0.09 \\
+ds-v4 & 0.59 & 0.44 & 0.52 & 0.04 \\
+gemini-3.1 & 0.79 & 0.73 & 0.76 & 0.11 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0151", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same 22:30 trigger set washing machine mode heavy_duty vs spin; conflicting commands."}
+{"sample_id": "IAA_0152", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0153", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0154", "label": "Anomalous", "type": "AM", "confidence": 3, "note": "Rule_1 opens living room window while engaging its window lock; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0155", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_3 form closed cycle: lamp strong -> light on -> curtain closed -> lamp strong; latching loop."}
+{"sample_id": "IAA_0156", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0157", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 door-open disarms hallway camera, chain Rule_5 unlocks window lock; unverified security downgrade before Rule_9 re-arms."}
+{"sample_id": "IAA_0158", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_9 re-arms camera via chain Rule_5->Rule_8, sequentially negating Rule_4's disarm action."}
+{"sample_id": "IAA_0159", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0160", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 (via Rule_1->Rule_3 chain when camera off) sets AC_mode cool vs Rule_5 heat; conflicting commands. Secondary PE Rule_1 unlocks smart lock."}
+{"sample_id": "IAA_0161", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_6 sets AC cool, Rule_7 then fan high, Rule_8 AC auto; chain sequentially reverts Rule_6's cool mode."}
+{"sample_id": "IAA_0162", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0163", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_1 & Rule_2 same user-home trigger set lamp off vs on (and lock window vs open window); conflicting commands."}
+{"sample_id": "IAA_0164", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_2 heater-eco duplicated by Rule_1; Rule_2's trigger (curtain closed AND 23:00) is subsumed by Rule_1's curtain-closed condition."}
+{"sample_id": "IAA_0165", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0166", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_8 (via Rule_6->Rule_7 chain when alarm rings) sets lamp brightness strong vs Rule_9 medium; conflicting commands."}
+{"sample_id": "IAA_0167", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_13 (via Rule_8->Rule_12 chain when user home) sets thermostat target 20 vs Rule_14 22; conflicting commands."}
+{"sample_id": "IAA_0168", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0169", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_8 form closed latching cycle: window lock locked -> smart lock -> thermostat/humidifier/dehumidifier/AC/fan off -> window lock locked."}
+{"sample_id": "IAA_0170", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0171", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3-Rule_5 form closed latching cycle: thermostat off -> humidifier off -> dehumidifier off -> thermostat off."}
+{"sample_id": "IAA_0172", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0173", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same vacuum-on trigger set living room fan on vs off; conflicting commands."}
+{"sample_id": "IAA_0174", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_6 self-referential: reads camera secure on then forces it off; same-attribute forcing defeats Rule_5's arming."}
+{"sample_id": "IAA_0175", "label": "Benign", "type": null, "confidence": 5, "note": ""}

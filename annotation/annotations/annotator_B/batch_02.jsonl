@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0026", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_3 freezing trigger cascades via Rule_4-Rule_8 turning heater off during freezing weather"}
+{"sample_id": "IAA_0027", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0028", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_5 sets lamp brightness strong at 08:00 while Rule_2-Rule_4 chain sets medium"}
+{"sample_id": "IAA_0029", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_4 form cycle: thermostat off, heater off, humidifier off, back to thermostat"}
+{"sample_id": "IAA_0030", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0031", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0032", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0033", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 & Rule_8 conflict on thermostat target 20 vs 22 when temp>37"}
+{"sample_id": "IAA_0034", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0035", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0036", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_8 freezing trigger cascades via Rule_9-Rule_13: door unlocked and cooler on in freezing weather"}
+{"sample_id": "IAA_0037", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0038", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0039", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0040", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 conflict on AC_mode cool vs fan_only when hallway door open"}
+{"sample_id": "IAA_0041", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_1 self-referentially forces heater_mode eco to auto, defeating steady state"}
+{"sample_id": "IAA_0042", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0043", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_4 reverts thermostat target 26 to 24, sequentially defeating Rule_3's set"}
+{"sample_id": "IAA_0044", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0045", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0046", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_6 & Rule_7 are identical duplicate rules on same trigger and action"}
+{"sample_id": "IAA_0047", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0048", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_6 trigger temperature < -559C is an impossible sensor reading"}
+{"sample_id": "IAA_0049", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 same trigger: lamp off vs on; window lock locked vs window open"}
+{"sample_id": "IAA_0050", "label": "Benign", "type": null, "confidence": 5, "note": ""}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0076", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_6 sets speaker on and off simultaneously; mutually exclusive actions in one rule"}
+{"sample_id": "IAA_0077", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0078", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_2-3 form dishwasher-coffee dependency cycle"}
+{"sample_id": "IAA_0079", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0080", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rules_3-5 freezing sensor chain unlocks smart lock, disarms camera; secondary AC-cool forced when freezing"}
+{"sample_id": "IAA_0081", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 duplicates humidifier-off already produced by Rule_4 to Rule_7 chain under same garage-closed trigger"}
+{"sample_id": "IAA_0082", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0083", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rules_4-5 require light on and off simultaneously; contradictory dead triggers"}
+{"sample_id": "IAA_0084", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0085", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_1-4 form window-lock-smart-lock-camera-AC-window-lock dependency cycle"}
+{"sample_id": "IAA_0086", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0087", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_1 self-referentially forces thermostat target from 20C to 25C"}
+{"sample_id": "IAA_0088", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0089", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 duplicates fan-off already produced by Rule_2 to Rule_5 chain under same away trigger"}
+{"sample_id": "IAA_0090", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_3 & Rule_4 conflict on lamp brightness medium vs strong; both triggered at 08:00 via chain"}
+{"sample_id": "IAA_0091", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_1 & Rule_3 conflict sprinkler on vs off (06:00 and hot); secondary AD Rule_6 subsumed by Rule_4-5 chain"}
+{"sample_id": "IAA_0092", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0093", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0094", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_3 duplicates window-lock-locked already produced by Rule_1 to Rule_2 chain under same camera-on trigger"}
+{"sample_id": "IAA_0095", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rules_3-4 require smart lock unlocked and locked simultaneously; contradictory dead triggers"}
+{"sample_id": "IAA_0096", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0097", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_3-7 chain ends re-enabling washing machine, sequentially defeating Rule_3's off command"}
+{"sample_id": "IAA_0098", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_10 requires humidity >55% and <45% simultaneously; contradictory dead trigger"}
+{"sample_id": "IAA_0099", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 duplicates cooler-high already produced by Rule_2 to Rule_3 chain under same fan-high trigger"}
+{"sample_id": "IAA_0100", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 & Rule_6 conflict on washing machine off vs on when brightness strong and AC heat"}

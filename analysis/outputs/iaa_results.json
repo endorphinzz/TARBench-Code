@@ -1,0 +1,314 @@
+{
+ "coverage": {
+  "annotators": [
+   "A",
+   "B",
+   "C"
+  ],
+  "n_samples": 500,
+  "per_annotator": {
+   "A": 500,
+   "B": 500,
+   "C": 500
+  }
+ },
+ "binary_label": {
+  "pairwise": {
+   "A-B": {
+    "kappa": 0.7411,
+    "percent_agreement": 0.872,
+    "pe": 0.5056,
+    "ci95": [
+     0.6852,
+     0.7971
+    ],
+    "n": 500
+   },
+   "A-C": {
+    "kappa": 0.9176,
+    "percent_agreement": 0.962,
+    "pe": 0.5386,
+    "ci95": [
+     0.8801,
+     0.9516
+    ],
+    "n": 500
+   },
+   "B-C": {
+    "kappa": 0.7614,
+    "percent_agreement": 0.882,
+    "pe": 0.5055,
+    "ci95": [
+     0.7036,
+     0.8164
+    ],
+    "n": 500
+   }
+  },
+  "alpha": 0.803,
+  "alpha_ci95": [
+   0.7605,
+   0.8456
+  ]
+ },
+ "full_15class": {
+  "pairwise": {
+   "A-B": {
+    "kappa": 0.7616,
+    "percent_agreement": 0.814,
+    "pe": 0.2199,
+    "ci95": [
+     0.7194,
+     0.8053
+    ],
+    "n": 500
+   },
+   "A-C": {
+    "kappa": 0.8835,
+    "percent_agreement": 0.906,
+    "pe": 0.1931,
+    "ci95": [
+     0.8515,
+     0.9151
+    ],
+    "n": 500
+   },
+   "B-C": {
+    "kappa": 0.7759,
+    "percent_agreement": 0.826,
+    "pe": 0.2234,
+    "ci95": [
+     0.7333,
+     0.821
+    ],
+    "n": 500
+   }
+  },
+  "alpha": 0.8073
+ },
+ "anomalous_only_subclass": {
+  "pairwise": {
+   "A-B": {
+    "kappa": 0.8658,
+    "percent_agreement": 0.8876,
+    "pe": 0.1625,
+    "ci95": [
+     0.8212,
+     0.9126
+    ],
+    "n": 258
+   },
+   "A-C": {
+    "kappa": 0.893,
+    "percent_agreement": 0.9097,
+    "pe": 0.156,
+    "ci95": [
+     0.8539,
+     0.9281
+    ],
+    "n": 310
+   },
+   "B-C": {
+    "kappa": 0.8709,
+    "percent_agreement": 0.8923,
+    "pe": 0.166,
+    "ci95": [
+     0.8259,
+     0.9159
+    ],
+    "n": 260
+   }
+  },
+  "alpha": 0.8744,
+  "n": 258
+ },
+ "per_class_one_vs_rest": [
+  {
+   "class": "BEN",
+   "n_votes": 601,
+   "pair_kappa": {
+    "A-B": 0.7411,
+    "A-C": 0.9176,
+    "B-C": 0.7614
+   }
+  },
+  {
+   "class": "AC",
+   "n_votes": 248,
+   "pair_kappa": {
+    "A-B": 0.9327,
+    "A-C": 0.915,
+    "B-C": 0.8779
+   }
+  },
+  {
+   "class": "AD",
+   "n_votes": 128,
+   "pair_kappa": {
+    "A-B": 0.3056,
+    "A-C": 0.922,
+    "B-C": 0.2957
+   }
+  },
+  {
+   "class": "AR",
+   "n_votes": 94,
+   "pair_kappa": {
+    "A-B": 0.7808,
+    "A-C": 0.7878,
+    "B-C": 0.9078
+   }
+  },
+  {
+   "class": "EL",
+   "n_votes": 134,
+   "pair_kappa": {
+    "A-B": 0.9756,
+    "A-C": 0.9756,
+    "B-C": 1.0
+   }
+  },
+  {
+   "class": "CB",
+   "n_votes": 0,
+   "pair_kappa": {
+    "A-B": 1.0,
+    "A-C": 1.0,
+    "B-C": 1.0
+   }
+  },
+  {
+   "class": "AM",
+   "n_votes": 35,
+   "pair_kappa": {
+    "A-B": 1.0,
+    "A-C": 0.9555,
+    "B-C": 0.9555
+   }
+  },
+  {
+   "class": "IS",
+   "n_votes": 39,
+   "pair_kappa": {
+    "A-B": 0.6585,
+    "A-C": 0.6568,
+    "B-C": 0.7569
+   }
+  },
+  {
+   "class": "BE",
+   "n_votes": 26,
+   "pair_kappa": {
+    "A-B": 1.0,
+    "A-C": 0.8869,
+    "B-C": 0.8869
+   }
+  },
+  {
+   "class": "TM",
+   "n_votes": 50,
+   "pair_kappa": {
+    "A-B": 0.9391,
+    "A-C": 1.0,
+    "B-C": 0.9391
+   }
+  },
+  {
+   "class": "AB",
+   "n_votes": 3,
+   "pair_kappa": {
+    "A-B": 0.0,
+    "A-C": 0.0,
+    "B-C": 1.0
+   }
+  },
+  {
+   "class": "CBk",
+   "n_votes": 0,
+   "pair_kappa": {
+    "A-B": 1.0,
+    "A-C": 1.0,
+    "B-C": 1.0
+   }
+  },
+  {
+   "class": "CV",
+   "n_votes": 30,
+   "pair_kappa": {
+    "A-B": 0.6245,
+    "A-C": 0.5919,
+    "B-C": 0.7568
+   }
+  },
+  {
+   "class": "PE",
+   "n_votes": 104,
+   "pair_kappa": {
+    "A-B": 0.6634,
+    "A-C": 0.7611,
+    "B-C": 0.5988
+   }
+  },
+  {
+   "class": "PD",
+   "n_votes": 8,
+   "pair_kappa": {
+    "A-B": 0.0,
+    "A-C": 1.0,
+    "B-C": 0.0
+   }
+  }
+ ],
+ "vs_ground_truth": {
+  "A": {
+   "accuracy": 0.932,
+   "precision": 0.9938,
+   "recall": 0.9086,
+   "f1": 0.9493,
+   "fp": 2,
+   "fn": 32,
+   "type_in_set_acc": 0.7516,
+   "type_exact_acc": 0.7008,
+   "n": 500
+  },
+  "B": {
+   "accuracy": 0.812,
+   "precision": 0.9923,
+   "recall": 0.7371,
+   "f1": 0.8459,
+   "fp": 2,
+   "fn": 92,
+   "type_in_set_acc": 0.8372,
+   "type_exact_acc": 0.7941,
+   "n": 500
+  },
+  "C": {
+   "accuracy": 0.922,
+   "precision": 0.9875,
+   "recall": 0.9,
+   "f1": 0.9417,
+   "fp": 4,
+   "fn": 35,
+   "type_in_set_acc": 0.7587,
+   "type_exact_acc": 0.7088,
+   "n": 500
+  },
+  "majority": {
+   "accuracy": 0.916,
+   "precision": 0.9936,
+   "recall": 0.8857,
+   "f1": 0.9366,
+   "fp": 2,
+   "fn": 40,
+   "type_in_set_acc": 0.7677,
+   "type_exact_acc": 0.7188,
+   "n": 500
+  }
+ },
+ "adjudication": {
+  "label_disagreement_samples": 71,
+  "all_anomalous_type_disagreement_samples": 39,
+  "majority_type_ties": 7,
+  "total": 500
+ }
+}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0226", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0227", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_6 turns dishwasher back on via Rule_5 chain, sequentially negating Rule_4's off action."}
+{"sample_id": "IAA_0228", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 humidifier-off already guaranteed by chain Rule_4->Rule_9 when user away; subsumed duplicate (AC cool new)."}
+{"sample_id": "IAA_0229", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same user-home trigger set coffee machine on vs off (and lock window vs open window); conflicting commands."}
+{"sample_id": "IAA_0230", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_1 & Rule_2 same 20:00 trigger set speaker volume high vs medium; conflicting commands."}
+{"sample_id": "IAA_0231", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_7 & Rule_8 same 14:00 trigger set AC_mode fan_only vs cool; conflicting commands."}
+{"sample_id": "IAA_0232", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0233", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0234", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 door-open unlocks hallway smart lock, cascade Rule_3 disarms camera; unverified security downgrade. Secondary AD Rule_8."}
+{"sample_id": "IAA_0235", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 water-valve-off already guaranteed by chain Rule_1->Rule_4 when camera on; subsumed duplicate action."}
+{"sample_id": "IAA_0236", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_2 self-referential: reads dishwasher off then forces it on; also reverts Rule_1's off action."}
+{"sample_id": "IAA_0237", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_7 sets dishwasher on AND off simultaneously on leak; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0238", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0239", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 oven-on subsumed by chain Rule_2->Rule_3 when alarm rings; redundant (dehumidifier-on part new)."}
+{"sample_id": "IAA_0240", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_3 self-referential: reads smart lock locked then forces it unlocked; same-attribute forcing defeats Rule_2's away-locking."}
+{"sample_id": "IAA_0241", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_1 requires gas sensor true AND false simultaneously; impossible trigger, dead rule."}
+{"sample_id": "IAA_0242", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_11 living room light state opens garage door; trivial device commands high-stakes entrance without verification."}
+{"sample_id": "IAA_0243", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 motion sensor opens garage door; trivial sensor commands high-stakes entrance without verification."}
+{"sample_id": "IAA_0244", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_9 (via Rule_6->Rule_8 chain at 08:00) sets window open vs Rule_10 closed; conflicting commands."}
+{"sample_id": "IAA_0245", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0246", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_6 unlocks smart lock via Rule_2->Rule_5 chain, sequentially negating Rule_1's locking action."}
+{"sample_id": "IAA_0247", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0248", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_5 turns purifier back on via Rule_2->Rule_4 chain, sequentially negating Rule_1's purifier-off action."}
+{"sample_id": "IAA_0249", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_6 & Rule_7 same window-lock-unlocked trigger set smart lock unlocked vs locked; conflicting commands. Secondary EL Rule_5/R6."}
+{"sample_id": "IAA_0250", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_5 turns speaker off via Rule_2->Rule_4 chain, sequentially reverting Rule_1's 08:00 speaker-on action."}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0201", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_9 (via Rule_8 chain when camera off) sets cooler mode low vs Rule_10 auto; conflicting commands from same root trigger."}
+{"sample_id": "IAA_0202", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0203", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_7 purifier-auto duplicated by Rule_6; Rule_7's trigger (oven grill AND user home) is subsumed by Rule_6's oven-grill condition."}
+{"sample_id": "IAA_0204", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_4 self-referential: reads lamp brightness strong then forces medium; same-attribute forcing defeats Rule_3."}
+{"sample_id": "IAA_0205", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 motion sensor activates toaster; trivial sensor commands fire-hazard appliance without user verification."}
+{"sample_id": "IAA_0206", "label": "Anomalous", "type": "AB", "confidence": 3, "note": "Rule_8 shuts water valve via Rule_6->Rule_7 chain (garage closed) before Rule_9 starts dishwasher at 18:00; action physically blocked."}
+{"sample_id": "IAA_0207", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0208", "label": "Anomalous", "type": "CV", "confidence": 4, "note": "Rule_7-Rule_10: gas leak triggers alarm then speaker, coffee machine, oven on; ignition sources activated during gas leak."}
+{"sample_id": "IAA_0209", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0210", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_13 curtain-open already guaranteed by chain Rule_10->Rule_12 when window lock unlocked; subsumed duplicate action."}
+{"sample_id": "IAA_0211", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0212", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 unlocks living room window lock when user sleeping; unverified anti-security trigger, cascade Rule_5 opens curtain."}
+{"sample_id": "IAA_0213", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_1-Rule_4: user away -> speaker -> toaster -> coffee -> oven on; unverified chain activates fire-hazard appliances unattended."}
+{"sample_id": "IAA_0214", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_5-Rule_9 form closed latching cycle: heater off -> humidifier -> dehumidifier -> AC -> fan off -> heater off."}
+{"sample_id": "IAA_0215", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_4 form closed latching cycle: thermostat off -> humidifier off -> dehumidifier off -> thermostat off."}
+{"sample_id": "IAA_0216", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0217", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0218", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 dishwasher-off already guaranteed by chain Rule_6->Rule_8 when camera on; subsumed duplicate (washing-off new)."}
+{"sample_id": "IAA_0219", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0220", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 form closed cycle: alarm ringing -> window open -> alarm ringing; latching loop. Secondary AD Rule_6 subsumed by Rule_4."}
+{"sample_id": "IAA_0221", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2-Rule_5 form closed cycle: speaker on -> light on -> curtain closed -> heater eco -> speaker on (latching loop)."}
+{"sample_id": "IAA_0222", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1 & Rule_2 form closed cycle: dishwasher off -> smart lock locked -> dishwasher off (latching). Secondary AD Rule_3 subsumed by Rule_1."}
+{"sample_id": "IAA_0223", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0224", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_3 form closed cycle: light on -> curtain closed -> heater eco -> light on (latching loop)."}
+{"sample_id": "IAA_0225", "label": "Benign", "type": null, "confidence": 5, "note": ""}

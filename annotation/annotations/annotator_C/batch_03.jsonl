@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0051", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 conflict on thermostat target 25 vs 28 when smart lock unlocked via Rule_1-3 chain"}
+{"sample_id": "IAA_0052", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_4 exactly duplicates Rule_3: identical trigger and dishwasher-off action"}
+{"sample_id": "IAA_0053", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0054", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 & Rule_4 conflict on living room lamp off vs on at same 08:00 trigger"}
+{"sample_id": "IAA_0055", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_4 turns purifier off when air quality hazardous (>300 AQI), inverting safety response"}
+{"sample_id": "IAA_0056", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rules_2-3 freezing sensor disarms camera and unlocks smart lock; secondary cooling on when freezing"}
+{"sample_id": "IAA_0057", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0058", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 duplicates thermostat-off already produced by Rule_2 to Rule_3 chain under subsumed trigger"}
+{"sample_id": "IAA_0059", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0060", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0061", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 conflict on dehumidifier off vs on when temp>35 and user home"}
+{"sample_id": "IAA_0062", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 set dehumidifier mode weak vs strong under same 23:00 trigger"}
+{"sample_id": "IAA_0063", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0064", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_8-12 chain ends re-enabling dehumidifier, sequentially defeating Rule_7's off command"}
+{"sample_id": "IAA_0065", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0066", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0067", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0068", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_7-9 form thermostat-humidifier-dehumidifier-thermostat dependency cycle"}
+{"sample_id": "IAA_0069", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_12 subsumes Rule_11's heater-eco action under identical curtain-closed trigger"}
+{"sample_id": "IAA_0070", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_1-3 form smart-lock-window-lock-brightness-smart-lock dependency cycle"}
+{"sample_id": "IAA_0071", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_5 & Rule_6 conflict on lamp brightness strong vs medium; both triggered at 08:00 via chain"}
+{"sample_id": "IAA_0072", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 duplicates coffee-off already produced by Rule_5 to Rule_9 chain under same away trigger"}
+{"sample_id": "IAA_0073", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 requires water valve on and off simultaneously; contradictory dead trigger"}
+{"sample_id": "IAA_0074", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_5 self-referentially forces oven off whenever on; unstable self-forcing"}
+{"sample_id": "IAA_0075", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 duplicates coffee-off already produced by Rule_6 to Rule_9 chain under subsumed trigger"}

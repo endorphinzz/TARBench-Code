@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0251", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0252", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0253", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 freezing sensor unlocks smart lock; cascade Rule_5-Rule_6 unlocks window lock and disarms camera; unverified security downgrade."}
+{"sample_id": "IAA_0254", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0255", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 dishwasher-off and washing-machine-off already guaranteed by chain Rule_6->Rule_9 when camera on; subsumed duplicate actions."}
+{"sample_id": "IAA_0256", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4-Rule_9 form closed latching cycle: thermostat off -> heater -> humidifier -> dehumidifier -> AC -> fan off -> thermostat off."}
+{"sample_id": "IAA_0257", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 (via Rule_1 chain at 19:00) sets thermostat target 28 vs Rule_3 22 at same time; conflicting commands."}
+{"sample_id": "IAA_0258", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_4 self-referential: reads living_room_lamp on then forces it off; same-attribute forcing makes lamp unusable."}
+{"sample_id": "IAA_0259", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0260", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0261", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_6 form closed latching cycle: window lock locked -> garage -> smart lock -> camera -> AC off -> purifier off -> window lock."}
+{"sample_id": "IAA_0262", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 living room temperature opens garage door; trivial sensor commands high-stakes entrance without verification."}
+{"sample_id": "IAA_0263", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 freezing sensor disarms hallway camera; trivial condition crosses security trust boundary, cascade Rule_6-Rule_9 follows."}
+{"sample_id": "IAA_0264", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0265", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 (via Rule_3 chain when alarm rings) sets lamp brightness strong vs Rule_5 weak; conflicting commands."}
+{"sample_id": "IAA_0266", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0267", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 door-open unlocks hallway smart lock; unverified security downgrade. Secondary AC: Rule_7 chain sets target 20 vs Rule_8 22."}
+{"sample_id": "IAA_0268", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_6 requires thermostat off AND on simultaneously; contradictory trigger, dead rule."}
+{"sample_id": "IAA_0269", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 motion sensor activates toaster; trivial sensor commands fire-hazard appliance without verification."}
+{"sample_id": "IAA_0270", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0271", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0272", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 overlap (light<100, AC off): purifier mode auto vs high; conflicting commands on same attribute."}
+{"sample_id": "IAA_0273", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_5 requires fan intensity medium AND low simultaneously; contradictory trigger, dead rule."}
+{"sample_id": "IAA_0274", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_4 turns heater on when temperature > 30C; contradicts thermal common sense (heating during heat)."}
+{"sample_id": "IAA_0275", "label": "Benign", "type": null, "confidence": 5, "note": ""}

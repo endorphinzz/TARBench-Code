@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0001", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0002", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 & Rule_2 same trigger user home: curtain open vs closed, window lock vs open"}
+{"sample_id": "IAA_0003", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 set lamp off vs on under identical trigger heater_mode == eco"}
+{"sample_id": "IAA_0004", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0005", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_4 sets thermostat_target_temp = -34C, outside plausible device operating range"}
+{"sample_id": "IAA_0006", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_9 & Rule_10 conflict stove off vs on at 09:00; secondary PE: lamp state triggers stove"}
+{"sample_id": "IAA_0007", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3–Rule_5 cycle smart_lock→window_lock→heater→smart_lock; heater-off unlock also PE-like"}
+{"sample_id": "IAA_0008", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0009", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0010", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0011", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_6 & Rule_7 mutual cycle smart_lock↔water_valve; Rule_8 subsumed by Rule_6 (secondary AD)"}
+{"sample_id": "IAA_0012", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0013", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 coffee-off duplicated: trigger subsumed by Rule_1→Rule_2→Rule_3 chain"}
+{"sample_id": "IAA_0014", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4–Rule_9 closed cycle lock→garage→AC→purifier→heater→humidifier→lock; Rule_6 vs Rule_11 AC"}
+{"sample_id": "IAA_0015", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_1 sprinkler on at 05:45 vs Rule_7 off when humidity < 35; co-satisfiable triggers"}
+{"sample_id": "IAA_0016", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_1 & Rule_2 set window open vs closed under identical trigger user away"}
+{"sample_id": "IAA_0017", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 conflict coffee off vs on when light < 100 and lock unlocked"}
+{"sample_id": "IAA_0018", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4–Rule_6: hallway door-open cascades to camera secure off and smart lock unlocked"}
+{"sample_id": "IAA_0019", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4–Rule_5: camera secure off unlocks window lock then smart lock, no verification"}
+{"sample_id": "IAA_0020", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_8: low light-sensor reading unlocks smart lock, trust-boundary crossing"}
+{"sample_id": "IAA_0021", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0022", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0023", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 coffee-off duplicated: trigger subsumed by Rule_4→Rule_5 chain"}
+{"sample_id": "IAA_0024", "label": "Anomalous", "type": "PE", "confidence": 2, "note": "Rule_5–Rule_6 appliance cascade activates toaster unattended, no presence verification"}
+{"sample_id": "IAA_0025", "label": "Benign", "type": null, "confidence": 5, "note": ""}

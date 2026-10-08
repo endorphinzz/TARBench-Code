@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0451", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0452", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0453", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_3 self-referentially forces oven from grill to bake; no rule sets grill mode"}
+{"sample_id": "IAA_0454", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_6 & Rule_7 co-satisfiable triggers (>35C) set washing machine on vs off"}
+{"sample_id": "IAA_0455", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_4 sets smart lock unlocked and locked simultaneously (contradictory actions)"}
+{"sample_id": "IAA_0456", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_4 door open disarms camera; Rule_5 unlocks smart lock; Rule_9 vs Rule_10 thermostat conflict"}
+{"sample_id": "IAA_0457", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0458", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 & Rule_2 same light-sensor trigger set heater mode auto vs high"}
+{"sample_id": "IAA_0459", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0460", "label": "Anomalous", "type": "TM", "confidence": 4, "note": "Rule_4 contradictory triggers (sleeping AND away) make rule dead"}
+{"sample_id": "IAA_0461", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_5 sets cooler high; Rule_6-Rule_8 chain reverts it to low"}
+{"sample_id": "IAA_0462", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4 & Rule_5 mutual pair: camera off sets fan on, fan on disarms camera"}
+{"sample_id": "IAA_0463", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0464", "label": "Anomalous", "type": "BE", "confidence": 3, "note": "Rule_3 light sensor threshold 100500lux beyond indoor physical range"}
+{"sample_id": "IAA_0465", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_3 closes garage when away; Rule_4-Rule_9 chain reverts it to open"}
+{"sample_id": "IAA_0466", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0467", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0468", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 & Rule_3 mutual pair: window lock locked sets lamp medium and vice versa"}
+{"sample_id": "IAA_0469", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_2 sets dishwasher off; Rule_3 immediately reverts it to on"}
+{"sample_id": "IAA_0470", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0471", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_1 door state unlocks smart lock; Rule_2 chain disarms camera"}
+{"sample_id": "IAA_0472", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0473", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0474", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 same 23:00 trigger set dehumidifier mode weak vs strong"}
+{"sample_id": "IAA_0475", "label": "Benign", "type": null, "confidence": 5, "note": ""}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0451", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible porch package-visibility automation"}
+{"sample_id": "IAA_0452", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible air-quality recovery automation"}
+{"sample_id": "IAA_0453", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_3 overrides user-selected oven mode grill to bake (AR state rewrite of user action)"}
+{"sample_id": "IAA_0454", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_6 (temp>27) turns washing machine on while Rule_7 (temp>35) turns it off; co-satisfiable nested conflict (AC)"}
+{"sample_id": "IAA_0455", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 sets smart lock unlocked AND locked in the same rule (direct action conflict)"}
+{"sample_id": "IAA_0456", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Chain Rule_4-Rule_9 (door open to thermostat 20) conflicts with direct Rule_10 (door open, thermostat 22) at same root (AC); door-open disarm/unlock cascade also PE-like"}
+{"sample_id": "IAA_0457", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible laundry drying support rules"}
+{"sample_id": "IAA_0458", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1/Rule_2 same trigger (light>1000lux) set heater mode auto vs high (same-trigger conflict); bright-ambient light-on also CV-like"}
+{"sample_id": "IAA_0459", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible hallway night guidance"}
+{"sample_id": "IAA_0460", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_4 requires user sleeping AND away simultaneously; mutually exclusive trigger conditions (TM)"}
+{"sample_id": "IAA_0461", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_5 sets cooler high; chain Rule_6-Rule_8 ends resetting cooler to low (AR)"}
+{"sample_id": "IAA_0462", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4/Rule_5 camera-off to fan-on satisfy-edge cycle (EL)"}
+{"sample_id": "IAA_0463", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible early-morning watering rules"}
+{"sample_id": "IAA_0464", "label": "Anomalous", "type": "BE", "confidence": 3, "note": "Rule_3 threshold 100500 lux exceeds realistic light-sensor range; off-scale value (BE)"}
+{"sample_id": "IAA_0465", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_3 closes garage door; chain Rule_4-Rule_9 ends reopening it (AR)"}
+{"sample_id": "IAA_0466", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible dining-room evening comfort rules"}
+{"sample_id": "IAA_0467", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible late-night wrap-up rules"}
+{"sample_id": "IAA_0468", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2/Rule_3 window-lock-locked and lamp-medium satisfy-edge cycle (EL)"}
+{"sample_id": "IAA_0469", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_3 self-activating rule turns dishwasher on whenever it is off (IS)"}
+{"sample_id": "IAA_0470", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_7 duplicates Rule_1-Rule_6 chain (user away to coffee off) at same head trigger (AD)"}
+{"sample_id": "IAA_0471", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_1 door-open unlocks hallway smart lock (PE); Rule_7 also shortcuts Rule_1-Rule_6 chain to fan on (AD)"}
+{"sample_id": "IAA_0472", "label": "Benign", "type": null, "confidence": 5, "note": "Correct fire-response automation with sensible alert propagation"}
+{"sample_id": "IAA_0473", "label": "Benign", "type": null, "confidence": 4, "note": "Sensible hallway night mode; window-open keeps lock unlocked, mild oddity only"}
+{"sample_id": "IAA_0474", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6/Rule_7 same trigger (23:00) set dehumidifier mode weak vs strong (same-trigger conflict)"}
+{"sample_id": "IAA_0475", "label": "Benign", "type": null, "confidence": 5, "note": "Sensible party dusk preparation rules"}

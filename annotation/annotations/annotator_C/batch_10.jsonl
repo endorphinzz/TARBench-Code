@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0226", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0227", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_4 turns dishwasher off; Rule_5 to Rule_6 chain turns it back on, negating head action"}
+{"sample_id": "IAA_0228", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_10 user away to humidifier off duplicates Rule_4 to Rule_9 chain from same trigger"}
+{"sample_id": "IAA_0229", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same user-home trigger: coffee on vs off, window open vs lock locked"}
+{"sample_id": "IAA_0230", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 vs Rule_2 same 20:00 trigger sets speaker volume high vs medium; conflict"}
+{"sample_id": "IAA_0231", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 vs Rule_8 same 14:00 trigger sets AC mode fan_only vs cool; conflict"}
+{"sample_id": "IAA_0232", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0233", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0234", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_2 door-open unlocks smart lock; Rule_3 chain disarms camera; unauthenticated security degradation"}
+{"sample_id": "IAA_0235", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 camera on to water valve off duplicates Rule_1 to Rule_4 chain from same trigger"}
+{"sample_id": "IAA_0236", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_1 sets dishwasher off; Rule_2 self-referentially reverts it to on, negating head action"}
+{"sample_id": "IAA_0237", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_7 leak sets dishwasher on and off simultaneously; contradictory actions"}
+{"sample_id": "IAA_0238", "label": "Benign", "type": null, "confidence": 3, "note": "Rule_6 no-motion turns speaker on, odd but no conflict, hazard, or cycle"}
+{"sample_id": "IAA_0239", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 ringing to oven on duplicates Rule_2 to Rule_3 chain from same trigger"}
+{"sample_id": "IAA_0240", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_2 locks smart lock when away; Rule_3 self-referentially unlocks it, negating head action"}
+{"sample_id": "IAA_0241", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_1 requires gas true and false simultaneously; impossible trigger"}
+{"sample_id": "IAA_0242", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_11 living room light on opens garage door; trivial trigger opens entry point"}
+{"sample_id": "IAA_0243", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 living room motion opens garage door; trivial trigger opens entry point"}
+{"sample_id": "IAA_0244", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_6 to Rule_9 chain opens window at 08:00 vs Rule_10 closes window at 08:00"}
+{"sample_id": "IAA_0245", "label": "Benign", "type": null, "confidence": 4, "note": "Rule_1 and Rule_2 cross-device pairings odd but no conflict, cycle, or duplication"}
+{"sample_id": "IAA_0246", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_1 locks smart lock; Rule_2 to Rule_6 chain ends unlocking it, negating head action"}
+{"sample_id": "IAA_0247", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0248", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_1 turns purifier off; Rule_2 to Rule_5 chain turns it back on, negating head action"}
+{"sample_id": "IAA_0249", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 vs Rule_7 same trigger sets smart lock unlocked vs locked; Rule_5/Rule_6 also form cycle"}
+{"sample_id": "IAA_0250", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_1 turns speaker on; Rule_2 to Rule_5 chain turns it off, negating head action"}

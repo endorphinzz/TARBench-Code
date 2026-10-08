@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0076", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_6 sets living_room_speaker on AND off simultaneously; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0077", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5-Rule_6 chain: speaker on makes alarm ring then activates toaster; trivial device state commands fire-hazard appliance unverified."}
+{"sample_id": "IAA_0078", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 & Rule_3 form closed cycle: dishwasher off -> coffee off -> dishwasher off; latching loop on appliance states."}
+{"sample_id": "IAA_0079", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0080", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 freezing sensor unlocks smart lock; cascade Rule_4-Rule_5 unlocks window lock and disarms camera; unverified security downgrade."}
+{"sample_id": "IAA_0081", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 humidifier-off already guaranteed by chain Rule_4->Rule_7 when garage door closed; subsumed duplicate action."}
+{"sample_id": "IAA_0082", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0083", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_4 & Rule_5 require light on AND off simultaneously; contradictory triggers, dead rules with conflicting curtain actions."}
+{"sample_id": "IAA_0084", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0085", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_4 closed cycle: window lock locked -> smart lock -> camera on -> AC off -> window lock; self-reinforcing loop."}
+{"sample_id": "IAA_0086", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_7 AC-on duplicated by Rule_5->Rule_6 chain whenever temp>30, subsumed within temp>28 region; redundant action."}
+{"sample_id": "IAA_0087", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_1 self-referential forcing: reads thermostat_target_temp==20 then sets it to 25; same-attribute state override."}
+{"sample_id": "IAA_0088", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0089", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 fan-off already guaranteed by chain Rule_2->Rule_5 when user away; subsumed duplicate action."}
+{"sample_id": "IAA_0090", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_3 (via Rule_1->Rule_2 chain at 08:00) sets lamp brightness medium vs Rule_4 strong; conflicting commands."}
+{"sample_id": "IAA_0091", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_6 curtain-closed subsumed by Rule_4->Rule_5 chain (sensor<200 -> light on -> curtain closed) in sensor<150 region."}
+{"sample_id": "IAA_0092", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0093", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0094", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_3 window-lock action already guaranteed by Rule_1->Rule_2 chain when camera secure on; subsumed duplication."}
+{"sample_id": "IAA_0095", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 & Rule_4 require smart lock unlocked AND locked simultaneously; impossible triggers, dead rules."}
+{"sample_id": "IAA_0096", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0097", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_7 sets washing machine back on via Rule_4->Rule_6 chain, sequentially negating Rule_3's off action."}
+{"sample_id": "IAA_0098", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_10 requires humidity >55% AND <45% simultaneously; impossible trigger. Smoke-response rules are legitimate safety automation."}
+{"sample_id": "IAA_0099", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_4 cooler-high duplicated by Rule_2->Rule_3 chain when fan intensity high; subsumed redundant action."}
+{"sample_id": "IAA_0100", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 vs Rule_6: lamp strong with AC heat sets washing machine off and on; overlapping triggers, conflicting commands."}

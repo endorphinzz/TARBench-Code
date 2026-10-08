@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0276", "label": "Anomalous", "type": "AR", "confidence": 4, "note": "Rule_6 turns toaster off via Rule_3->Rule_5 chain (08:00 -> toaster -> oven -> coffee), sequentially negating Rule_3's on action."}
+{"sample_id": "IAA_0277", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 & Rule_4 require time_point 08:00 AND 09:00 simultaneously; impossible triggers, dead rules with conflicting window actions."}
+{"sample_id": "IAA_0278", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 hot-temperature sensor unlocks hallway smart lock; trivial condition commands high-stakes security device without verification."}
+{"sample_id": "IAA_0279", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_5 sets humidifier on AND off simultaneously; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0280", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_4 unlocks smart lock via Rule_2->Rule_3 chain, sequentially negating Rule_2's locking action when camera secure on."}
+{"sample_id": "IAA_0281", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_4 sets fan off AND on simultaneously; mutually exclusive actions within one rule."}
+{"sample_id": "IAA_0282", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0283", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0284", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_8 (via Rule_7 chain when window lock unlocked) sets cooler low vs Rule_9 auto; conflicting commands."}
+{"sample_id": "IAA_0285", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_5 & Rule_6 same humidity>80% trigger set window open vs closed; conflicting commands."}
+{"sample_id": "IAA_0286", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same 08:00 trigger set fan intensity low vs medium; conflicting commands."}
+{"sample_id": "IAA_0287", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 curtain-closed conflicts with chain Rule_2->Rule_5 (user home -> lock -> lamp -> curtain open); same root trigger."}
+{"sample_id": "IAA_0288", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_8 reopens curtain via Rule_6->Rule_7 chain, sequentially negating Rule_5's curtain-close when user sleeping."}
+{"sample_id": "IAA_0289", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_1 door-open unlocks hallway smart lock; unverified security downgrade. Secondary AD: Rule_5 lamp-off subsumed by Rule_2->Rule_4 chain."}
+{"sample_id": "IAA_0290", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0291", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0292", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_12 reopens garage door via Rule_7->Rule_11 chain, sequentially negating Rule_6's closed action when user away."}
+{"sample_id": "IAA_0293", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0294", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0295", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0296", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0297", "label": "Anomalous", "type": "BE", "confidence": 4, "note": "Rule_4 trigger temperature < -120C is physically impossible (below absolute zero); dead rule. Remaining rules are benign garage support."}
+{"sample_id": "IAA_0298", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0299", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0300", "label": "Benign", "type": null, "confidence": 5, "note": ""}

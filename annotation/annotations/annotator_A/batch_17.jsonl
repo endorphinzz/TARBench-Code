@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0401", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0402", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0403", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0404", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0405", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Under lamp strong with AC heat, Rule_7 sets washing machine off while Rule_8 sets it on."}
+{"sample_id": "IAA_0406", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0407", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0408", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 duplicates coffee off already delivered by Rule_3-Rule_7 chain from same window-lock-locked trigger."}
+{"sample_id": "IAA_0409", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_5 sets thermostat target 18°C and 20°C simultaneously; mutually exclusive actions in one rule."}
+{"sample_id": "IAA_0410", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 and Rule_5 set lamp brightness strong vs medium under same 08:00 trigger; conflicting commands."}
+{"sample_id": "IAA_0411", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_7-Rule_9 chain unlocks smart lock and disarms camera from trivial light-sensor trigger; privilege escalation."}
+{"sample_id": "IAA_0412", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_11 reverts speaker off after Rule_7 turned it on via 08:00 chain; sequential cancellation."}
+{"sample_id": "IAA_0413", "label": "Anomalous", "type": "EL", "confidence": 3, "note": "Rule_5-Rule_10 form closed latching cycle: garage-closed chain re-asserts garage closed via Rule_10."}
+{"sample_id": "IAA_0414", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_7 duplicates stove off already delivered by Rule_2-Rule_6 chain from same garage-closed trigger."}
+{"sample_id": "IAA_0415", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "If door open at 14:00, Rule_7 sets vacuum on while Rule_8 sets it charging; conflicting commands."}
+{"sample_id": "IAA_0416", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 and Rule_5 set fan intensity high vs low under same 08:00 trigger; conflicting commands."}
+{"sample_id": "IAA_0417", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_7 and Rule_8 conflict on purifier on/off under same curtain-open trigger; secondary PE toaster activation."}
+{"sample_id": "IAA_0418", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_4 self-referentially forces speaker on whenever off; secondary AD Rule_12 duplicates chain's thermostat off."}
+{"sample_id": "IAA_0419", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0420", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0421", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0422", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 and Rule_6 set cooler mode auto vs high under same lamp-on trigger; conflicting commands."}
+{"sample_id": "IAA_0423", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 lets living-room temperature sensor unlock hallway smart lock without verification; privilege escalation."}
+{"sample_id": "IAA_0424", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0425", "label": "Benign", "type": null, "confidence": 5, "note": ""}

@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0351", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_10 (via Rule_8->Rule_9 chain when camera off) sets AC_mode cool vs Rule_11 heat; conflicting commands. Secondary PE: Rule_8 camera-off state."}
+{"sample_id": "IAA_0352", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_7 & Rule_8 same 09:00 trigger set hallway camera secure off vs on; conflicting commands."}
+{"sample_id": "IAA_0353", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0354", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_9 oven-off and dishwasher-off already guaranteed by chain Rule_3->Rule_8 when window lock locked; subsumed duplicates."}
+{"sample_id": "IAA_0355", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 door-open disarms camera, Rule_4 unlocks smart lock; unverified security downgrade chain from trivial door sensor."}
+{"sample_id": "IAA_0356", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same user-away trigger set window open vs closed; conflicting commands."}
+{"sample_id": "IAA_0357", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_11 & Rule_12 form closed cycle: lamp on -> curtain open -> lamp on (latching). Secondary AD: Rule_13 subsumed by Rule_11."}
+{"sample_id": "IAA_0358", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_8 lock-locked already guaranteed by chain Rule_6->Rule_7 when window lock locked; subsumed duplicate action."}
+{"sample_id": "IAA_0359", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0360", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 overlap (temp>30, window lock unlocked): dishwasher on vs off; conflicting commands."}
+{"sample_id": "IAA_0361", "label": "Anomalous", "type": "BE", "confidence": 4, "note": "Rule_1 trigger temperature < -120C is physically impossible (below absolute zero); dead rule. Remaining rules are benign balcony comfort."}
+{"sample_id": "IAA_0362", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0363", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 lamp-on already guaranteed by chain Rule_2->Rule_3 when camera off; subsumed duplicate (narrower trigger)."}
+{"sample_id": "IAA_0364", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 same user-away trigger set living room light on vs off; conflicting commands."}
+{"sample_id": "IAA_0365", "label": "Anomalous", "type": "IS", "confidence": 4, "note": "Rule_8 self-referential: reads lamp_brightness strong then forces medium; same-attribute forcing defeats Rule_7."}
+{"sample_id": "IAA_0366", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0367", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0368", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_3 lamp-strong already guaranteed by chain Rule_1->Rule_2 (light<200 -> light on -> lamp strong); subsumed at light<150."}
+{"sample_id": "IAA_0369", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0370", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 (via Rule_4 chain at 19:00) sets thermostat target 28 vs Rule_6 22 at same time; conflicting commands."}
+{"sample_id": "IAA_0371", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_5 cold-temperature sensor disarms hallway camera; trivial condition crosses security trust boundary without verification."}
+{"sample_id": "IAA_0372", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_5 & Rule_6 same AQI>300 trigger set light off vs on; conflicting commands. Secondary CV: Rule_5 turns purifier off in severe pollution."}
+{"sample_id": "IAA_0373", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0374", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0375", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3->Rule_5 chain: washing machine state rings alarm then activates coffee machine and toaster; unverified appliance triggers fire-hazard device."}

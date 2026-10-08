@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0001", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0002", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 & Rule_2 same trigger set curtain open vs closed; window lock locked vs window open"}
+{"sample_id": "IAA_0003", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 conflict on lamp off vs on under same heater-eco trigger; Rule_3-Rule_4 also cycle"}
+{"sample_id": "IAA_0004", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0005", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_4 sets thermostat target to -34C, outside plausible device operating range"}
+{"sample_id": "IAA_0006", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_9 & Rule_10 conflict on stove status off vs on at 09:00 when lamp on"}
+{"sample_id": "IAA_0007", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_3-Rule_5 form trigger-action cycle: lock to window lock to heater back to lock"}
+{"sample_id": "IAA_0008", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0009", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0010", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0011", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_6 & Rule_7 form lock-valve cycle; Rule_8 duplicates Rule_6 action (AD secondary)"}
+{"sample_id": "IAA_0012", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0013", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0014", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4-Rule_9 form closed cycle: lock, garage, AC, purifier, heater, humidifier, back to lock"}
+{"sample_id": "IAA_0015", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0016", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_1 & Rule_2 same trigger set living room window open vs closed"}
+{"sample_id": "IAA_0017", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_4 & Rule_5 conflict on coffee machine off vs on when light<100 and lock unlocked"}
+{"sample_id": "IAA_0018", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0019", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0020", "label": "Anomalous", "type": "PE", "confidence": 4, "note": "Rule_8 low light sensor unlocks hallway smart lock without verification"}
+{"sample_id": "IAA_0021", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0022", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0023", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0024", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0025", "label": "Benign", "type": null, "confidence": 5, "note": ""}

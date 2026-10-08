@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0251", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0252", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0253", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_4 freezing trigger unlocks smart lock; chain Rule_5-Rule_9 disarms camera and cools in freezing weather"}
+{"sample_id": "IAA_0254", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0255", "label": "Anomalous", "type": "TM", "confidence": 3, "note": "Rule_4 trigger compares gas sensor to undefined value (?), dead rule"}
+{"sample_id": "IAA_0256", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_4-Rule_9 closed cycle: thermostat, heater, humidifier, dehumidifier, AC, fan off loop back"}
+{"sample_id": "IAA_0257", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 via Rule_1 chain and Rule_3 both fire at 19:00, setting thermostat 28 vs 22"}
+{"sample_id": "IAA_0258", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_4 self-referentially forces living room lamp from on to off"}
+{"sample_id": "IAA_0259", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0260", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0261", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_6 closed cycle: window lock, garage, smart lock, camera, AC, purifier back to window lock"}
+{"sample_id": "IAA_0262", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_4 living room temperature sensor opens garage door without verification"}
+{"sample_id": "IAA_0263", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_5 freezing trigger disarms camera; chain Rule_6-Rule_9 runs cooling in freezing weather"}
+{"sample_id": "IAA_0264", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0265", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_4 via Rule_3 chain and Rule_5 both fire on alarm ringing, setting lamp strong vs weak"}
+{"sample_id": "IAA_0266", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0267", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 door sensor unlocks smart lock; Rule_7 chain vs Rule_8 conflict thermostat 20 vs 22 (AC secondary)"}
+{"sample_id": "IAA_0268", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_6 trigger requires thermostat off and on simultaneously, never fires"}
+{"sample_id": "IAA_0269", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0270", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0271", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0272", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_6 & Rule_7 overlapping triggers set purifier auto vs high when dark and AC off"}
+{"sample_id": "IAA_0273", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_5 trigger requires fan intensity medium and low simultaneously, never fires"}
+{"sample_id": "IAA_0274", "label": "Anomalous", "type": "CV", "confidence": 3, "note": "Rule_4 turns living room heater on above 30C, contradicting thermal common sense"}
+{"sample_id": "IAA_0275", "label": "Benign", "type": null, "confidence": 5, "note": ""}

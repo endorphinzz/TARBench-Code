@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0126", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_7 sets washing machine on and off simultaneously; mutually exclusive actions"}
+{"sample_id": "IAA_0127", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0128", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_3 & Rule_4 conflict on AC mode fan_only vs auto when temp>37 via Rule_2"}
+{"sample_id": "IAA_0129", "label": "Anomalous", "type": "AC", "confidence": 5, "note": "Rule_2 & Rule_3 conflict on coffee machine off vs on under same humidity trigger"}
+{"sample_id": "IAA_0130", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0131", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rules_5-6 door-open unlocks smart lock and disarms camera; Rule_9 duplicates chain light-on (AD)"}
+{"sample_id": "IAA_0132", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0133", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_6 & Rule_7 conflict on thermostat target 26 vs 22 when window lock unlocked via Rule_5"}
+{"sample_id": "IAA_0134", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0135", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_7-9 chain ends re-enabling dishwasher, sequentially defeating Rule_7's off command"}
+{"sample_id": "IAA_0136", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_11 duplicates water-valve-off already produced by Rule_8 to Rule_10 chain under same siren trigger"}
+{"sample_id": "IAA_0137", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0138", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0139", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_7 sets speaker volume medium and low simultaneously; mutually exclusive actions"}
+{"sample_id": "IAA_0140", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0141", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0142", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0143", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_5 duplicates fan-off already produced by Rule_1 to Rule_4 chain under same away trigger"}
+{"sample_id": "IAA_0144", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_3-8 form thermostat-heater-humidifier-dehumidifier-AC-fan-thermostat dependency cycle"}
+{"sample_id": "IAA_0145", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_5 subsumed by Rule_4, duplicate target-28 command; secondary Rule_3 30000 lux implausible (BE)"}
+{"sample_id": "IAA_0146", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0147", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0148", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_5-6 form camera-fan dependency cycle"}
+{"sample_id": "IAA_0149", "label": "Anomalous", "type": "AD", "confidence": 3, "note": "Rule_4 duplicates coffee-off already produced by Rule_2 to Rule_3 chain under subsumed trigger"}
+{"sample_id": "IAA_0150", "label": "Benign", "type": null, "confidence": 5, "note": ""}

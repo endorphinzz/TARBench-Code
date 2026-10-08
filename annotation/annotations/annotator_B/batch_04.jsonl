@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0076", "label": "Anomalous", "type": "AM", "confidence": 5, "note": "Rule_6 sets living room speaker on and off simultaneously (AM)"}
+{"sample_id": "IAA_0077", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0078", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_2 & Rule_3 form mutual cycle: dishwasher off to coffee off back to dishwasher"}
+{"sample_id": "IAA_0079", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0080", "label": "Anomalous", "type": "PD", "confidence": 3, "note": "Rule_3 freezing trigger cascades via Rule_4-Rule_7: doors unlocked, camera off, AC cool in freezing weather"}
+{"sample_id": "IAA_0081", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0082", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0083", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_4 & Rule_5 triggers require light on and off simultaneously, never fire"}
+{"sample_id": "IAA_0084", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0085", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rule_1-Rule_4 form cycle: window lock, smart lock, camera, AC, back to window lock"}
+{"sample_id": "IAA_0086", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0087", "label": "Anomalous", "type": "IS", "confidence": 3, "note": "Rule_1 self-referentially forces thermostat target from 20C to 25C"}
+{"sample_id": "IAA_0088", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0089", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0090", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_4 sets lamp brightness strong at 08:00 while Rule_1-Rule_3 chain sets medium"}
+{"sample_id": "IAA_0091", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0092", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0093", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0094", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0095", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 & Rule_4 triggers require lock unlocked and locked simultaneously, never fire"}
+{"sample_id": "IAA_0096", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0097", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_3 & Rule_7 conflict on washing machine off vs on via chain Rule_4-Rule_6"}
+{"sample_id": "IAA_0098", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_10 trigger requires humidity >55% and <45% simultaneously, never fires"}
+{"sample_id": "IAA_0099", "label": "Benign", "type": null, "confidence": 3, "note": ""}
+{"sample_id": "IAA_0100", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 & Rule_6 conflict on washing machine off vs on when lamp strong and AC heat"}

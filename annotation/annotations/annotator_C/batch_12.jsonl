@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0276", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_3 turns toaster on; Rule_4 to Rule_6 chain turns it off, negating head action"}
+{"sample_id": "IAA_0277", "label": "Anomalous", "type": "TM", "confidence": 5, "note": "Rule_3 and Rule_4 require 08:00 and 09:00 simultaneously, impossible; conflicting window actions too"}
+{"sample_id": "IAA_0278", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_3 hot temp above 30 unlocks hallway smart lock; trivial trigger, unsafe direction"}
+{"sample_id": "IAA_0279", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_5 sets humidifier on and off simultaneously, contradictory actions"}
+{"sample_id": "IAA_0280", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_2 locks smart lock; Rule_3 to Rule_4 chain unlocks it, negating head action"}
+{"sample_id": "IAA_0281", "label": "Anomalous", "type": "AM", "confidence": 4, "note": "Rule_4 sets fan off and on simultaneously, contradictory actions"}
+{"sample_id": "IAA_0282", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0283", "label": "Benign", "type": null, "confidence": 4, "note": ""}
+{"sample_id": "IAA_0284", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_7 to Rule_8 chain cooler low vs Rule_9 direct auto, same window-lock-unlocked trigger"}
+{"sample_id": "IAA_0285", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_5 vs Rule_6 same humidity trigger opens vs closes window; humidifier-on-when-humid inverted"}
+{"sample_id": "IAA_0286", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 vs Rule_3 same 08:00 trigger sets fan intensity low vs medium"}
+{"sample_id": "IAA_0287", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_2 to Rule_4 chain opens curtain vs Rule_6 closes it, same user-home trigger; Rule_9 writes sensor"}
+{"sample_id": "IAA_0288", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_5 closes curtain; Rule_6 to Rule_8 chain reopens it, negating head action"}
+{"sample_id": "IAA_0289", "label": "Anomalous", "type": "PE", "confidence": 3, "note": "Rule_1 door-open unlocks smart lock unauthenticated; Rule_5 duplicates Rule_1 to Rule_4 chain"}
+{"sample_id": "IAA_0290", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0291", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0292", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_6 closes garage; Rule_7 to Rule_12 chain reopens it, negating head action"}
+{"sample_id": "IAA_0293", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0294", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0295", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0296", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0297", "label": "Anomalous", "type": "BE", "confidence": 5, "note": "Rule_4 threshold -120C physically impossible"}
+{"sample_id": "IAA_0298", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0299", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_1 sprinkler on at 05:30 vs Rule_3 temp above 24 off; co-satisfiable conflict"}
+{"sample_id": "IAA_0300", "label": "Benign", "type": null, "confidence": 5, "note": ""}

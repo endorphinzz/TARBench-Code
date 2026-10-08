@@ -1,0 +1,141 @@
+{
+  "config": {
+    "n_original": 15183,
+    "n_benign_original": 10583,
+    "n_variants": 300,
+    "device_overlap_distribution": {
+      "1": 253,
+      "2": 40,
+      "3": 5,
+      "4": 2
+    },
+    "n_folds": 5,
+    "seed": 20260513
+  },
+  "original_cv": {
+    "auc_mean": 0.9955736856304478,
+    "auc_std": 0.0012556184165330826,
+    "fold_aucs": [
+      0.9937108500544247,
+      0.9971468033106734,
+      0.9960701156271179,
+      0.9963841744061807,
+      0.9945564847538424
+    ]
+  },
+  "transfer": {
+    "auc_variants_vs_original_benign": 0.9941135153863114,
+    "variant_score_mean": 0.8570929902211835,
+    "variant_score_std": 0.2134408324778515,
+    "variant_flag_rate_gt_0.5": 0.9066666666666666,
+    "original_benign_score_mean": 0.05842204654481428
+  },
+  "transfer_reference_oof": {
+    "auc_original_oof": 0.9955644203788686
+  },
+  "transfer_per_type": {
+    "Action Block": {
+      "n_variants": 13,
+      "auc": 0.998633512381977,
+      "score_mean": 0.8794810012454112
+    },
+    "Action Conflict": {
+      "n_variants": 31,
+      "auc": 0.9997531037299625,
+      "score_mean": 0.9270515493246179
+    },
+    "Action Duplication": {
+      "n_variants": 30,
+      "auc": 0.9991716274528332,
+      "score_mean": 0.92729121984389
+    },
+    "Action Mutex": {
+      "n_variants": 13,
+      "auc": 0.9948247915742955,
+      "score_mean": 0.6719445256973517
+    },
+    "Action Revert": {
+      "n_variants": 26,
+      "auc": 0.9996002296862166,
+      "score_mean": 0.8785897186767848
+    },
+    "Common Sense Violation": {
+      "n_variants": 19,
+      "auc": 0.9994380262287582,
+      "score_mean": 0.8538162618569601
+    },
+    "Condition Block": {
+      "n_variants": 9,
+      "auc": 0.9993910569361765,
+      "score_mean": 0.8215510713143213
+    },
+    "Condition Bypass": {
+      "n_variants": 33,
+      "auc": 0.998141673753504,
+      "score_mean": 0.9344473991086566
+    },
+    "Dual Anomaly": {
+      "n_variants": 38,
+      "auc": 0.9993485082828967,
+      "score_mean": 0.8839793151470898
+    },
+    "Illegal State Rule": {
+      "n_variants": 3,
+      "auc": 0.6728085923966108,
+      "score_mean": 0.3202467227245007
+    },
+    "Loop": {
+      "n_variants": 38,
+      "auc": 0.9989009185535889,
+      "score_mean": 0.9091144031583811
+    },
+    "Physical Cross-rule Interaction": {
+      "n_variants": 12,
+      "auc": 0.9992361964156352,
+      "score_mean": 0.771608379484687
+    },
+    "Privilege Escalation": {
+      "n_variants": 11,
+      "auc": 0.9959540601135612,
+      "score_mean": 0.69853574112916
+    },
+    "Safety Boundary Error": {
+      "n_variants": 7,
+      "auc": 0.9349225847383269,
+      "score_mean": 0.34496510542699665
+    },
+    "Trigger Mutex": {
+      "n_variants": 10,
+      "auc": 0.9996787300387414,
+      "score_mean": 0.7804232047983495
+    },
+    "Triple Anomaly": {
+      "n_variants": 7,
+      "auc": 1.0,
+      "score_mean": 0.9778545946336005
+    }
+  },
+  "invariant_cv": {
+    "auc_mean": 0.9920235452553652,
+    "auc_std": 0.003375233973209723,
+    "fold_aucs": [
+      0.9858132577546843,
+      0.9923161706817824,
+      0.9960951031333648,
+      0.9930608065532451,
+      0.9928323881537492
+    ]
+  },
+  "matched_host_cv": {
+    "n_host_chains": 284,
+    "auc_mean": 0.9399258563074351,
+    "auc_std": 0.01663400937936898,
+    "fold_aucs": [
+      0.9230994152046783,
+      0.9514619883040936,
+      0.9669590643274855,
+      0.9292397660818714,
+      0.9288690476190475
+    ]
+  }
+}

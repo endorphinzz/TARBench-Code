@@ -1,0 +1,25 @@
+{"sample_id": "IAA_0151", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 conflict on washing machine mode heavy_duty vs spin under same 22:30 trigger"}
+{"sample_id": "IAA_0152", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0153", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0154", "label": "Anomalous", "type": "AM", "confidence": 3, "note": "Rule_1 commands window open while engaging window lock; mutually exclusive actions in one rule"}
+{"sample_id": "IAA_0155", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_1-3 form brightness-light-curtain-brightness dependency cycle"}
+{"sample_id": "IAA_0156", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0157", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_4-9 chain ends re-arming camera, defeating Rule_4's disarm; secondary PE door-open unlocks window lock"}
+{"sample_id": "IAA_0158", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_4-9 chain ends re-arming camera, sequentially defeating Rule_4's disarm command"}
+{"sample_id": "IAA_0159", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0160", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_4 & Rule_5 conflict on AC mode cool vs heat when camera off; secondary PE Rule_1 unlocks smart lock"}
+{"sample_id": "IAA_0161", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rules_6-8 chain ends setting AC auto, sequentially defeating Rule_6's cool command"}
+{"sample_id": "IAA_0162", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0163", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_1 & Rule_2 conflict on lamp off vs on under same home trigger; secondary AB window lock vs open"}
+{"sample_id": "IAA_0164", "label": "Anomalous", "type": "AD", "confidence": 4, "note": "Rule_2 subsumed by Rule_1; duplicate heater-eco command under narrower trigger"}
+{"sample_id": "IAA_0165", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_1 & Rule_3 give sprinkler on vs off under co-satisfiable time and temperature triggers"}
+{"sample_id": "IAA_0166", "label": "Anomalous", "type": "AC", "confidence": 3, "note": "Rule_8 & Rule_9 conflict on lamp brightness strong vs medium when alarm ringing via chain"}
+{"sample_id": "IAA_0167", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_13 & Rule_14 conflict on thermostat target 20 vs 22 when user home via Rule_8-12 chain"}
+{"sample_id": "IAA_0168", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0169", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_2-8 form window-lock through fan back to window-lock dependency cycle"}
+{"sample_id": "IAA_0170", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0171", "label": "Anomalous", "type": "EL", "confidence": 4, "note": "Rules_3-5 form thermostat-humidifier-dehumidifier-thermostat dependency cycle"}
+{"sample_id": "IAA_0172", "label": "Benign", "type": null, "confidence": 5, "note": ""}
+{"sample_id": "IAA_0173", "label": "Anomalous", "type": "AC", "confidence": 4, "note": "Rule_2 & Rule_3 conflict on fan on vs off under same vacuum-on trigger"}
+{"sample_id": "IAA_0174", "label": "Anomalous", "type": "AR", "confidence": 3, "note": "Rule_6 reverts Rule_5's camera arming via state dependency; sequential cancellation, self-referential"}
+{"sample_id": "IAA_0175", "label": "Benign", "type": null, "confidence": 5, "note": ""}
