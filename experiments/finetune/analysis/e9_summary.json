@@ -1,0 +1,3232 @@
+{
+  "generated_at": "2026-10-09T12:52:35",
+  "seeds": {
+    "test_t1": {
+      "acc": {
+        "mean": 0.993532,
+        "std": 0.000862
+      },
+      "p": {
+        "mean": 0.988609,
+        "std": 0.003383
+      },
+      "r": {
+        "mean": 0.99204,
+        "std": 0.003107
+      },
+      "f1": {
+        "mean": 0.990315,
+        "std": 0.001286
+      },
+      "fpr": {
+        "mean": 0.005721,
+        "std": 0.001723
+      },
+      "arl_f1": {
+        "mean": 0.986325,
+        "std": 0.001911
+      },
+      "loc_em": {
+        "mean": 0.973134,
+        "std": 0.0
+      },
+      "type_mentioned": {
+        "mean": 0.888557,
+        "std": 0.012517
+      },
+      "overthinking": {
+        "mean": 0.005721,
+        "std": 0.001723
+      },
+      "n_seeds": 3
+    },
+    "test_t2_icl750": {
+      "acc": {
+        "mean": 0.996,
+        "std": 0.0
+      },
+      "p": {
+        "mean": 0.995984,
+        "std": 0.0
+      },
+      "r": {
+        "mean": 0.992,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 0.993988,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.002,
+        "std": 0.0
+      },
+      "arl_f1": {
+        "mean": 0.98313,
+        "std": 0.002832
+      },
+      "loc_em": {
+        "mean": 0.973333,
+        "std": 0.002309
+      },
+      "type_mentioned": {
+        "mean": 0.942667,
+        "std": 0.010066
+      },
+      "overthinking": {
+        "mean": 0.002,
+        "std": 0.0
+      },
+      "n_seeds": 3
+    },
+    "test_t3_variants": {
+      "acc": {
+        "mean": 0.986301,
+        "std": 0.001713
+      },
+      "p": {
+        "mean": 0.996599,
+        "std": 1.2e-05
+      },
+      "r": {
+        "mean": 0.976667,
+        "std": 0.003334
+      },
+      "f1": {
+        "mean": 0.98653,
+        "std": 0.001706
+      },
+      "fpr": {
+        "mean": 0.003521,
+        "std": 0.0
+      },
+      "arl_f1": {
+        "mean": 0.947339,
+        "std": 0.00942
+      },
+      "loc_em": {
+        "mean": 0.846667,
+        "std": 0.029628
+      },
+      "type_mentioned": {
+        "mean": 0.93,
+        "std": 0.008819
+      },
+      "overthinking": {
+        "mean": 0.003521,
+        "std": 0.0
+      },
+      "n_seeds": 3
+    }
+  },
+  "rows": {
+    "test_t1": {
+      "base0shot": {
+        "tag": "base0shot",
+        "n": 2010,
+        "acc": 0.757349,
+        "p": 0.878151,
+        "r": 0.313343,
+        "f1": 0.461878,
+        "fpr": 0.021642,
+        "arl_f1": 0.273324,
+        "loc_em": 0.204478,
+        "type_mentioned": 0.016418,
+        "overthinking": 0.021642
+      },
+      "e9_m1_s1": {
+        "tag": "e9_m1_s1",
+        "n": 2010,
+        "acc": 0.99403,
+        "p": 0.986686,
+        "r": 0.995522,
+        "f1": 0.991084,
+        "fpr": 0.006716,
+        "arl_f1": 0.988477,
+        "loc_em": 0.973134,
+        "type_mentioned": 0.88209,
+        "overthinking": 0.006716
+      },
+      "e9_m1_s2": {
+        "tag": "e9_m1_s2",
+        "n": 2010,
+        "acc": 0.99403,
+        "p": 0.992515,
+        "r": 0.989552,
+        "f1": 0.991031,
+        "fpr": 0.003731,
+        "arl_f1": 0.985672,
+        "loc_em": 0.973134,
+        "type_mentioned": 0.902985,
+        "overthinking": 0.003731
+      },
+      "e9_m1_s3": {
+        "tag": "e9_m1_s3",
+        "n": 2010,
+        "acc": 0.992537,
+        "p": 0.986627,
+        "r": 0.991045,
+        "f1": 0.988831,
+        "fpr": 0.006716,
+        "arl_f1": 0.984826,
+        "loc_em": 0.973134,
+        "type_mentioned": 0.880597,
+        "overthinking": 0.006716
+      },
+      "e9_m2_2000": {
+        "tag": "e9_m2_2000",
+        "n": 2010,
+        "acc": 0.977612,
+        "p": 0.975647,
+        "r": 0.956716,
+        "f1": 0.966089,
+        "fpr": 0.01194,
+        "arl_f1": 0.948564,
+        "loc_em": 0.928358,
+        "type_mentioned": 0.810448,
+        "overthinking": 0.01194
+      },
+      "e9_m2_500": {
+        "tag": "e9_m2_500",
+        "n": 2010,
+        "acc": 0.888557,
+        "p": 0.968487,
+        "r": 0.68806,
+        "f1": 0.804538,
+        "fpr": 0.011194,
+        "arl_f1": 0.614923,
+        "loc_em": 0.459701,
+        "type_mentioned": 0.253731,
+        "overthinking": 0.011194
+      },
+      "e9_m3_cls": {
+        "tag": "e9_m3_cls",
+        "n": 2010,
+        "acc": 0.978607,
+        "p": 0.984544,
+        "r": 0.950746,
+        "f1": 0.96735,
+        "fpr": 0.007463,
+        "arl_f1": 0.0,
+        "loc_em": 0.0,
+        "type_mentioned": 0.0,
+        "overthinking": 1.0
+      }
+    },
+    "test_t2_icl750": {
+      "base0shot": {
+        "tag": "base0shot",
+        "n": 750,
+        "acc": 0.791165,
+        "p": 0.918182,
+        "r": 0.407258,
+        "f1": 0.564246,
+        "fpr": 0.018036,
+        "arl_f1": 0.338028,
+        "loc_em": 0.248,
+        "type_mentioned": 0.036,
+        "overthinking": 0.018
+      },
+      "e9_m1_s1": {
+        "tag": "e9_m1_s1",
+        "n": 750,
+        "acc": 0.996,
+        "p": 0.995984,
+        "r": 0.992,
+        "f1": 0.993988,
+        "fpr": 0.002,
+        "arl_f1": 0.981524,
+        "loc_em": 0.972,
+        "type_mentioned": 0.952,
+        "overthinking": 0.002
+      },
+      "e9_m1_s2": {
+        "tag": "e9_m1_s2",
+        "n": 750,
+        "acc": 0.996,
+        "p": 0.995984,
+        "r": 0.992,
+        "f1": 0.993988,
+        "fpr": 0.002,
+        "arl_f1": 0.9864,
+        "loc_em": 0.976,
+        "type_mentioned": 0.944,
+        "overthinking": 0.002
+      },
+      "e9_m1_s3": {
+        "tag": "e9_m1_s3",
+        "n": 750,
+        "acc": 0.996,
+        "p": 0.995984,
+        "r": 0.992,
+        "f1": 0.993988,
+        "fpr": 0.002,
+        "arl_f1": 0.981467,
+        "loc_em": 0.972,
+        "type_mentioned": 0.932,
+        "overthinking": 0.002
+      },
+      "e9_m2_2000": {
+        "tag": "e9_m2_2000",
+        "n": 750,
+        "acc": 0.982667,
+        "p": 0.991701,
+        "r": 0.956,
+        "f1": 0.973523,
+        "fpr": 0.004,
+        "arl_f1": 0.933886,
+        "loc_em": 0.892,
+        "type_mentioned": 0.824,
+        "overthinking": 0.004
+      },
+      "e9_m2_500": {
+        "tag": "e9_m2_500",
+        "n": 750,
+        "acc": 0.9,
+        "p": 0.988827,
+        "r": 0.708,
+        "f1": 0.825175,
+        "fpr": 0.004,
+        "arl_f1": 0.637125,
+        "loc_em": 0.504,
+        "type_mentioned": 0.224,
+        "overthinking": 0.004
+      },
+      "e9_m3_cls": {
+        "tag": "e9_m3_cls",
+        "n": 750,
+        "acc": 0.982667,
+        "p": 0.983673,
+        "r": 0.964,
+        "f1": 0.973737,
+        "fpr": 0.008,
+        "arl_f1": 0.0,
+        "loc_em": 0.0,
+        "type_mentioned": 0.0,
+        "overthinking": 1.0
+      }
+    },
+    "test_t3_variants": {
+      "base0shot": {
+        "tag": "base0shot",
+        "n": 584,
+        "acc": 0.726644,
+        "p": 0.953333,
+        "r": 0.486395,
+        "f1": 0.644144,
+        "fpr": 0.024648,
+        "arl_f1": 0.41707,
+        "loc_em": 0.293333,
+        "type_mentioned": 0.046667,
+        "overthinking": 0.024648
+      },
+      "e9_m1_s1": {
+        "tag": "e9_m1_s1",
+        "n": 584,
+        "acc": 0.986301,
+        "p": 0.996599,
+        "r": 0.976667,
+        "f1": 0.986532,
+        "fpr": 0.003521,
+        "arl_f1": 0.947658,
+        "loc_em": 0.856667,
+        "type_mentioned": 0.936667,
+        "overthinking": 0.003521
+      },
+      "e9_m1_s2": {
+        "tag": "e9_m1_s2",
+        "n": 584,
+        "acc": 0.984589,
+        "p": 0.996587,
+        "r": 0.973333,
+        "f1": 0.984823,
+        "fpr": 0.003521,
+        "arl_f1": 0.937763,
+        "loc_em": 0.813333,
+        "type_mentioned": 0.92,
+        "overthinking": 0.003521
+      },
+      "e9_m1_s3": {
+        "tag": "e9_m1_s3",
+        "n": 584,
+        "acc": 0.988014,
+        "p": 0.99661,
+        "r": 0.98,
+        "f1": 0.988235,
+        "fpr": 0.003521,
+        "arl_f1": 0.956595,
+        "loc_em": 0.87,
+        "type_mentioned": 0.933333,
+        "overthinking": 0.003521
+      },
+      "e9_m2_2000": {
+        "tag": "e9_m2_2000",
+        "n": 584,
+        "acc": 0.97774,
+        "p": 0.989761,
+        "r": 0.966667,
+        "f1": 0.978078,
+        "fpr": 0.010563,
+        "arl_f1": 0.909086,
+        "loc_em": 0.746667,
+        "type_mentioned": 0.76,
+        "overthinking": 0.010563
+      },
+      "e9_m2_500": {
+        "tag": "e9_m2_500",
+        "n": 584,
+        "acc": 0.928082,
+        "p": 0.992366,
+        "r": 0.866667,
+        "f1": 0.925267,
+        "fpr": 0.007042,
+        "arl_f1": 0.740667,
+        "loc_em": 0.443333,
+        "type_mentioned": 0.173333,
+        "overthinking": 0.007042
+      },
+      "e9_m3_cls": {
+        "tag": "e9_m3_cls",
+        "n": 584,
+        "acc": 0.976027,
+        "p": 0.993103,
+        "r": 0.96,
+        "f1": 0.976271,
+        "fpr": 0.007042,
+        "arl_f1": 0.0,
+        "loc_em": 0.0,
+        "type_mentioned": 0.0,
+        "overthinking": 1.0
+      }
+    }
+  },
+  "mcnemar": [
+    {
+      "tag": "e9_m1_s1",
+      "split": "test_t1",
+      "base_better": 10,
+      "ft_better": 488,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s2",
+      "split": "test_t1",
+      "base_better": 6,
+      "ft_better": 484,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s3",
+      "split": "test_t1",
+      "base_better": 9,
+      "ft_better": 484,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m3_cls",
+      "split": "test_t1",
+      "base_better": 12,
+      "ft_better": 459,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_500",
+      "split": "test_t1",
+      "base_better": 38,
+      "ft_better": 304,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_2000",
+      "split": "test_t1",
+      "base_better": 16,
+      "ft_better": 461,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s1",
+      "split": "test_t2_icl750",
+      "base_better": 1,
+      "ft_better": 168,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s2",
+      "split": "test_t2_icl750",
+      "base_better": 1,
+      "ft_better": 168,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s3",
+      "split": "test_t2_icl750",
+      "base_better": 1,
+      "ft_better": 168,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m3_cls",
+      "split": "test_t2_icl750",
+      "base_better": 5,
+      "ft_better": 162,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_500",
+      "split": "test_t2_icl750",
+      "base_better": 42,
+      "ft_better": 137,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_2000",
+      "split": "test_t2_icl750",
+      "base_better": 5,
+      "ft_better": 162,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s1",
+      "split": "test_t3_variants",
+      "base_better": 3,
+      "ft_better": 159,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s2",
+      "split": "test_t3_variants",
+      "base_better": 5,
+      "ft_better": 160,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m1_s3",
+      "split": "test_t3_variants",
+      "base_better": 2,
+      "ft_better": 159,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m3_cls",
+      "split": "test_t3_variants",
+      "base_better": 4,
+      "ft_better": 154,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_500",
+      "split": "test_t3_variants",
+      "base_better": 9,
+      "ft_better": 131,
+      "p_value": 0.0
+    },
+    {
+      "tag": "e9_m2_2000",
+      "split": "test_t3_variants",
+      "base_better": 3,
+      "ft_better": 154,
+      "p_value": 0.0
+    }
+  ],
+  "bootstrap": [
+    {
+      "tag": "e9_m1_s1",
+      "split": "test_t1",
+      "d_f1": {
+        "mean": 0.530983,
+        "ci95": [
+          0.493354,
+          0.571649
+        ]
+      },
+      "d_arl_f1": {
+        "mean": 0.715872,
+        "ci95": [
+          0.683668,
+          0.748958
+        ]
+      }
+    },
+    {
+      "tag": "e9_m1_s2",
+      "split": "test_t1",
+      "d_f1": {
+        "mean": 0.530889,
+        "ci95": [
+          0.493906,
+          0.570598
+        ]
+      },
+      "d_arl_f1": {
+        "mean": 0.713061,
+        "ci95": [
+          0.680599,
+          0.745373
+        ]
+      }
+    },
+    {
+      "tag": "e9_m1_s3",
+      "split": "test_t1",
+      "d_f1": {
+        "mean": 0.528708,
+        "ci95": [
+          0.491228,
+          0.56985
+        ]
+      },
+      "d_arl_f1": {
+        "mean": 0.712183,
+        "ci95": [
+          0.679786,
+          0.745893
+        ]
+      }
+    }
+  ],
+  "groups": {
+    "test_t1": {
+      "base0shot": {
+        "rule_rule": {
+          "recall": 0.4144,
+          "total": 485,
+          "tp": 201
+        },
+        "rule_env": {
+          "recall": 0.1959,
+          "total": 245,
+          "tp": 48
+        },
+        "structural": {
+          "recall": 0.4,
+          "total": 580,
+          "tp": 232
+        },
+        "semantic": {
+          "recall": 0.1133,
+          "total": 150,
+          "tp": 17
+        }
+      },
+      "e9_m1_s1": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 485,
+          "tp": 485
+        },
+        "rule_env": {
+          "recall": 0.9878,
+          "total": 245,
+          "tp": 242
+        },
+        "structural": {
+          "recall": 0.9983,
+          "total": 580,
+          "tp": 579
+        },
+        "semantic": {
+          "recall": 0.9867,
+          "total": 150,
+          "tp": 148
+        }
+      },
+      "e9_m1_s2": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 485,
+          "tp": 485
+        },
+        "rule_env": {
+          "recall": 0.9714,
+          "total": 245,
+          "tp": 238
+        },
+        "structural": {
+          "recall": 0.9931,
+          "total": 580,
+          "tp": 576
+        },
+        "semantic": {
+          "recall": 0.98,
+          "total": 150,
+          "tp": 147
+        }
+      },
+      "e9_m1_s3": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 485,
+          "tp": 485
+        },
+        "rule_env": {
+          "recall": 0.9755,
+          "total": 245,
+          "tp": 239
+        },
+        "structural": {
+          "recall": 0.9948,
+          "total": 580,
+          "tp": 577
+        },
+        "semantic": {
+          "recall": 0.98,
+          "total": 150,
+          "tp": 147
+        }
+      },
+      "e9_m2_2000": {
+        "rule_rule": {
+          "recall": 0.9959,
+          "total": 485,
+          "tp": 483
+        },
+        "rule_env": {
+          "recall": 0.8816,
+          "total": 245,
+          "tp": 216
+        },
+        "structural": {
+          "recall": 0.9828,
+          "total": 580,
+          "tp": 570
+        },
+        "semantic": {
+          "recall": 0.86,
+          "total": 150,
+          "tp": 129
+        }
+      },
+      "e9_m2_500": {
+        "rule_rule": {
+          "recall": 0.8454,
+          "total": 485,
+          "tp": 410
+        },
+        "rule_env": {
+          "recall": 0.3918,
+          "total": 245,
+          "tp": 96
+        },
+        "structural": {
+          "recall": 0.7776,
+          "total": 580,
+          "tp": 451
+        },
+        "semantic": {
+          "recall": 0.3667,
+          "total": 150,
+          "tp": 55
+        }
+      },
+      "e9_m3_cls": {
+        "rule_rule": {
+          "recall": 0.9856,
+          "total": 485,
+          "tp": 478
+        },
+        "rule_env": {
+          "recall": 0.8694,
+          "total": 245,
+          "tp": 213
+        },
+        "structural": {
+          "recall": 0.969,
+          "total": 580,
+          "tp": 562
+        },
+        "semantic": {
+          "recall": 0.86,
+          "total": 150,
+          "tp": 129
+        }
+      },
+      "e9_m1_mean": {
+        "rule_rule": 1.0,
+        "rule_env": 0.9782,
+        "structural": 0.9954,
+        "semantic": 0.9822,
+        "recall": {
+          "rule_rule": 1.0,
+          "rule_env": 0.9782,
+          "structural": 0.9954,
+          "semantic": 0.9822
+        }
+      }
+    },
+    "test_t2_icl750": {
+      "base0shot": {
+        "rule_rule": {
+          "recall": 0.5123,
+          "total": 203,
+          "tp": 104
+        },
+        "rule_env": {
+          "recall": 0.3295,
+          "total": 88,
+          "tp": 29
+        },
+        "structural": {
+          "recall": 0.5207,
+          "total": 242,
+          "tp": 126
+        },
+        "semantic": {
+          "recall": 0.1429,
+          "total": 49,
+          "tp": 7
+        }
+      },
+      "e9_m1_s1": {
+        "rule_rule": {
+          "recall": 0.9951,
+          "total": 203,
+          "tp": 202
+        },
+        "rule_env": {
+          "recall": 0.9886,
+          "total": 88,
+          "tp": 87
+        },
+        "structural": {
+          "recall": 0.9959,
+          "total": 242,
+          "tp": 241
+        },
+        "semantic": {
+          "recall": 0.9796,
+          "total": 49,
+          "tp": 48
+        }
+      },
+      "e9_m1_s2": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 203,
+          "tp": 203
+        },
+        "rule_env": {
+          "recall": 0.9773,
+          "total": 88,
+          "tp": 86
+        },
+        "structural": {
+          "recall": 1.0,
+          "total": 242,
+          "tp": 242
+        },
+        "semantic": {
+          "recall": 0.9592,
+          "total": 49,
+          "tp": 47
+        }
+      },
+      "e9_m1_s3": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 203,
+          "tp": 203
+        },
+        "rule_env": {
+          "recall": 0.9773,
+          "total": 88,
+          "tp": 86
+        },
+        "structural": {
+          "recall": 1.0,
+          "total": 242,
+          "tp": 242
+        },
+        "semantic": {
+          "recall": 0.9592,
+          "total": 49,
+          "tp": 47
+        }
+      },
+      "e9_m2_2000": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 203,
+          "tp": 203
+        },
+        "rule_env": {
+          "recall": 0.875,
+          "total": 88,
+          "tp": 77
+        },
+        "structural": {
+          "recall": 1.0,
+          "total": 242,
+          "tp": 242
+        },
+        "semantic": {
+          "recall": 0.7755,
+          "total": 49,
+          "tp": 38
+        }
+      },
+      "e9_m2_500": {
+        "rule_rule": {
+          "recall": 0.8571,
+          "total": 203,
+          "tp": 174
+        },
+        "rule_env": {
+          "recall": 0.4091,
+          "total": 88,
+          "tp": 36
+        },
+        "structural": {
+          "recall": 0.8099,
+          "total": 242,
+          "tp": 196
+        },
+        "semantic": {
+          "recall": 0.2857,
+          "total": 49,
+          "tp": 14
+        }
+      },
+      "e9_m3_cls": {
+        "rule_rule": {
+          "recall": 0.9901,
+          "total": 203,
+          "tp": 201
+        },
+        "rule_env": {
+          "recall": 0.9205,
+          "total": 88,
+          "tp": 81
+        },
+        "structural": {
+          "recall": 0.9876,
+          "total": 242,
+          "tp": 239
+        },
+        "semantic": {
+          "recall": 0.8776,
+          "total": 49,
+          "tp": 43
+        }
+      },
+      "e9_m1_mean": {
+        "rule_rule": 0.9984,
+        "rule_env": 0.9811,
+        "structural": 0.9986,
+        "semantic": 0.966,
+        "recall": {
+          "rule_rule": 0.9984,
+          "rule_env": 0.9811,
+          "structural": 0.9986,
+          "semantic": 0.966
+        }
+      }
+    },
+    "test_t3_variants": {
+      "base0shot": {
+        "rule_rule": {
+          "recall": 0.5369,
+          "total": 244,
+          "tp": 131
+        },
+        "rule_env": {
+          "recall": 0.4259,
+          "total": 108,
+          "tp": 46
+        },
+        "structural": {
+          "recall": 0.5445,
+          "total": 292,
+          "tp": 159
+        },
+        "semantic": {
+          "recall": 0.3,
+          "total": 60,
+          "tp": 18
+        }
+      },
+      "e9_m1_s1": {
+        "rule_rule": {
+          "recall": 0.9877,
+          "total": 244,
+          "tp": 241
+        },
+        "rule_env": {
+          "recall": 0.9444,
+          "total": 108,
+          "tp": 102
+        },
+        "structural": {
+          "recall": 0.9829,
+          "total": 292,
+          "tp": 287
+        },
+        "semantic": {
+          "recall": 0.9333,
+          "total": 60,
+          "tp": 56
+        }
+      },
+      "e9_m1_s2": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 244,
+          "tp": 244
+        },
+        "rule_env": {
+          "recall": 0.9259,
+          "total": 108,
+          "tp": 100
+        },
+        "structural": {
+          "recall": 0.9897,
+          "total": 292,
+          "tp": 289
+        },
+        "semantic": {
+          "recall": 0.9167,
+          "total": 60,
+          "tp": 55
+        }
+      },
+      "e9_m1_s3": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 244,
+          "tp": 244
+        },
+        "rule_env": {
+          "recall": 0.9444,
+          "total": 108,
+          "tp": 102
+        },
+        "structural": {
+          "recall": 0.9932,
+          "total": 292,
+          "tp": 290
+        },
+        "semantic": {
+          "recall": 0.9333,
+          "total": 60,
+          "tp": 56
+        }
+      },
+      "e9_m2_2000": {
+        "rule_rule": {
+          "recall": 1.0,
+          "total": 244,
+          "tp": 244
+        },
+        "rule_env": {
+          "recall": 0.9074,
+          "total": 108,
+          "tp": 98
+        },
+        "structural": {
+          "recall": 0.9897,
+          "total": 292,
+          "tp": 289
+        },
+        "semantic": {
+          "recall": 0.8833,
+          "total": 60,
+          "tp": 53
+        }
+      },
+      "e9_m2_500": {
+        "rule_rule": {
+          "recall": 0.9467,
+          "total": 244,
+          "tp": 231
+        },
+        "rule_env": {
+          "recall": 0.7407,
+          "total": 108,
+          "tp": 80
+        },
+        "structural": {
+          "recall": 0.9144,
+          "total": 292,
+          "tp": 267
+        },
+        "semantic": {
+          "recall": 0.7333,
+          "total": 60,
+          "tp": 44
+        }
+      },
+      "e9_m3_cls": {
+        "rule_rule": {
+          "recall": 0.9959,
+          "total": 244,
+          "tp": 243
+        },
+        "rule_env": {
+          "recall": 0.8981,
+          "total": 108,
+          "tp": 97
+        },
+        "structural": {
+          "recall": 0.9829,
+          "total": 292,
+          "tp": 287
+        },
+        "semantic": {
+          "recall": 0.8833,
+          "total": 60,
+          "tp": 53
+        }
+      },
+      "e9_m1_mean": {
+        "rule_rule": 0.9959,
+        "rule_env": 0.9382,
+        "structural": 0.9886,
+        "semantic": 0.9278,
+        "recall": {
+          "rule_rule": 0.9959,
+          "rule_env": 0.9382,
+          "structural": 0.9886,
+          "semantic": 0.9278
+        }
+      }
+    }
+  },
+  "type_recall": {
+    "test_t1": {
+      "base0shot": {
+        "Action Duplication": {
+          "recall": 0.05,
+          "total": 120,
+          "tp": 6
+        },
+        "Action Revert": {
+          "recall": 0.6833,
+          "total": 60,
+          "tp": 41
+        },
+        "Common Sense Violation": {
+          "recall": 0.1667,
+          "total": 60,
+          "tp": 10
+        },
+        "Action Block": {
+          "recall": 0.0364,
+          "total": 55,
+          "tp": 2
+        },
+        "Safety Boundary Error": {
+          "recall": 0.4,
+          "total": 5,
+          "tp": 2
+        },
+        "Condition Bypass": {
+          "recall": 0.0111,
+          "total": 90,
+          "tp": 1
+        },
+        "Loop": {
+          "recall": 0.3667,
+          "total": 30,
+          "tp": 11
+        },
+        "Action Mutex": {
+          "recall": 0.95,
+          "total": 20,
+          "tp": 19
+        },
+        "Condition Block": {
+          "recall": 0.02,
+          "total": 50,
+          "tp": 1
+        },
+        "Illegal State Rule": {
+          "recall": 0.3,
+          "total": 10,
+          "tp": 3
+        },
+        "Privilege Escalation": {
+          "recall": 0.04,
+          "total": 25,
+          "tp": 1
+        },
+        "Triple Anomaly": {
+          "recall": 0.5,
+          "total": 10,
+          "tp": 5
+        },
+        "Action Conflict": {
+          "recall": 0.8933,
+          "total": 75,
+          "tp": 67
+        },
+        "Dual Anomaly": {
+          "recall": 0.75,
+          "total": 40,
+          "tp": 30
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.0,
+          "total": 5,
+          "tp": 0
+        },
+        "Trigger Mutex": {
+          "recall": 0.6667,
+          "total": 15,
+          "tp": 10
+        }
+      },
+      "e9_m1_s1": {
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120,
+          "tp": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60,
+          "tp": 60
+        },
+        "Common Sense Violation": {
+          "recall": 0.9667,
+          "total": 60,
+          "tp": 58
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 55,
+          "tp": 55
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90,
+          "tp": 90
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 1.0,
+          "total": 50,
+          "tp": 50
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75,
+          "tp": 75
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40,
+          "tp": 40
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Trigger Mutex": {
+          "recall": 0.9333,
+          "total": 15,
+          "tp": 14
+        }
+      },
+      "e9_m1_s2": {
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120,
+          "tp": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60,
+          "tp": 60
+        },
+        "Common Sense Violation": {
+          "recall": 0.9667,
+          "total": 60,
+          "tp": 58
+        },
+        "Action Block": {
+          "recall": 0.9455,
+          "total": 55,
+          "tp": 52
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90,
+          "tp": 90
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 1.0,
+          "total": 50,
+          "tp": 50
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75,
+          "tp": 75
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40,
+          "tp": 40
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.8,
+          "total": 5,
+          "tp": 4
+        },
+        "Trigger Mutex": {
+          "recall": 0.9333,
+          "total": 15,
+          "tp": 14
+        }
+      },
+      "e9_m1_s3": {
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120,
+          "tp": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60,
+          "tp": 60
+        },
+        "Common Sense Violation": {
+          "recall": 0.95,
+          "total": 60,
+          "tp": 57
+        },
+        "Action Block": {
+          "recall": 0.9636,
+          "total": 55,
+          "tp": 53
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90,
+          "tp": 90
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 1.0,
+          "total": 50,
+          "tp": 50
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75,
+          "tp": 75
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40,
+          "tp": 40
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Trigger Mutex": {
+          "recall": 0.9333,
+          "total": 15,
+          "tp": 14
+        }
+      },
+      "e9_m2_2000": {
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120,
+          "tp": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60,
+          "tp": 60
+        },
+        "Common Sense Violation": {
+          "recall": 0.8833,
+          "total": 60,
+          "tp": 53
+        },
+        "Action Block": {
+          "recall": 0.8909,
+          "total": 55,
+          "tp": 49
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90,
+          "tp": 90
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 0.92,
+          "total": 50,
+          "tp": 46
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Privilege Escalation": {
+          "recall": 0.84,
+          "total": 25,
+          "tp": 21
+        },
+        "Triple Anomaly": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75,
+          "tp": 75
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40,
+          "tp": 40
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.0,
+          "total": 5,
+          "tp": 0
+        },
+        "Trigger Mutex": {
+          "recall": 0.8667,
+          "total": 15,
+          "tp": 13
+        }
+      },
+      "e9_m2_500": {
+        "Action Duplication": {
+          "recall": 0.9083,
+          "total": 120,
+          "tp": 109
+        },
+        "Action Revert": {
+          "recall": 0.9833,
+          "total": 60,
+          "tp": 59
+        },
+        "Common Sense Violation": {
+          "recall": 0.5333,
+          "total": 60,
+          "tp": 32
+        },
+        "Action Block": {
+          "recall": 0.3091,
+          "total": 55,
+          "tp": 17
+        },
+        "Safety Boundary Error": {
+          "recall": 0.0,
+          "total": 5,
+          "tp": 0
+        },
+        "Condition Bypass": {
+          "recall": 0.7444,
+          "total": 90,
+          "tp": 67
+        },
+        "Loop": {
+          "recall": 0.8667,
+          "total": 30,
+          "tp": 26
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 0.24,
+          "total": 50,
+          "tp": 12
+        },
+        "Illegal State Rule": {
+          "recall": 0.4,
+          "total": 10,
+          "tp": 4
+        },
+        "Privilege Escalation": {
+          "recall": 0.24,
+          "total": 25,
+          "tp": 6
+        },
+        "Triple Anomaly": {
+          "recall": 0.5,
+          "total": 10,
+          "tp": 5
+        },
+        "Action Conflict": {
+          "recall": 0.8667,
+          "total": 75,
+          "tp": 65
+        },
+        "Dual Anomaly": {
+          "recall": 0.875,
+          "total": 40,
+          "tp": 35
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.0,
+          "total": 5,
+          "tp": 0
+        },
+        "Trigger Mutex": {
+          "recall": 0.2667,
+          "total": 15,
+          "tp": 4
+        }
+      },
+      "e9_m3_cls": {
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120,
+          "tp": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60,
+          "tp": 60
+        },
+        "Common Sense Violation": {
+          "recall": 0.8333,
+          "total": 60,
+          "tp": 50
+        },
+        "Action Block": {
+          "recall": 0.8909,
+          "total": 55,
+          "tp": 49
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5,
+          "tp": 5
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90,
+          "tp": 90
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20,
+          "tp": 20
+        },
+        "Condition Block": {
+          "recall": 0.92,
+          "total": 50,
+          "tp": 46
+        },
+        "Illegal State Rule": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Triple Anomaly": {
+          "recall": 0.7,
+          "total": 10,
+          "tp": 7
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75,
+          "tp": 75
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40,
+          "tp": 40
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.2,
+          "total": 5,
+          "tp": 1
+        },
+        "Trigger Mutex": {
+          "recall": 0.6667,
+          "total": 15,
+          "tp": 10
+        }
+      },
+      "e9_m1_mean": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 75
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 120
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 60
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 30
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 90
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 20
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 10
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 5
+        },
+        "Trigger Mutex": {
+          "recall": 0.9333,
+          "total": 15
+        },
+        "Action Block": {
+          "recall": 0.9697,
+          "total": 55
+        },
+        "Condition Block": {
+          "recall": 1.0,
+          "total": 50
+        },
+        "Common Sense Violation": {
+          "recall": 0.9611,
+          "total": 60
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 25
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.9333,
+          "total": 5
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 40
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 10
+        }
+      }
+    },
+    "test_t2_icl750": {
+      "base0shot": {
+        "Action Conflict": {
+          "recall": 0.8214,
+          "total": 28,
+          "tp": 23
+        },
+        "Action Duplication": {
+          "recall": 0.0857,
+          "total": 35,
+          "tp": 3
+        },
+        "Dual Anomaly": {
+          "recall": 0.72,
+          "total": 25,
+          "tp": 18
+        },
+        "Loop": {
+          "recall": 0.375,
+          "total": 24,
+          "tp": 9
+        },
+        "Trigger Mutex": {
+          "recall": 0.7692,
+          "total": 13,
+          "tp": 10
+        },
+        "Action Revert": {
+          "recall": 0.8095,
+          "total": 21,
+          "tp": 17
+        },
+        "Illegal State Rule": {
+          "recall": 0.5,
+          "total": 8,
+          "tp": 4
+        },
+        "Action Mutex": {
+          "recall": 0.6364,
+          "total": 11,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.2222,
+          "total": 9,
+          "tp": 2
+        },
+        "Condition Bypass": {
+          "recall": 0.0,
+          "total": 21,
+          "tp": 0
+        },
+        "Privilege Escalation": {
+          "recall": 0.1111,
+          "total": 9,
+          "tp": 1
+        },
+        "Safety Boundary Error": {
+          "recall": 0.0,
+          "total": 2,
+          "tp": 0
+        },
+        "Condition Block": {
+          "recall": 0.0,
+          "total": 9,
+          "tp": 0
+        },
+        "Common Sense Violation": {
+          "recall": 0.0,
+          "total": 17,
+          "tp": 0
+        },
+        "Triple Anomaly": {
+          "recall": 0.875,
+          "total": 8,
+          "tp": 7
+        },
+        "Action Block": {
+          "recall": 0.0,
+          "total": 10,
+          "tp": 0
+        }
+      },
+      "e9_m1_s1": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28,
+          "tp": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35,
+          "tp": 35
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Mutex": {
+          "recall": 0.9091,
+          "total": 11,
+          "tp": 10
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 1.0,
+          "total": 9,
+          "tp": 9
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 9,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 2,
+          "tp": 2
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Common Sense Violation": {
+          "recall": 1.0,
+          "total": 17,
+          "tp": 17
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        }
+      },
+      "e9_m1_s2": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28,
+          "tp": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35,
+          "tp": 35
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 9,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 2,
+          "tp": 2
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Common Sense Violation": {
+          "recall": 1.0,
+          "total": 17,
+          "tp": 17
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        }
+      },
+      "e9_m1_s3": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28,
+          "tp": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35,
+          "tp": 35
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 9,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 2,
+          "tp": 2
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Common Sense Violation": {
+          "recall": 1.0,
+          "total": 17,
+          "tp": 17
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        }
+      },
+      "e9_m2_2000": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28,
+          "tp": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35,
+          "tp": 35
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.3333,
+          "total": 9,
+          "tp": 3
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Privilege Escalation": {
+          "recall": 0.7778,
+          "total": 9,
+          "tp": 7
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 2,
+          "tp": 2
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Common Sense Violation": {
+          "recall": 0.8824,
+          "total": 17,
+          "tp": 15
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        }
+      },
+      "e9_m2_500": {
+        "Action Conflict": {
+          "recall": 0.8929,
+          "total": 28,
+          "tp": 25
+        },
+        "Action Duplication": {
+          "recall": 0.9429,
+          "total": 35,
+          "tp": 33
+        },
+        "Dual Anomaly": {
+          "recall": 0.84,
+          "total": 25,
+          "tp": 21
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 0.6154,
+          "total": 13,
+          "tp": 8
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 0.875,
+          "total": 8,
+          "tp": 7
+        },
+        "Action Mutex": {
+          "recall": 0.5455,
+          "total": 11,
+          "tp": 6
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.0,
+          "total": 9,
+          "tp": 0
+        },
+        "Condition Bypass": {
+          "recall": 0.619,
+          "total": 21,
+          "tp": 13
+        },
+        "Privilege Escalation": {
+          "recall": 0.1111,
+          "total": 9,
+          "tp": 1
+        },
+        "Safety Boundary Error": {
+          "recall": 0.0,
+          "total": 2,
+          "tp": 0
+        },
+        "Condition Block": {
+          "recall": 0.1111,
+          "total": 9,
+          "tp": 1
+        },
+        "Common Sense Violation": {
+          "recall": 0.4706,
+          "total": 17,
+          "tp": 8
+        },
+        "Triple Anomaly": {
+          "recall": 0.75,
+          "total": 8,
+          "tp": 6
+        },
+        "Action Block": {
+          "recall": 0.3,
+          "total": 10,
+          "tp": 3
+        }
+      },
+      "e9_m3_cls": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28,
+          "tp": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35,
+          "tp": 35
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25,
+          "tp": 25
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24,
+          "tp": 24
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Mutex": {
+          "recall": 0.8182,
+          "total": 11,
+          "tp": 9
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.6667,
+          "total": 9,
+          "tp": 6
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21,
+          "tp": 21
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 9,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 0.5,
+          "total": 2,
+          "tp": 1
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9,
+          "tp": 8
+        },
+        "Common Sense Violation": {
+          "recall": 0.8824,
+          "total": 17,
+          "tp": 15
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8,
+          "tp": 8
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        }
+      },
+      "e9_m1_mean": {
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 28
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 35
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 21
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 24
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 21
+        },
+        "Action Mutex": {
+          "recall": 0.9697,
+          "total": 11
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 8
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 2
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 13
+        },
+        "Action Block": {
+          "recall": 1.0,
+          "total": 10
+        },
+        "Condition Block": {
+          "recall": 0.8889,
+          "total": 9
+        },
+        "Common Sense Violation": {
+          "recall": 1.0,
+          "total": 17
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 9
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.9259,
+          "total": 9
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 25
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 8
+        }
+      }
+    },
+    "test_t3_variants": {
+      "base0shot": {
+        "Loop": {
+          "recall": 0.4211,
+          "total": 38,
+          "tp": 16
+        },
+        "Dual Anomaly": {
+          "recall": 0.7368,
+          "total": 38,
+          "tp": 28
+        },
+        "Action Mutex": {
+          "recall": 0.9231,
+          "total": 13,
+          "tp": 12
+        },
+        "Action Conflict": {
+          "recall": 0.9032,
+          "total": 31,
+          "tp": 28
+        },
+        "Common Sense Violation": {
+          "recall": 0.4211,
+          "total": 19,
+          "tp": 8
+        },
+        "Condition Block": {
+          "recall": 0.2222,
+          "total": 9,
+          "tp": 2
+        },
+        "Action Duplication": {
+          "recall": 0.1333,
+          "total": 30,
+          "tp": 4
+        },
+        "Action Revert": {
+          "recall": 0.8077,
+          "total": 26,
+          "tp": 21
+        },
+        "Condition Bypass": {
+          "recall": 0.1212,
+          "total": 33,
+          "tp": 4
+        },
+        "Action Block": {
+          "recall": 0.1538,
+          "total": 13,
+          "tp": 2
+        },
+        "Privilege Escalation": {
+          "recall": 0.0909,
+          "total": 11,
+          "tp": 1
+        },
+        "Triple Anomaly": {
+          "recall": 0.4286,
+          "total": 7,
+          "tp": 3
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.0833,
+          "total": 12,
+          "tp": 1
+        },
+        "Illegal State Rule": {
+          "recall": 0.3333,
+          "total": 3,
+          "tp": 1
+        },
+        "Trigger Mutex": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 0.4286,
+          "total": 7,
+          "tp": 3
+        }
+      },
+      "e9_m1_s1": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 0.9677,
+          "total": 31,
+          "tp": 30
+        },
+        "Common Sense Violation": {
+          "recall": 1.0,
+          "total": 19,
+          "tp": 19
+        },
+        "Condition Block": {
+          "recall": 0.6667,
+          "total": 9,
+          "tp": 6
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33,
+          "tp": 33
+        },
+        "Action Block": {
+          "recall": 0.9231,
+          "total": 13,
+          "tp": 12
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Triple Anomaly": {
+          "recall": 0.8571,
+          "total": 7,
+          "tp": 6
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 1.0,
+          "total": 12,
+          "tp": 12
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 3,
+          "tp": 3
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Safety Boundary Error": {
+          "recall": 0.8571,
+          "total": 7,
+          "tp": 6
+        }
+      },
+      "e9_m1_s2": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 31,
+          "tp": 31
+        },
+        "Common Sense Violation": {
+          "recall": 0.9474,
+          "total": 19,
+          "tp": 18
+        },
+        "Condition Block": {
+          "recall": 0.6667,
+          "total": 9,
+          "tp": 6
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33,
+          "tp": 33
+        },
+        "Action Block": {
+          "recall": 0.8462,
+          "total": 13,
+          "tp": 11
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.9167,
+          "total": 12,
+          "tp": 11
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 3,
+          "tp": 3
+        },
+        "Trigger Mutex": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        }
+      },
+      "e9_m1_s3": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 31,
+          "tp": 31
+        },
+        "Common Sense Violation": {
+          "recall": 0.9474,
+          "total": 19,
+          "tp": 18
+        },
+        "Condition Block": {
+          "recall": 0.7778,
+          "total": 9,
+          "tp": 7
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33,
+          "tp": 33
+        },
+        "Action Block": {
+          "recall": 0.9231,
+          "total": 13,
+          "tp": 12
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.9167,
+          "total": 12,
+          "tp": 11
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 3,
+          "tp": 3
+        },
+        "Trigger Mutex": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        }
+      },
+      "e9_m2_2000": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 31,
+          "tp": 31
+        },
+        "Common Sense Violation": {
+          "recall": 0.9474,
+          "total": 19,
+          "tp": 18
+        },
+        "Condition Block": {
+          "recall": 0.6667,
+          "total": 9,
+          "tp": 6
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33,
+          "tp": 33
+        },
+        "Action Block": {
+          "recall": 0.9231,
+          "total": 13,
+          "tp": 12
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.75,
+          "total": 12,
+          "tp": 9
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 3,
+          "tp": 3
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Safety Boundary Error": {
+          "recall": 0.7143,
+          "total": 7,
+          "tp": 5
+        }
+      },
+      "e9_m2_500": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 0.9737,
+          "total": 38,
+          "tp": 37
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 31,
+          "tp": 31
+        },
+        "Common Sense Violation": {
+          "recall": 0.9474,
+          "total": 19,
+          "tp": 18
+        },
+        "Condition Block": {
+          "recall": 0.3333,
+          "total": 9,
+          "tp": 3
+        },
+        "Action Duplication": {
+          "recall": 0.8667,
+          "total": 30,
+          "tp": 26
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 0.8485,
+          "total": 33,
+          "tp": 28
+        },
+        "Action Block": {
+          "recall": 0.4615,
+          "total": 13,
+          "tp": 6
+        },
+        "Privilege Escalation": {
+          "recall": 0.9091,
+          "total": 11,
+          "tp": 10
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.3333,
+          "total": 12,
+          "tp": 4
+        },
+        "Illegal State Rule": {
+          "recall": 0.3333,
+          "total": 3,
+          "tp": 1
+        },
+        "Trigger Mutex": {
+          "recall": 0.9,
+          "total": 10,
+          "tp": 9
+        },
+        "Safety Boundary Error": {
+          "recall": 0.4286,
+          "total": 7,
+          "tp": 3
+        }
+      },
+      "e9_m3_cls": {
+        "Loop": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38,
+          "tp": 38
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13,
+          "tp": 13
+        },
+        "Action Conflict": {
+          "recall": 1.0,
+          "total": 31,
+          "tp": 31
+        },
+        "Common Sense Violation": {
+          "recall": 0.9474,
+          "total": 19,
+          "tp": 18
+        },
+        "Condition Block": {
+          "recall": 0.7778,
+          "total": 9,
+          "tp": 7
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30,
+          "tp": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26,
+          "tp": 26
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33,
+          "tp": 33
+        },
+        "Action Block": {
+          "recall": 0.8462,
+          "total": 13,
+          "tp": 11
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11,
+          "tp": 11
+        },
+        "Triple Anomaly": {
+          "recall": 1.0,
+          "total": 7,
+          "tp": 7
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.6667,
+          "total": 12,
+          "tp": 8
+        },
+        "Illegal State Rule": {
+          "recall": 0.6667,
+          "total": 3,
+          "tp": 2
+        },
+        "Trigger Mutex": {
+          "recall": 1.0,
+          "total": 10,
+          "tp": 10
+        },
+        "Safety Boundary Error": {
+          "recall": 0.7143,
+          "total": 7,
+          "tp": 5
+        }
+      },
+      "e9_m1_mean": {
+        "Action Conflict": {
+          "recall": 0.9892,
+          "total": 31
+        },
+        "Action Duplication": {
+          "recall": 1.0,
+          "total": 30
+        },
+        "Action Revert": {
+          "recall": 1.0,
+          "total": 26
+        },
+        "Loop": {
+          "recall": 1.0,
+          "total": 38
+        },
+        "Condition Bypass": {
+          "recall": 1.0,
+          "total": 33
+        },
+        "Action Mutex": {
+          "recall": 1.0,
+          "total": 13
+        },
+        "Illegal State Rule": {
+          "recall": 1.0,
+          "total": 3
+        },
+        "Safety Boundary Error": {
+          "recall": 0.9524,
+          "total": 7
+        },
+        "Trigger Mutex": {
+          "recall": 0.9333,
+          "total": 10
+        },
+        "Action Block": {
+          "recall": 0.8975,
+          "total": 13
+        },
+        "Condition Block": {
+          "recall": 0.7037,
+          "total": 9
+        },
+        "Common Sense Violation": {
+          "recall": 0.9649,
+          "total": 19
+        },
+        "Privilege Escalation": {
+          "recall": 1.0,
+          "total": 11
+        },
+        "Physical Cross-rule Interaction": {
+          "recall": 0.9445,
+          "total": 12
+        },
+        "Dual Anomaly": {
+          "recall": 1.0,
+          "total": 38
+        },
+        "Triple Anomaly": {
+          "recall": 0.9524,
+          "total": 7
+        }
+      }
+    }
+  },
+  "references": {
+    "paper_qwen8b_table2": {
+      "acc": 0.89,
+      "p": 0.83,
+      "r": 0.83,
+      "f1": 0.83,
+      "fpr": 0.08,
+      "arl": 0.62,
+      "tess": 3.07
+    },
+    "icl_gateway": [
+      {
+        "tag": "icl_gpt-5.4_0shot",
+        "n": 750,
+        "acc": 0.866667,
+        "p": 0.815126,
+        "r": 0.776,
+        "f1": 0.795082,
+        "fpr": 0.088,
+        "arl_f1": 0.710578,
+        "loc_em": 0.532,
+        "type_mentioned": 0.084,
+        "overthinking": 0.088,
+        "display": "GPT-5.4 (ICL) 0shot"
+      },
+      {
+        "tag": "icl_gpt-5.4_5shot",
+        "n": 750,
+        "acc": 0.957333,
+        "p": 0.97807,
+        "r": 0.892,
+        "f1": 0.933054,
+        "fpr": 0.01,
+        "arl_f1": 0.864854,
+        "loc_em": 0.74,
+        "type_mentioned": 0.648,
+        "overthinking": 0.01,
+        "display": "GPT-5.4 (ICL) 5shot"
+      },
+      {
+        "tag": "icl_deepseek-v4-flash_0shot",
+        "n": 750,
+        "acc": 0.814667,
+        "p": 0.877551,
+        "r": 0.516,
+        "f1": 0.649874,
+        "fpr": 0.036,
+        "arl_f1": 0.440841,
+        "loc_em": 0.316,
+        "type_mentioned": 0.044,
+        "overthinking": 0.036,
+        "display": "DS-v4-flash (ICL) 0shot"
+      },
+      {
+        "tag": "icl_deepseek-v4-flash_5shot",
+        "n": 750,
+        "acc": 0.914667,
+        "p": 0.955882,
+        "r": 0.78,
+        "f1": 0.859031,
+        "fpr": 0.018,
+        "arl_f1": 0.745295,
+        "loc_em": 0.624,
+        "type_mentioned": 0.592,
+        "overthinking": 0.018,
+        "display": "DS-v4-flash (ICL) 5shot"
+      },
+      {
+        "tag": "icl_gemini-3.1-flash-lite-preview_0shot",
+        "n": 750,
+        "acc": 0.848,
+        "p": 0.780992,
+        "r": 0.756,
+        "f1": 0.768293,
+        "fpr": 0.106,
+        "arl_f1": 0.648416,
+        "loc_em": 0.392,
+        "type_mentioned": 0.092,
+        "overthinking": 0.106,
+        "display": "Gemini-3.1-flash (ICL) 0shot"
+      },
+      {
+        "tag": "icl_gemini-3.1-flash-lite-preview_5shot",
+        "n": 750,
+        "acc": 0.885333,
+        "p": 0.927083,
+        "r": 0.712,
+        "f1": 0.80543,
+        "fpr": 0.028,
+        "arl_f1": 0.637117,
+        "loc_em": 0.48,
+        "type_mentioned": 0.4,
+        "overthinking": 0.028,
+        "display": "Gemini-3.1-flash (ICL) 5shot"
+      }
+    ],
+    "symbolic": [
+      {
+        "tag": "symbolic_el",
+        "n": 15183,
+        "acc": 0.739511,
+        "p": 1.0,
+        "r": 0.140217,
+        "f1": 0.245948,
+        "fpr": 0.0,
+        "arl_f1": 0.13588,
+        "loc_em": 0.117391,
+        "type_mentioned": 0.108696,
+        "overthinking": 0.0,
+        "display": "Heuristic (loop)"
+      },
+      {
+        "tag": "symbolic_ar",
+        "n": 15183,
+        "acc": 0.881315,
+        "p": 0.917612,
+        "r": 0.668261,
+        "f1": 0.773333,
+        "fpr": 0.02608,
+        "arl_f1": 0.510797,
+        "loc_em": 0.228913,
+        "type_mentioned": 0.281522,
+        "overthinking": 0.02608,
+        "display": "Heuristic (action)"
+      },
+      {
+        "tag": "symbolic_ac",
+        "n": 15183,
+        "acc": 0.754857,
+        "p": 0.97103,
+        "r": 0.196739,
+        "f1": 0.327187,
+        "fpr": 0.002551,
+        "arl_f1": 0.175573,
+        "loc_em": 0.122609,
+        "type_mentioned": 0.021739,
+        "overthinking": 0.002551,
+        "display": "Heuristic (trig.-overlap)"
+      },
+      {
+        "tag": "symbolic_tm",
+        "n": 15183,
+        "acc": 0.709214,
+        "p": 1.0,
+        "r": 0.040217,
+        "f1": 0.077324,
+        "fpr": 0.0,
+        "arl_f1": 0.040217,
+        "loc_em": 0.040217,
+        "type_mentioned": 0.023913,
+        "overthinking": 0.0,
+        "display": "Heuristic (mutex)"
+      },
+      {
+        "tag": "symbolic_be",
+        "n": 15183,
+        "acc": 0.704867,
+        "p": 0.904762,
+        "r": 0.028913,
+        "f1": 0.056035,
+        "fpr": 0.001323,
+        "arl_f1": 0.024819,
+        "loc_em": 0.020652,
+        "type_mentioned": 0.0,
+        "overthinking": 0.001323,
+        "display": "Heuristic (ontology)"
+      },
+      {
+        "tag": "symbolic_smt",
+        "n": 15183,
+        "acc": 0.828229,
+        "p": 0.902262,
+        "r": 0.485652,
+        "f1": 0.63143,
+        "fpr": 0.022867,
+        "arl_f1": 0.392435,
+        "loc_em": 0.229348,
+        "type_mentioned": 0.177174,
+        "overthinking": 0.022867,
+        "display": "SMT (iRuler-style)"
+      },
+      {
+        "tag": "symbolic_lex",
+        "n": 15183,
+        "acc": 0.963973,
+        "p": 0.990085,
+        "r": 0.89,
+        "f1": 0.937379,
+        "fpr": 0.003874,
+        "arl_f1": 0.0,
+        "loc_em": 0.0,
+        "type_mentioned": 0.0,
+        "overthinking": 1.0,
+        "display": "Lexical (TF-IDF+LR)"
+      },
+      {
+        "tag": "symbolic_graph",
+        "n": 15183,
+        "acc": 0.958374,
+        "p": 0.971483,
+        "r": 0.888696,
+        "f1": 0.928247,
+        "fpr": 0.011339,
+        "arl_f1": 0.659295,
+        "loc_em": 0.448696,
+        "type_mentioned": 0.0,
+        "overthinking": 1.0,
+        "display": "Graph (features+LR)"
+      }
+    ]
+  }
+}

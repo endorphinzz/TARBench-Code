@@ -1,0 +1,100 @@
+{
+  "seed": 20261008,
+  "jaccard_threshold": 0.8,
+  "inputs": {
+    "full": 15183,
+    "icl": 750,
+    "variants": 584
+  },
+  "t1": {
+    "abnormal_chains": 670,
+    "benign": 1340,
+    "total": 2010,
+    "fragment_templates": 134
+  },
+  "benign_ratio_cap": {
+    "before": 8240,
+    "after": 5360,
+    "abnormal": 2680,
+    "note": "下采样至 2:1, 与评测集先验一致"
+  },
+  "exclusions": {
+    "chain_id_overlap_with_T2_T3": 0,
+    "fragment_template_overlap_with_T1_T2": 895,
+    "rule_jaccard_ge_threshold": 331,
+    "max_residual_jaccard_in_train": 0.7778
+  },
+  "t3_fragment_overlap_report_only": {
+    "t3_templates": 300,
+    "also_in_train_exact_match": 166,
+    "note": "T3 为 OOD 压力集; 变体片段经改写, 精确匹配为重合下界"
+  },
+  "token_stats_train": {
+    "method": "whitespace (n=3000)",
+    "p50": 54,
+    "p90": 72,
+    "p99": 90,
+    "max": 90,
+    "gt_2048": 0,
+    "gt_4096": 0
+  },
+  "final_counts": {
+    "train": {
+      "benign": 5026,
+      "abnormal": 2514,
+      "total": 7540
+    },
+    "dev": {
+      "total": 500,
+      "abnormal": 166
+    },
+    "t1": {
+      "total": 2010,
+      "abnormal_chains": 670,
+      "benign": 1340,
+      "fragment_templates": 134
+    },
+    "scales": {
+      "500": 500,
+      "2000": 2000
+    }
+  },
+  "distributions": {
+    "train_abnormal_type": {
+      "Action Block": 35,
+      "Action Conflict": 284,
+      "Action Duplication": 197,
+      "Action Mutex": 64,
+      "Action Revert": 323,
+      "Common Sense Violation": 146,
+      "Condition Block": 44,
+      "Condition Bypass": 287,
+      "Dual Anomaly": 361,
+      "Illegal State Rule": 44,
+      "Loop": 337,
+      "Physical Cross-rule Interaction": 94,
+      "Privilege Escalation": 68,
+      "Safety Boundary Error": 72,
+      "Trigger Mutex": 60,
+      "Triple Anomaly": 98
+    },
+    "t1_abnormal_type": {
+      "Action Block": 55,
+      "Action Conflict": 75,
+      "Action Duplication": 120,
+      "Action Mutex": 20,
+      "Action Revert": 60,
+      "Common Sense Violation": 60,
+      "Condition Block": 50,
+      "Condition Bypass": 90,
+      "Dual Anomaly": 40,
+      "Illegal State Rule": 10,
+      "Loop": 30,
+      "Physical Cross-rule Interaction": 5,
+      "Privilege Escalation": 25,
+      "Safety Boundary Error": 5,
+      "Trigger Mutex": 15,
+      "Triple Anomaly": 10
+    }
+  }
+}

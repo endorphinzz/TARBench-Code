@@ -9,6 +9,7 @@ TARBench is a benchmark for smart-home trigger-action rule chains, covering both
   - `benign_long_chains_gpt54.json`
 - `data/abnormal/`
   - `abnormal_chains_gpt54.json`
+  - `abnormal_chains_gpt54_contextual_variants.json`
   - `abnormal_rr_re_pie_summary.json`
   - `abnormal_rr_re_radar_summary.json`
 - `data/abnormal_fragments/`
@@ -24,6 +25,7 @@ TARBench is a benchmark for smart-home trigger-action rule chains, covering both
   - `icl/`
   - `rag/`
   - `token_compression/`
+  - `finetune/` (QLoRA fine-tuning study: SFT data builder, LLaMA-Factory config generator, vLLM inference, evaluation, and released per-run metrics)
   - `datasets/` (mixed evaluation sets)
 - `annotation/`
   - annotation guidelines, per-annotator batches, and inter-annotator agreement (IAA) sampling and validation scripts
@@ -103,6 +105,7 @@ python run.py token-compression --dry-run
 
 The repository keeps the evaluation metrics for every reported run under:
 
+- `experiments/finetune/analysis/metrics/` (`*_metrics.json`, fine-tuning study)
 - `experiments/icl/outputs/` (`*_metrics.json`)
 - `experiments/rag/outputs/` (`*_metrics.json`)
 - `experiments/token_compression/outputs/` (`*_metrics.json`)
@@ -155,6 +158,38 @@ python generation/validate_long_chains.py --help
 - build evaluation datasets
 - run benchmark
 - evaluate predictions
+
+### `experiments/finetune/`
+
+QLoRA fine-tuning of Qwen-3-8B under the benchmark's three-level output contract (binary verdict + involved rules + explanation), following Appendix O of the paper.
+
+- build SFT data from the released benchmark pools: `build_sft_data.py`
+- generate LLaMA-Factory configs: `configs/make_configs.py`
+- run inference and score: `run_inference.py`, `score_tess.py`, `analyze_finetune.py`
+- one-click cloud pipeline (single 24GB GPU): `cloud/cloud_setup.sh`, `cloud/train_queue.sh`, `cloud/infer_all.sh`
+
+Quick recipe:
+
+```bash
+# 1) SFT training files (sft_*.json) and split audit
+python experiments/finetune/build_sft_data.py
+
+# 2) Generate training configs (writes *.yaml next to make_configs.py)
+python experiments/finetune/configs/make_configs.py --model-path /path/to/Qwen3-8B
+
+# 3) Train one run with LLaMA-Factory (see experiments/finetune/requirements.txt)
+llamafactory-cli train experiments/finetune/configs/e9_m1_s1.yaml
+
+# 4) Serve base + adapters with vLLM and run the three evaluation sets
+python experiments/finetune/run_inference.py --help
+python experiments/finetune/analyze_finetune.py --help
+```
+
+Notes:
+
+- Per-run metrics for all reported configurations (3 seeds, cls-only, 500/2,000 data-scale, zero-shot base) are released under `experiments/finetune/analysis/metrics/` with the split-audit report in `experiments/finetune/split_audit.json`.
+- The LoRA adapters (about 2 GB for all six checkpoints) and the bulky raw prediction files are not stored in this repository; they can be reproduced with the pipeline above.
+- Training uses LLaMA-Factory + bitsandbytes (QLoRA, 4-bit NF4, rank 32 / alpha 64) and vLLM for greedy-decoding inference; both environments are provisioned automatically by `cloud/cloud_setup.sh`.
 
 ## Notes
 

@@ -1,0 +1,161 @@
+{
+  "overall": {
+    "total": 120,
+    "tp": 7,
+    "tn": 0,
+    "fp": 1,
+    "fn": 0,
+    "unknown": 112,
+    "accuracy": 0.875,
+    "precision": 0.875,
+    "recall": 1.0,
+    "specificity": 0.0,
+    "false_positive_rate": 1.0,
+    "false_negative_rate": 0.0
+  },
+  "benign": {
+    "total": 60,
+    "false_positive_rate": 1.0,
+    "overthinking_rate": 0.016667
+  },
+  "abnormal": {
+    "total": 60,
+    "recall": 1.0,
+    "type_mentioned_rate": 0.0,
+    "localization_all_abnormal": {
+      "exact_match_rate": 0.0,
+      "overlap_precision": 0.0,
+      "overlap_recall": 0.0,
+      "overlap_f1": 0.0
+    },
+    "localization_detected_abnormal": {
+      "exact_match_rate": 0.0,
+      "overlap_precision": 0.0,
+      "overlap_recall": 0.0,
+      "overlap_f1": 0.0
+    }
+  },
+  "groups": {
+    "anomaly_type": {
+      "Action Conflict": {
+        "total": 60,
+        "tp": 7,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "unknown": 53,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "__benign__": {
+        "total": 60,
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "unknown": 59,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "sub_category": {
+      "Atomic Action Conflict": {
+        "total": 60,
+        "tp": 7,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "unknown": 53,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      },
+      "__benign__": {
+        "total": 60,
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "unknown": 59,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "scenario_group": {
+      "Guest Mode": {
+        "total": 60,
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "unknown": 59,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "Night/Sleep Mode": {
+        "total": 60,
+        "tp": 7,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "unknown": 53,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      }
+    },
+    "chain_length": {
+      "6": {
+        "total": 60,
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "unknown": 59,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0
+      },
+      "8": {
+        "total": 60,
+        "tp": 7,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "unknown": 53,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0
+      }
+    }
+  },
+  "f1": 0.933333
+}

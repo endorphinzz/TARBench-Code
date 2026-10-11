@@ -1,0 +1,6 @@
+# Fine-tuning study dependencies (install in a dedicated venv, see README "Fine-tuning").
+# Training: LLaMA-Factory with QLoRA (bitsandbytes 4-bit NF4)
+llamafactory>=0.9.2
+bitsandbytes>=0.43.0
+# Inference: vLLM serves the base model and each LoRA adapter
+vllm>=0.6.0
