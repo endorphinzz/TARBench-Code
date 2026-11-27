@@ -71,7 +71,7 @@ rewrite with its verdict and reason.
   variants, paper), 0.997 (restyled fragments), 0.990 (three salient cues removed).
 - 37.4% of the device-attribute pairs that trigger fragment rules never occur as a trigger in a
   benign rule; 64.1% of fragment rules and 13.9% of benign rules are triggered by a state another
-  rule sets.
+  rule sets. The 4,600 anomalous samples come from 918 fragment templates.
 - Prompted models on the restyled set, same 750 samples and session: gpt-5.4 F1 0.678 to 0.676,
   ARL-IoU 0.575 to 0.580; gemini-3.1-flash-lite F1 0.627 to 0.630, ARL-IoU 0.491 to 0.490.
 - RAG without stored cases (FPR, then recall): gpt-5.4 0.082/0.772 (no retrieval), 0.016/0.640

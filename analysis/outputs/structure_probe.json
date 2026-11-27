@@ -1,4 +1,9 @@
 {
+  "fragment_templates": {
+    "abnormal_samples": 4600,
+    "distinct_fragment_templates": 918,
+    "chains_per_template": 5.0
+  },
   "rule_level": {
     "frag": {
       "n_cond_oop": 0.3736,

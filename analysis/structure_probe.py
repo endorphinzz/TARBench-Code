@@ -91,6 +91,21 @@ def main():
                 agg[key][k] += f[k]
     rule_level = {k: {f: round(agg[k][f] / n[k], 4) for f in FEATS} for k in agg}
     rule_level["n_rules"] = dict(n)
+
+    # ---- 片段模板数：模板身份 = 插入区间规则文本的规范化元组（与 finetune/build_sft_data.py 一致） ----
+    normalize = lambda r: re.sub(r"\s+", " ", r.strip().lower())
+    templates, n_abnormal = set(), 0
+    for s in samples:
+        gt = s.get("ground_truth") or {}
+        st, ln = gt.get("abnormal_fragment_start_index"), gt.get("abnormal_fragment_length")
+        if s["label"] != "abnormal" or st is None or ln is None:
+            continue
+        n_abnormal += 1
+        templates.add(tuple(normalize(s["rules"][f"Rule_{i}"]) for i in range(int(st), int(st) + int(ln))
+                            if f"Rule_{i}" in s["rules"]))
+    templates.discard(())
+    templates_info = {"abnormal_samples": n_abnormal, "distinct_fragment_templates": len(templates),
+                      "chains_per_template": round(n_abnormal / len(templates), 1)}
     print("rule-level rates      frag     host   benign")
     for f in FEATS:
         print(f"  {f:20s} {rule_level['frag'][f]:7.1%} {rule_level['host'][f]:7.1%} {rule_level['benign'][f]:7.1%}")
@@ -112,7 +127,7 @@ def main():
                 "counts_plus_per_rule_rates": cv(StandardScaler().fit_transform(np.column_stack([X, X / nr])))}
     print("5 structural features combined (LR, 5-fold CV) AUC:", combined)
 
-    res = {"rule_level": rule_level, "sample_single_feature_auc": single, "combined_cv_auc": combined}
+    res = {"fragment_templates": templates_info, "rule_level": rule_level, "sample_single_feature_auc": single, "combined_cv_auc": combined}
     OUT.write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
