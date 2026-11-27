@@ -1,0 +1,227 @@
+{
+  "gpt-5.4 0-shot (rerun 11-26)": {
+    "n": 750,
+    "n_condition_block": 9,
+    "recall_condition_block": 0.222,
+    "all": {
+      "F1": 0.678,
+      "R": 0.656,
+      "FPR": 0.14
+    },
+    "without_condition_block": {
+      "F1": 0.685,
+      "R": 0.672,
+      "FPR": 0.14
+    }
+  },
+  "gemini-3.1 0-shot (rerun 11-26)": {
+    "n": 750,
+    "n_condition_block": 9,
+    "recall_condition_block": 0.222,
+    "all": {
+      "F1": 0.627,
+      "R": 0.624,
+      "FPR": 0.184
+    },
+    "without_condition_block": {
+      "F1": 0.632,
+      "R": 0.639,
+      "FPR": 0.184
+    }
+  },
+  "gpt-5.4 0-shot (submitted)": {
+    "n": 750,
+    "n_condition_block": 9,
+    "recall_condition_block": 0.444,
+    "all": {
+      "F1": 0.795,
+      "R": 0.776,
+      "FPR": 0.088
+    },
+    "without_condition_block": {
+      "F1": 0.8,
+      "R": 0.788,
+      "FPR": 0.088
+    }
+  },
+  "ds-v4 0-shot (submitted)": {
+    "n": 750,
+    "n_condition_block": 9,
+    "recall_condition_block": 0.111,
+    "all": {
+      "F1": 0.65,
+      "R": 0.516,
+      "FPR": 0.036
+    },
+    "without_condition_block": {
+      "F1": 0.661,
+      "R": 0.531,
+      "FPR": 0.036
+    }
+  },
+  "gemini-3.1 0-shot (submitted)": {
+    "n": 750,
+    "n_condition_block": 9,
+    "recall_condition_block": 0.444,
+    "all": {
+      "F1": 0.768,
+      "R": 0.756,
+      "FPR": 0.106
+    },
+    "without_condition_block": {
+      "F1": 0.772,
+      "R": 0.768,
+      "FPR": 0.106
+    }
+  },
+  "gpt-5.4 RAG (submitted)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.385,
+    "all": {
+      "F1": 0.872,
+      "R": 0.78,
+      "FPR": 0.004
+    },
+    "without_condition_block": {
+      "F1": 0.886,
+      "R": 0.802,
+      "FPR": 0.004
+    }
+  },
+  "claude-sonnet RAG (submitted)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.615,
+    "all": {
+      "F1": 0.922,
+      "R": 0.904,
+      "FPR": 0.028
+    },
+    "without_condition_block": {
+      "F1": 0.93,
+      "R": 0.92,
+      "FPR": 0.028
+    }
+  },
+  "ds-v4 RAG (submitted)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.154,
+    "all": {
+      "F1": 0.769,
+      "R": 0.64,
+      "FPR": 0.012
+    },
+    "without_condition_block": {
+      "F1": 0.788,
+      "R": 0.667,
+      "FPR": 0.012
+    }
+  },
+  "gpt-5.4 no-retr. (rerun 11-26)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.385,
+    "all": {
+      "F1": 0.798,
+      "R": 0.772,
+      "FPR": 0.082
+    },
+    "without_condition_block": {
+      "F1": 0.807,
+      "R": 0.793,
+      "FPR": 0.082
+    }
+  },
+  "claude-sonnet no-retr. (rerun 11-26)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.538,
+    "all": {
+      "F1": 0.837,
+      "R": 0.852,
+      "FPR": 0.092
+    },
+    "without_condition_block": {
+      "F1": 0.843,
+      "R": 0.869,
+      "FPR": 0.092
+    }
+  },
+  "ds-v4 no-retr. (rerun 11-26)": {
+    "n": 750,
+    "n_condition_block": 13,
+    "recall_condition_block": 0.308,
+    "all": {
+      "F1": 0.849,
+      "R": 0.82,
+      "FPR": 0.056
+    },
+    "without_condition_block": {
+      "F1": 0.863,
+      "R": 0.848,
+      "FPR": 0.056
+    }
+  },
+  "qwen-8b base 0-shot (t1)": {
+    "n": 2010,
+    "n_condition_block": 50,
+    "recall_condition_block": 0.02,
+    "all": {
+      "F1": 0.46,
+      "R": 0.312,
+      "FPR": 0.022
+    },
+    "without_condition_block": {
+      "F1": 0.485,
+      "R": 0.335,
+      "FPR": 0.022
+    }
+  },
+  "qwen-8b-FT s1 (t1)": {
+    "n": 2010,
+    "n_condition_block": 50,
+    "recall_condition_block": 1.0,
+    "all": {
+      "F1": 0.991,
+      "R": 0.996,
+      "FPR": 0.007
+    },
+    "without_condition_block": {
+      "F1": 0.99,
+      "R": 0.995,
+      "FPR": 0.007
+    }
+  },
+  "qwen-8b-FT s2 (t1)": {
+    "n": 2010,
+    "n_condition_block": 50,
+    "recall_condition_block": 1.0,
+    "all": {
+      "F1": 0.991,
+      "R": 0.99,
+      "FPR": 0.004
+    },
+    "without_condition_block": {
+      "F1": 0.99,
+      "R": 0.989,
+      "FPR": 0.004
+    }
+  },
+  "qwen-8b-FT s3 (t1)": {
+    "n": 2010,
+    "n_condition_block": 50,
+    "recall_condition_block": 1.0,
+    "all": {
+      "F1": 0.989,
+      "R": 0.991,
+      "FPR": 0.007
+    },
+    "without_condition_block": {
+      "F1": 0.988,
+      "R": 0.99,
+      "FPR": 0.007
+    }
+  }
+}

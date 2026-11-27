@@ -1,0 +1,26 @@
+{
+  "probe": "TF-IDF(1-2)+LR trained on full ORIGINAL dataset, applied to ICL-750 subsets (App C transfer protocol)",
+  "n": {
+    "orig_abnormal": 229,
+    "rewritten_abnormal": 229,
+    "benign": 500
+  },
+  "original_fragment": {
+    "flag_rate@0.5": 0.9039301310043668,
+    "score_mean": 0.8535870493472238,
+    "auc_vs_benign": 0.9987336244541484
+  },
+  "rewritten_fragment": {
+    "flag_rate@0.5": 0.8471615720524017,
+    "score_mean": 0.8054978636148179,
+    "auc_vs_benign": 0.9970218340611354
+  },
+  "benign": {
+    "flag_rate@0.5": 0.002,
+    "score_mean": 0.05758618687972045
+  },
+  "reference": {
+    "device_sharing_variant_flag_rate_90.7pct_auc_0.994": "variant_artifact_probe.json (App C)",
+    "cv_auc_on_original": 0.9956
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "n_rewritten_abnormal": 229,
+  "n_unrewritten_abnormal": 21,
+  "models": {
+    "gpt-5.4": {
+      "full_750": {
+        "control": {
+          "acc": 0.792,
+          "P": 0.701,
+          "R": 0.656,
+          "F1": 0.678,
+          "FPR": 0.14
+        },
+        "style_matched": {
+          "acc": 0.792,
+          "P": 0.703,
+          "R": 0.652,
+          "F1": 0.676,
+          "FPR": 0.138
+        },
+        "arl_iou_control": 0.575,
+        "arl_iou_style_matched": 0.58
+      },
+      "paired_229_rewritten": {
+        "recall_control": 0.659,
+        "recall_style_matched": 0.655,
+        "detected_both": 143,
+        "lost_after_rewrite": 8,
+        "gained_after_rewrite": 7,
+        "arl_iou_control": 0.588,
+        "arl_iou_style_matched": 0.587,
+        "iou_up": 20,
+        "iou_down": 18,
+        "exact_control": 104,
+        "exact_style_matched": 105
+      },
+      "run_to_run_noise_on_unchanged_samples": {
+        "n": 521,
+        "detection_flips": 9,
+        "iou_changes_on_unrewritten_abnormal": 5,
+        "n_unrewritten_abnormal": 21
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "full_750": {
+        "control": {
+          "acc": 0.752,
+          "P": 0.629,
+          "R": 0.624,
+          "F1": 0.627,
+          "FPR": 0.184
+        },
+        "style_matched": {
+          "acc": 0.759,
+          "P": 0.644,
+          "R": 0.616,
+          "F1": 0.63,
+          "FPR": 0.17
+        },
+        "arl_iou_control": 0.491,
+        "arl_iou_style_matched": 0.49
+      },
+      "paired_229_rewritten": {
+        "recall_control": 0.62,
+        "recall_style_matched": 0.611,
+        "detected_both": 133,
+        "lost_after_rewrite": 9,
+        "gained_after_rewrite": 7,
+        "arl_iou_control": 0.5,
+        "arl_iou_style_matched": 0.499,
+        "iou_up": 13,
+        "iou_down": 15,
+        "exact_control": 83,
+        "exact_style_matched": 87
+      },
+      "run_to_run_noise_on_unchanged_samples": {
+        "n": 521,
+        "detection_flips": 15,
+        "iou_changes_on_unrewritten_abnormal": 4,
+        "n_unrewritten_abnormal": 21
+      }
+    }
+  }
+}

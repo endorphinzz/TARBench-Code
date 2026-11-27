@@ -1,0 +1,15 @@
+{
+  "protocol": "TF-IDF(1-2gram) + LogisticRegression trained on train_full.json, evaluated on test_t1.json; fragment templates of test chains are absent from training",
+  "n_train": 7540,
+  "n_test": 2010,
+  "detection": {
+    "auc": 0.9945,
+    "f1": 0.9283,
+    "fpr": 0.0075
+  },
+  "localization": {
+    "arl_iou": 0.9669,
+    "exact_rate": 0.9164,
+    "n_abnormal_scored": 670
+  }
+}

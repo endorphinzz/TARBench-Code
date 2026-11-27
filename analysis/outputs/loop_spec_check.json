@@ -1,0 +1,49 @@
+{
+  "loop_fragments": 500,
+  "oscillate_under_stated_semantics": 10,
+  "terminate_after_one_pass": 360,
+  "unparsed": 130,
+  "satisfy_structural_cycle_spec": 345,
+  "benign_chains": 10583,
+  "benign_with_static_dependency_cycle": 4,
+  "benign_unparsed": 1873,
+  "benign_examples": [
+    {
+      "chain_id": "L_0526",
+      "rules": [
+        "IF front_porch_doorbell.doorbell_status == pressed THEN front_porch_camera.secure_mode = on",
+        "IF front_porch_motion_sensor.motion_sensor_value == true THEN front_porch_light.light_status = on",
+        "IF front_porch_light_sensor.light_sensor_value < 50 THEN front_porch_lamp.lamp_status = on",
+        "IF hallway_speaker.speaker_status == off THEN hallway_speaker.speaker_status = on",
+        "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_lamp.lamp_brightness = medium",
+        "IF front_porch_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on"
+      ]
+    },
+    {
+      "chain_id": "L_2352",
+      "rules": [
+        "IF hallway_alarm_clock.alarm_clock_time == 22:00 THEN living_room_light.light_status = off",
+        "IF hallway_alarm_clock.alarm_clock_time == 22:05 THEN dining_room_light.light_status = off",
+        "IF bedroom_temperature_sensor.temperature_sensor_value < 19 THEN bedroom_heater.heater_status = on",
+        "IF bedroom_humidity_sensor.humidity_sensor_value < 35 THEN bedroom_humidifier.humidifier_status = on",
+        "IF bedroom_light_sensor.light_sensor_value < 100 THEN bedroom_lamp.lamp_brightness = weak",
+        "IF front_porch_alarm_clock.alarm_clock_time == 22:15 THEN front_porch_camera.secure_mode = on",
+        "IF garage_alarm_clock.alarm_clock_time == 22:15 THEN garage_camera.secure_mode = on",
+        "IF hallway_door_sensor.door_sensor_value == closed THEN hallway_speaker.speaker_status = off",
+        "IF bedroom_window.window_status == closed THEN bedroom_window_lock.window_lock_status = locked",
+        "IF living_room_curtain.curtain_status == open THEN living_room_curtain.curtain_status = closed"
+      ]
+    },
+    {
+      "chain_id": "L_3899",
+      "rules": [
+        "IF living_room_alarm_clock.alarm_clock_time == 14:00 THEN living_room_robot_vacuum.robot_vacuum_status = on",
+        "IF living_room_light_sensor.light_sensor_value < 240 THEN living_room_light.light_status = on",
+        "IF living_room_curtain.curtain_status == closed THEN living_room_curtain.curtain_status = open",
+        "IF living_room_air_quality_sensor.air_quality_sensor_value > 105 THEN living_room_air_purifier.air_purifier_mode = auto",
+        "IF living_room_temperature_sensor.temperature_sensor_value > 26 THEN living_room_fan.fan_status = on",
+        "IF hallway_door_sensor.door_sensor_value == closed THEN hallway_lamp.lamp_status = on"
+      ]
+    }
+  ]
+}

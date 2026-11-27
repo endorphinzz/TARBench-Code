@@ -14,6 +14,7 @@ from retriever import KnowledgeBaseRetriever, compact_retrieval
 
 SUPPORTED_MODELS = {
     "gpt-5.4",
+    "gemini-3.1-flash-lite",
     "gemini-3.1-flash-lite-preview",
     "gemini-3.1-pro-preview",
     "claude-sonnet-4-5",
@@ -319,7 +320,7 @@ def run(args):
         raise ValueError(f"Unsupported model: {model}. Supported: {', '.join(sorted(SUPPORTED_MODELS))}")
 
     dataset_path = Path(args.dataset_file).resolve() if args.dataset_file else resolve_path(config, "dataset_file")
-    knowledge_base_path = resolve_path(config, "knowledge_base_file")
+    knowledge_base_path = Path(args.kb_file).resolve() if args.kb_file else resolve_path(config, "knowledge_base_file")
     if args.prompt_file:
         prompt_path = Path(args.prompt_file).resolve()
     elif args.without_rag:
@@ -429,6 +430,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run the TAPBench RAG benchmark through Poixe.")
     parser.add_argument("--model", choices=sorted(SUPPORTED_MODELS), help="Poixe model name.")
     parser.add_argument("--dataset-file", help="Override the dataset JSON path.")
+    parser.add_argument("--kb-file", help="Override the knowledge base JSONL path (e.g. knowledge_base_no_cases ablation).")
     parser.add_argument("--prompt-file", help="Override the prompt markdown path.")
     parser.add_argument("--output-dir", help="Override the output directory path.")
     parser.add_argument("--batch-size", type=int, help="Samples per API call.")

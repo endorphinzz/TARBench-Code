@@ -14,6 +14,7 @@ from selector import ICLExampleSelector, render_examples, render_type_definition
 
 SUPPORTED_MODELS = {
     "gpt-5.4",
+    "gemini-3.1-flash-lite",
     "gemini-3.1-flash-lite-preview",
     "gemini-3.1-pro-preview",
     "claude-sonnet-4-5",

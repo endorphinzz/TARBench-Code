@@ -1,0 +1,392 @@
+{
+  "Loop": {
+    "n_chains": 500,
+    "sub_categories": {
+      "4 Rules Chained Loop": {
+        "n": 85,
+        "oscillates": 0,
+        "terminates": 65,
+        "unparsed": 20
+      },
+      "6 Rules Chained Loop": {
+        "n": 85,
+        "oscillates": 0,
+        "terminates": 45,
+        "unparsed": 40
+      },
+      "5 Rules Chained Loop": {
+        "n": 60,
+        "oscillates": 0,
+        "terminates": 40,
+        "unparsed": 20
+      },
+      "2 Rules Chained Loop": {
+        "n": 95,
+        "oscillates": 5,
+        "terminates": 75,
+        "unparsed": 15
+      },
+      "7 Rules Chained Loop": {
+        "n": 55,
+        "oscillates": 0,
+        "terminates": 35,
+        "unparsed": 20
+      },
+      "3 Rules Chained Loop": {
+        "n": 120,
+        "oscillates": 5,
+        "terminates": 100,
+        "unparsed": 15
+      }
+    }
+  },
+  "Illegal State Rule": {
+    "n_chains": 100,
+    "sub_categories": {
+      "Discrete State Illegal State": {
+        "n": 95,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "Numerical Illegal State": {
+        "n": 5,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      }
+    }
+  },
+  "Condition Block": {
+    "n_chains": 150,
+    "sub_categories": {
+      "4 Rules Chained Condition Block": {
+        "n": 30,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "3 Rules Chained Condition Block": {
+        "n": 35,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "Atomic Condition Block": {
+        "n": 20,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "6 Rules Chained Condition Block": {
+        "n": 20,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "7 Rules Chained Condition Block": {
+        "n": 35,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "5 Rules Chained Condition Block": {
+        "n": 10,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      }
+    }
+  },
+  "Condition Bypass": {
+    "n_chains": 500,
+    "sub_categories": {
+      "3 Rules Chained Condition Bypass": {
+        "n": 90,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "4 Rules Chained Numerical Range Bypass": {
+        "n": 20,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "Atomic Condition Bypass": {
+        "n": 85,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "3 Rules Chained Numerical Range Bypass": {
+        "n": 25,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "5 Rules Chained Condition Bypass": {
+        "n": 85,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "6 Rules Chained Condition Bypass": {
+        "n": 85,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "Atomic Numerical Range Bypass": {
+        "n": 10,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "5 Rules Chained Numerical Range Bypass": {
+        "n": 5,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "7 Rules Chained Condition Bypass": {
+        "n": 50,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      },
+      "4 Rules Chained Condition Bypass": {
+        "n": 45,
+        "oscillates": 0,
+        "terminates": 0,
+        "unparsed": 0
+      }
+    }
+  },
+  "examples": {
+    "Loop": [
+      {
+        "chain_id": "AB_001501",
+        "sub": "4 Rules Chained Loop",
+        "rules": [
+          "IF hallway_camera.secure_mode == off THEN hallway_smart_lock.smart_lock_status = unlocked",
+          "IF hallway_smart_lock.smart_lock_status == unlocked THEN living_room_fan.fan_status = on",
+          "IF living_room_fan.fan_status == on THEN living_room_AC.AC_mode = cool",
+          "IF living_room_AC.AC_mode == cool THEN hallway_camera.secure_mode = off"
+        ],
+        "desc": "Rules Rule_4, Rule_5, Rule_6 and Rule_7 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions."
+      },
+      {
+        "chain_id": "AB_001601",
+        "sub": "6 Rules Chained Loop",
+        "rules": [
+          "IF living_room_window_lock.window_lock_status == locked THEN backyard_sprinkler_valve.sprinkler_valve_status = off",
+          "IF backyard_sprinkler_valve.sprinkler_valve_status == off THEN kitchen_dishwasher.dishwasher_status = off",
+          "IF kitchen_dishwasher.dishwasher_status == off THEN kitchen_oven.oven_status = off",
+          "IF kitchen_oven.oven_status == off THEN kitchen_toaster.toaster_status = off",
+          "IF kitchen_toaster.toaster_status == off THEN kitchen_coffee_machine.coffee_machine_status = off",
+          "IF kitchen_coffee_machine.coffee_machine_status == off THEN living_room_window_lock.window_lock_status = locked"
+        ],
+        "desc": "Rules Rule_6, Rule_7, Rule_8, Rule_9, Rule_10 and Rule_11 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions."
+      },
+      {
+        "chain_id": "AB_001701",
+        "sub": "5 Rules Chained Loop",
+        "rules": [
+          "IF living_room_window_lock.window_lock_status == locked THEN garage_garage_door.garage_door_status = closed",
+          "IF garage_garage_door.garage_door_status == closed THEN hallway_smart_lock.smart_lock_status = locked",
+          "IF hallway_smart_lock.smart_lock_status == locked THEN kitchen_dishwasher.dishwasher_status = off",
+          "IF kitchen_dishwasher.dishwasher_status == off THEN kitchen_oven.oven_status = off",
+          "IF kitchen_oven.oven_status == off THEN living_room_window_lock.window_lock_status = locked"
+        ],
+        "desc": "Rules Rule_5, Rule_6, Rule_7, Rule_8 and Rule_9 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions."
+      },
+      {
+        "chain_id": "AB_001801",
+        "sub": "3 Rules Chained Loop",
+        "rules": [
+          "IF hallway_camera.secure_mode == off THEN hallway_smart_lock.smart_lock_status = locked",
+          "IF hallway_smart_lock.smart_lock_status == locked THEN living_room_heater.heater_status = on",
+          "IF living_room_heater.heater_status == on THEN hallway_camera.secure_mode = off",
+          "IF hallway_camera.secure_mode == on THEN living_room_heater.heater_status = off"
+        ],
+        "desc": "Rules Rule_2, Rule_3 and Rule_4 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions."
+      },
+      {
+        "chain_id": "AB_001901",
+        "sub": "6 Rules Chained Loop",
+        "rules": [
+          "IF hallway_smart_lock.smart_lock_status == locked THEN hallway_camera.secure_mode = on",
+          "IF hallway_camera.secure_mode == on THEN living_room_air_purifier.air_purifier_status = off",
+          "IF living_room_air_purifier.air_purifier_status == off THEN living_room_heater.heater_status = off",
+          "IF living_room_heater.heater_status == off THEN living_room_humidifier.humidifier_status = off",
+          "IF living_room_humidifier.humidifier_status == off THEN living_room_dehumidifier.dehumidifier_status = off",
+          "IF living_room_dehumidifier.dehumidifier_status == off THEN hallway_smart_lock.smart_lock_status = locked"
+        ],
+        "desc": "Rules Rule_8, Rule_9, Rule_10, Rule_11, Rule_12 and Rule_13 form a circular dependency,triggering any rule in this set leads to an infinite loop of actions."
+      }
+    ],
+    "Illegal State Rule": [
+      {
+        "chain_id": "AB_003201",
+        "sub": "Discrete State Illegal State",
+        "rules": [
+          "IF living_room_fan.fan_intensity == medium THEN living_room_fan.fan_intensity = low"
+        ],
+        "desc": "Rule_6 defines a forbidden steady state: whenever fan.fan_intensity becomes medium, it is immediately forced to low."
+      },
+      {
+        "chain_id": "AB_003221",
+        "sub": "Discrete State Illegal State",
+        "rules": [
+          "IF kitchen_coffee_machine.coffee_machine_status == off THEN kitchen_coffee_machine.coffee_machine_status = on"
+        ],
+        "desc": "Rule_6 defines a forbidden steady state: whenever coffee_machine.coffee_machine_status becomes off, it is immediately forced to on."
+      },
+      {
+        "chain_id": "AB_003241",
+        "sub": "Discrete State Illegal State",
+        "rules": [
+          "IF living_room_lamp.lamp_status == on THEN living_room_lamp.lamp_status = off"
+        ],
+        "desc": "Rule_3 defines a forbidden steady state: whenever lamp.lamp_status becomes on, it is immediately forced to off."
+      },
+      {
+        "chain_id": "AB_003261",
+        "sub": "Discrete State Illegal State",
+        "rules": [
+          "IF living_room_alarm_clock.alarm_clock_status == off THEN living_room_alarm_clock.alarm_clock_status = ringing"
+        ],
+        "desc": "Rule_7 defines a forbidden steady state: whenever alarm_clock.alarm_clock_status becomes off, it is immediately forced to ringing."
+      },
+      {
+        "chain_id": "AB_003281",
+        "sub": "Discrete State Illegal State",
+        "rules": [
+          "IF living_room_AC.AC_status == on THEN living_room_AC.AC_status = off"
+        ],
+        "desc": "Rule_8 defines a forbidden steady state: whenever AC.AC_status becomes on, it is immediately forced to off."
+      }
+    ],
+    "Condition Block": [
+      {
+        "chain_id": "AB_002651",
+        "sub": "4 Rules Chained Condition Block",
+        "rules": [
+          "IF hallway_smart_lock.smart_lock_status == locked THEN hallway_camera.secure_mode = on",
+          "IF hallway_camera.secure_mode == on THEN garage_garage_door.garage_door_status = closed",
+          "IF garage_garage_door.garage_door_status == closed THEN laundry_room_water_valve.water_valve_status = off",
+          "IF laundry_room_washing_machine.washing_machine_mode == quick_wash THEN kitchen_dishwasher.dishwasher_status = on"
+        ],
+        "desc": "Rule_6 is permanently disabled because its trigger condition (washing_machine.washing_machine_mode == quick_wash) cannot be satisfied while the chain formed by Rule_3 & Rule_4 & Rule_5 maintains water_valve.water_valve_status in the 'off' state."
+      },
+      {
+        "chain_id": "AB_002681",
+        "sub": "4 Rules Chained Condition Block",
+        "rules": [
+          "IF living_room_window_lock.window_lock_status == locked THEN hallway_camera.secure_mode = on",
+          "IF hallway_camera.secure_mode == on THEN living_room_robot_vacuum.robot_vacuum_status = off",
+          "IF living_room_robot_vacuum.robot_vacuum_status == off THEN laundry_room_water_valve.water_valve_status = off",
+          "IF laundry_room_washing_machine.washing_machine_mode == quick_wash THEN kitchen_dishwasher.dishwasher_status = on"
+        ],
+        "desc": "Rule_5 is permanently disabled because its trigger condition (washing_machine.washing_machine_mode == quick_wash) cannot be satisfied while the chain formed by Rule_2 & Rule_3 & Rule_4 maintains water_valve.water_valve_status in the 'off' state."
+      },
+      {
+        "chain_id": "AB_002711",
+        "sub": "6 Rules Chained Condition Block",
+        "rules": [
+          "IF living_room_window_lock.window_lock_status == locked THEN hallway_camera.secure_mode = on",
+          "IF hallway_camera.secure_mode == on THEN hallway_smart_lock.smart_lock_status = locked",
+          "IF hallway_smart_lock.smart_lock_status == locked THEN garage_garage_door.garage_door_status = closed",
+          "IF garage_garage_door.garage_door_status == closed THEN backyard_sprinkler_valve.sprinkler_valve_status = off",
+          "IF backyard_sprinkler_valve.sprinkler_valve_status == off THEN laundry_room_water_valve.water_valve_status = off",
+          "IF laundry_room_washing_machine.washing_machine_mode == normal THEN kitchen_dishwasher.dishwasher_status = on"
+        ],
+        "desc": "Rule_7 is permanently disabled because its trigger condition (washing_machine.washing_machine_mode == normal) cannot be satisfied while the chain formed by Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 maintains water_valve.water_valve_status in the 'off' state."
+      },
+      {
+        "chain_id": "AB_002741",
+        "sub": "Atomic Condition Block",
+        "rules": [
+          "IF kitchen_dishwasher.dishwasher_status == off THEN laundry_room_water_valve.water_valve_status = off",
+          "IF backyard_sprinkler_valve.sprinkler_valve_status == on THEN living_room_robot_vacuum.robot_vacuum_status = on",
+          "IF environment_time.time_point == 20:00 THEN backyard_sprinkler_valve.sprinkler_valve_status = off"
+        ],
+        "desc": "Rule_6 is permanently disabled because its trigger condition (sprinkler_valve.sprinkler_valve_status == on) cannot be satisfied while Rule_5 maintains water_valve.water_valve_status in the 'off' state."
+      },
+      {
+        "chain_id": "AB_002771",
+        "sub": "6 Rules Chained Condition Block",
+        "rules": [
+          "IF garage_garage_door.garage_door_status == closed THEN hallway_camera.secure_mode = on",
+          "IF hallway_camera.secure_mode == on THEN hallway_smart_lock.smart_lock_status = locked",
+          "IF hallway_smart_lock.smart_lock_status == locked THEN backyard_sprinkler_valve.sprinkler_valve_status = off",
+          "IF backyard_sprinkler_valve.sprinkler_valve_status == off THEN kitchen_dishwasher.dishwasher_status = off",
+          "IF kitchen_dishwasher.dishwasher_status == off THEN laundry_room_water_valve.water_valve_status = off",
+          "IF laundry_room_washing_machine.washing_machine_status == on THEN laundry_room_washing_machine.washing_machine_mode = quick_wash"
+        ],
+        "desc": "Rule_6 is permanently disabled because its trigger condition (washing_machine.washing_machine_status == on) cannot be satisfied while the chain formed by Rule_1 & Rule_2 & Rule_3 & Rule_4 & Rule_5 maintains water_valve.water_valve_status in the 'off' state."
+      }
+    ],
+    "Condition Bypass": [
+      {
+        "chain_id": "AB_002001",
+        "sub": "3 Rules Chained Condition Bypass",
+        "rules": [
+          "IF living_room_humidifier.humidifier_status == off THEN living_room_heater.heater_status = off",
+          "IF living_room_heater.heater_status == off THEN living_room_air_purifier.air_purifier_status = off",
+          "IF living_room_humidifier.humidifier_status == off AND environment_user.user_status == away THEN living_room_air_purifier.air_purifier_status = off"
+        ],
+        "desc": "Chain formed by Rule_4 & Rule_5 bypasses the extra condition (user.user_status) required by Rule_6."
+      },
+      {
+        "chain_id": "AB_002101",
+        "sub": "6 Rules Chained Condition Bypass",
+        "rules": [
+          "IF environment_user.user_status == away THEN living_room_window_lock.window_lock_status = locked",
+          "IF living_room_window_lock.window_lock_status == locked THEN hallway_smart_lock.smart_lock_status = locked",
+          "IF hallway_smart_lock.smart_lock_status == locked THEN kitchen_dishwasher.dishwasher_status = off",
+          "IF kitchen_dishwasher.dishwasher_status == off THEN kitchen_coffee_machine.coffee_machine_status = off",
+          "IF kitchen_coffee_machine.coffee_machine_status == off THEN kitchen_toaster.toaster_status = off",
+          "IF environment_user.user_status == away AND kitchen_stove.stove_status == off THEN kitchen_toaster.toaster_status = off"
+        ],
+        "desc": "Chain formed by Rule_2 & Rule_3 & Rule_4 & Rule_5 & Rule_6 bypasses the extra condition (stove.stove_status) required by Rule_7."
+      },
+      {
+        "chain_id": "AB_002201",
+        "sub": "3 Rules Chained Condition Bypass",
+        "rules": [
+          "IF hallway_camera.secure_mode == off THEN living_room_window_lock.window_lock_status = unlocked",
+          "IF living_room_window_lock.window_lock_status == unlocked THEN living_room_lamp.lamp_status = on",
+          "IF hallway_camera.secure_mode == off AND living_room_light.light_status == off THEN living_room_lamp.lamp_status = on"
+        ],
+        "desc": "Chain formed by Rule_6 & Rule_7 bypasses the extra condition (light.light_status) required by Rule_8."
+      },
+      {
+        "chain_id": "AB_002301",
+        "sub": "6 Rules Chained Condition Bypass",
+        "rules": [
+          "IF hallway_camera.secure_mode == on THEN garage_garage_door.garage_door_status = closed",
+          "IF garage_garage_door.garage_door_status == closed THEN kitchen_dishwasher.dishwasher_status = off",
+          "IF kitchen_dishwasher.dishwasher_status == off THEN backyard_sprinkler_valve.sprinkler_valve_status = off",
+          "IF backyard_sprinkler_valve.sprinkler_valve_status == off THEN laundry_room_washing_machine.washing_machine_status = off",
+          "IF laundry_room_washing_machine.washing_machine_status == off THEN laundry_room_water_valve.water_valve_status = off",
+          "IF hallway_camera.secure_mode == on AND living_room_window_lock.window_lock_status == locked THEN laundry_room_water_valve.water_valve_status = off"
+        ],
+        "desc": "Chain formed by Rule_3 & Rule_4 & Rule_5 & Rule_6 & Rule_7 bypasses the extra condition (window_lock.window_lock_status) required by Rule_8."
+      },
+      {
+        "chain_id": "AB_002401",
+        "sub": "5 Rules Chained Condition Bypass",
+        "rules": [
+          "IF hallway_door_sensor.door_sensor_value == open THEN hallway_smart_lock.smart_lock_status = unlocked",
+          "IF hallway_smart_lock.smart_lock_status == unlocked THEN living_room_light.light_status = on",
+          "IF living_room_light.light_status == on THEN living_room_curtain.curtain_status = closed",
+          "IF living_room_curtain.curtain_status == closed THEN living_room_lamp.lamp_status = off",
+          "IF hallway_door_sensor.door_sensor_value == open AND living_room_window_lock.window_lock_status == unlocked THEN living_room_lamp.lamp_status = off"
+        ],
+        "desc": "Chain formed by Rule_1 & Rule_2 & Rule_3 & Rule_4 bypasses the extra condition (window_lock.window_lock_status) required by Rule_5."
+      }
+    ]
+  }
+}

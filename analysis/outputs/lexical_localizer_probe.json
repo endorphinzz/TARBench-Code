@@ -1,0 +1,21 @@
+{
+  "w2_device_overlap": {
+    "abnormal_samples": 4600,
+    "zero_device_overlap": 4599,
+    "zero_overlap_rate": 0.9997826086956522
+  },
+  "w1_lexical_localizer": {
+    "method": "TF-IDF(1-2gram) + LogisticRegression, rule-level labels, 5-fold CV, paper ARL-IoU protocol",
+    "rule_rows": 109008,
+    "in_fragment_rules": 16075,
+    "abnormal_samples_scored": 4600,
+    "arl_iou_mean": 0.9728317805383022,
+    "exact_iou_rate": 0.9310869565217391,
+    "zero_iou_rate": 0.0002173913043478261,
+    "reference": {
+      "best_prompted_llm_arl_iou": 0.84,
+      "qwen_8b_arl_iou": 0.62,
+      "qwen_8b_ft_arl_iou": 0.986
+    }
+  }
+}

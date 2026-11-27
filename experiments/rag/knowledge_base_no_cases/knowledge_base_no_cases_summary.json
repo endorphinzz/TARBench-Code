@@ -1,0 +1,10 @@
+{
+  "purpose": "W4 ablation: KB without case docs (no abnormal_case / benign_pattern), so no evaluation fragment or gold description can be retrieved",
+  "kept_documents": 22,
+  "dropped_documents": 12183,
+  "doc_type_counts": {
+    "abnormal_type_definition": 14,
+    "contrastive_guideline": 8
+  },
+  "source_kb": "experiments\\rag\\knowledge_base\\knowledge_base.jsonl"
+}

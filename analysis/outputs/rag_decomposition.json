@@ -1,0 +1,145 @@
+{
+  "note": "all conditions run on 2026-11-26 on the same 750 samples; published submission-time numbers shown for reference only",
+  "models": {
+    "gpt-5.4": {
+      "conditions": {
+        "no_retrieval": {
+          "n": 750,
+          "acc": 0.869,
+          "P": 0.825,
+          "R": 0.772,
+          "F1": 0.798,
+          "FPR": 0.082
+        },
+        "nocase": {
+          "n": 750,
+          "acc": 0.869,
+          "P": 0.952,
+          "R": 0.64,
+          "F1": 0.766,
+          "FPR": 0.016
+        },
+        "fullkb": {
+          "n": 750,
+          "acc": 0.924,
+          "P": 0.99,
+          "R": 0.78,
+          "F1": 0.872,
+          "FPR": 0.004
+        }
+      },
+      "paired_transitions": {
+        "no_retrieval->nocase": {
+          "n_paired": 750,
+          "abnormal_gained": 16,
+          "abnormal_lost": 49,
+          "benign_fixed": 33,
+          "benign_newly_flagged": 0
+        },
+        "nocase->fullkb": {
+          "n_paired": 750,
+          "abnormal_gained": 45,
+          "abnormal_lost": 10,
+          "benign_fixed": 6,
+          "benign_newly_flagged": 0
+        },
+        "no_retrieval->fullkb": {
+          "n_paired": 750,
+          "abnormal_gained": 33,
+          "abnormal_lost": 31,
+          "benign_fixed": 39,
+          "benign_newly_flagged": 0
+        }
+      },
+      "same_day_shares": {
+        "f1_gain_retained_without_cases": -0.432,
+        "fpr_reduction_retained_without_cases": 0.846
+      }
+    },
+    "claude-sonnet-4-5": {
+      "conditions": {
+        "no_retrieval": {
+          "n": 750,
+          "acc": 0.889,
+          "P": 0.822,
+          "R": 0.852,
+          "F1": 0.837,
+          "FPR": 0.092
+        },
+        "nocase": {
+          "n": 750,
+          "acc": 0.915,
+          "P": 0.881,
+          "R": 0.86,
+          "F1": 0.87,
+          "FPR": 0.058
+        }
+      },
+      "paired_transitions": {
+        "no_retrieval->nocase": {
+          "n_paired": 750,
+          "abnormal_gained": 18,
+          "abnormal_lost": 16,
+          "benign_fixed": 20,
+          "benign_newly_flagged": 3
+        }
+      },
+      "same_day_shares": {}
+    },
+    "deepseek-v4-flash": {
+      "conditions": {
+        "no_retrieval": {
+          "n": 750,
+          "acc": 0.903,
+          "P": 0.88,
+          "R": 0.82,
+          "F1": 0.849,
+          "FPR": 0.056
+        },
+        "nocase": {
+          "n": 750,
+          "acc": 0.921,
+          "P": 0.961,
+          "R": 0.796,
+          "F1": 0.871,
+          "FPR": 0.016
+        },
+        "fullkb": {
+          "n": 750,
+          "acc": 0.971,
+          "P": 0.987,
+          "R": 0.924,
+          "F1": 0.955,
+          "FPR": 0.006
+        }
+      },
+      "paired_transitions": {
+        "no_retrieval->nocase": {
+          "n_paired": 750,
+          "abnormal_gained": 18,
+          "abnormal_lost": 24,
+          "benign_fixed": 23,
+          "benign_newly_flagged": 3
+        },
+        "nocase->fullkb": {
+          "n_paired": 750,
+          "abnormal_gained": 36,
+          "abnormal_lost": 4,
+          "benign_fixed": 6,
+          "benign_newly_flagged": 1
+        },
+        "no_retrieval->fullkb": {
+          "n_paired": 750,
+          "abnormal_gained": 36,
+          "abnormal_lost": 10,
+          "benign_fixed": 25,
+          "benign_newly_flagged": 0
+        }
+      },
+      "same_day_shares": {
+        "f1_gain_retained_without_cases": 0.208,
+        "fpr_reduction_retained_without_cases": 0.8
+      }
+    }
+  }
+}

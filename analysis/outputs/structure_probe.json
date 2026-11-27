@@ -1,0 +1,41 @@
+{
+  "rule_level": {
+    "frag": {
+      "n_cond_oop": 0.3736,
+      "n_trig_oop": 0.3533,
+      "n_state_trig": 0.6414,
+      "n_act_oop": 0.024,
+      "n_and": 0.0603
+    },
+    "host": {
+      "n_cond_oop": 0.0,
+      "n_trig_oop": 0.0,
+      "n_state_trig": 0.1522,
+      "n_act_oop": 0.0,
+      "n_and": 0.0
+    },
+    "benign": {
+      "n_cond_oop": 0.0,
+      "n_trig_oop": 0.0,
+      "n_state_trig": 0.1389,
+      "n_act_oop": 0.0,
+      "n_and": 0.0
+    },
+    "n_rules": {
+      "benign": 64965,
+      "host": 27968,
+      "frag": 16075
+    }
+  },
+  "sample_single_feature_auc": {
+    "n_cond_oop": 0.8109,
+    "n_trig_oop": 0.8011,
+    "n_state_trig": 0.8158,
+    "n_act_oop": 0.5342,
+    "n_and": 0.5973
+  },
+  "combined_cv_auc": {
+    "counts_only": 0.9286,
+    "counts_plus_per_rule_rates": 0.939
+  }
+}

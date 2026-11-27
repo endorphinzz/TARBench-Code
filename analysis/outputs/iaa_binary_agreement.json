@@ -1,0 +1,316 @@
+{
+  "n": 500,
+  "types": {
+    "abnormal:EL": {
+      "n": 38,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "EL": 114
+      }
+    },
+    "abnormal:CB": {
+      "n": 38,
+      "majority_anom": 0.947,
+      "per_annotator_anom": {
+        "A": 0.947,
+        "B": 0.263,
+        "C": 0.974
+      },
+      "subtype_votes": {
+        "AD": 59,
+        "PE": 23,
+        "AC": 1
+      }
+    },
+    "abnormal:AD": {
+      "n": 38,
+      "majority_anom": 0.947,
+      "per_annotator_anom": {
+        "A": 0.974,
+        "B": 0.342,
+        "C": 0.974
+      },
+      "subtype_votes": {
+        "AC": 7,
+        "AD": 69,
+        "TM": 1,
+        "BE": 1,
+        "PE": 6,
+        "IS": 3
+      }
+    },
+    "abnormal:AC": {
+      "n": 38,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 105,
+        "PE": 9
+      }
+    },
+    "abnormal:AR": {
+      "n": 38,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AR": 93,
+        "EL": 2,
+        "AC": 3,
+        "PE": 5,
+        "IS": 11
+      }
+    },
+    "abnormal:CV": {
+      "n": 23,
+      "majority_anom": 0.739,
+      "per_annotator_anom": {
+        "A": 0.826,
+        "B": 0.696,
+        "C": 0.826
+      },
+      "subtype_votes": {
+        "CV": 24,
+        "PD": 8,
+        "PE": 20,
+        "AC": 2
+      }
+    },
+    "abnormal:AM": {
+      "n": 12,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AM": 35,
+        "AC": 1
+      }
+    },
+    "abnormal:CBk": {
+      "n": 11,
+      "majority_anom": 0.0,
+      "per_annotator_anom": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0
+      },
+      "subtype_votes": {}
+    },
+    "abnormal:PD": {
+      "n": 11,
+      "majority_anom": 0.909,
+      "per_annotator_anom": {
+        "A": 0.909,
+        "B": 0.818,
+        "C": 0.909
+      },
+      "subtype_votes": {
+        "PE": 28,
+        "CV": 1
+      }
+    },
+    "abnormal:PE": {
+      "n": 11,
+      "majority_anom": 0.273,
+      "per_annotator_anom": {
+        "A": 0.636,
+        "B": 0.273,
+        "C": 0.364
+      },
+      "subtype_votes": {
+        "PE": 12,
+        "IS": 2
+      }
+    },
+    "abnormal:AB": {
+      "n": 11,
+      "majority_anom": 0.182,
+      "per_annotator_anom": {
+        "A": 0.273,
+        "B": 0.091,
+        "C": 0.182
+      },
+      "subtype_votes": {
+        "AB": 3,
+        "TM": 1,
+        "BE": 1,
+        "AC": 1
+      }
+    },
+    "abnormal:TM": {
+      "n": 11,
+      "majority_anom": 0.909,
+      "per_annotator_anom": {
+        "A": 0.909,
+        "B": 0.909,
+        "C": 0.909
+      },
+      "subtype_votes": {
+        "TM": 30
+      }
+    },
+    "abnormal:AC+AB": {
+      "n": 8,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 24
+      }
+    },
+    "abnormal:BE": {
+      "n": 8,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "BE": 24
+      }
+    },
+    "abnormal:IS": {
+      "n": 8,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "IS": 23,
+        "AR": 1
+      }
+    },
+    "abnormal:AC+CV": {
+      "n": 7,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 18,
+        "CV": 3
+      }
+    },
+    "abnormal:AC+EL": {
+      "n": 6,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 18
+      }
+    },
+    "abnormal:EL+CB": {
+      "n": 6,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "EL": 18
+      }
+    },
+    "abnormal:PD+AC+CB": {
+      "n": 6,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 18
+      }
+    },
+    "abnormal:TM+AC": {
+      "n": 6,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "TM": 18
+      }
+    },
+    "abnormal:AB+AC+AD": {
+      "n": 6,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 18
+      }
+    },
+    "abnormal:AC+CB": {
+      "n": 5,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 15
+      }
+    },
+    "abnormal:AC+AD": {
+      "n": 4,
+      "majority_anom": 1.0,
+      "per_annotator_anom": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0
+      },
+      "subtype_votes": {
+        "AC": 12
+      }
+    },
+    "benign:": {
+      "n": 150,
+      "majority_anom": 0.013,
+      "per_annotator_anom": {
+        "A": 0.013,
+        "B": 0.013,
+        "C": 0.027
+      },
+      "subtype_votes": {
+        "AC": 5,
+        "PE": 1,
+        "CV": 2
+      }
+    }
+  }
+}

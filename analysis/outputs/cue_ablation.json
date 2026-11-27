@@ -1,0 +1,38 @@
+{
+  "n": 15183,
+  "a_three_cue_rule": {
+    "rule": "flag if ANY rule in the sample contains AND / '= off' / security vocab",
+    "precision": 0.494,
+    "recall": 0.919,
+    "f1": 0.643,
+    "fpr": 0.409,
+    "per_cue_recall": {
+      "AND": 0.352,
+      "OFF": 0.692,
+      "SEC": 0.666
+    },
+    "per_cue_benign_rate": {
+      "AND": 0.0,
+      "OFF": 0.164,
+      "SEC": 0.337
+    }
+  },
+  "b_feature_drop_ablation_auc": {
+    "full": 0.9957,
+    "drop_AND": 0.9944,
+    "drop_OFF": 0.9938,
+    "drop_SEC": 0.9951,
+    "drop_all_three": 0.9897
+  },
+  "security_devices_dropped": 5,
+  "c_cue_free_subset": {
+    "abnormal_samples_without_any_cue": 665,
+    "of": 4600,
+    "probe_auc_on_cuefree_abnormal_vs_benign": 0.9807,
+    "probe_flag_rate_on_cuefree_abnormal": 0.624,
+    "probe_mean_score_cuefree_abnormal_vs_benign": [
+      0.595,
+      0.066
+    ]
+  }
+}

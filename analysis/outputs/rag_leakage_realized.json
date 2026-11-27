@@ -1,0 +1,16 @@
+{
+  "n_eval_abnormal": 1000,
+  "retrieved_doc": "top-5 abnormal_case, published KB, published retriever, published top_k config",
+  "at_least_one_rule_overlap": 565,
+  "rate_any": 0.565,
+  "full_fragment_contained": 99,
+  "rate_full": 0.099,
+  "hit_at_rank1": 260,
+  "rank_distribution": {
+    "1": 260,
+    "2": 132,
+    "3": 98,
+    "4": 50,
+    "5": 25
+  }
+}
